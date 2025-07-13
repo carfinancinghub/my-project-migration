@@ -34,3 +34,6 @@ cypress/screenshots/
 *.bak
 *.swp
 *.tmp
+
+# Google Drive or temp sync folders
+.tmp.driveupload/
