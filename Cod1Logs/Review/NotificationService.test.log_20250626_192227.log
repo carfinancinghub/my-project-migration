@@ -1,0 +1,48 @@
+// Date: 062625 [1000], © 2025 CFH
+import { CFHNotificationService } from '@services/notification/NotificationService';
+import { logger } from '@utils/logger';
+
+describe('CFHNotificationService', () => {
+  let service: CFHNotificationService;
+
+  beforeEach(() => {
+    service = new CFHNotificationService();
+    jest.clearAllMocks();
+  });
+
+  it('should send email notification and return success', async () => {
+    const result = await service.sendEmail('user1@example.com', 'Test email');
+    expect(result).toEqual({ message: 'Email sent' });
+    expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Sending email'));
+  });
+
+  it('should send push notification and return success', async () => {
+    const result = await service.sendPush('user1', 'Test push');
+    expect(result).toEqual({ message: 'Push sent' });
+    expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Sending push'));
+  });
+
+  it('should send notification and return true', async () => {
+    const result = await service.sendNotification('user1', 'Test message');
+    expect(result).toBe(true);
+    expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Sending notification'));
+  });
+
+  it('should throw error on email notification failure', async () => {
+    jest.spyOn(logger, 'info').mockImplementationOnce(() => { throw new Error('Mock error'); });
+    await expect(service.sendEmail('user1@example.com', 'Test email')).rejects.toThrow('Notification failed');
+    expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Failed to send email'));
+  });
+
+  it('should throw error on push notification failure', async () => {
+    jest.spyOn(logger, 'info').mockImplementationOnce(() => { throw new Error('Mock error'); });
+    await expect(service.sendPush('user1', 'Test push')).rejects.toThrow('Notification failed');
+    expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Failed to send push'));
+  });
+
+  it('should throw error on notification failure', async () => {
+    jest.spyOn(logger, 'info').mockImplementationOnce(() => { throw new Error('Mock error'); });
+    await expect(service.sendNotification('user1', 'Test message')).rejects.toThrow('Notification failed');
+    expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Failed to send notification'));
+  });
+});

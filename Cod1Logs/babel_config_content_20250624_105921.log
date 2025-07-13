@@ -1,0 +1,12 @@
+﻿// (c) 2025 CFH, All Rights Reserved
+// Purpose: Babel configuration for the CFH Automotive Ecosystem backend
+// Author: CFH Dev Team
+// Date: 2025-06-24T11:00:00.000Z
+// Version: 1.0.0
+// Crown Certified: Yes
+// Batch ID: Config-062325
+// Save Location: C:\CFH\backend\babel.config.js
+module.exports = {
+  presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
+};
+

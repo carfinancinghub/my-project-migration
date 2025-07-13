@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET /api/hauler/health returns healthy status when all endpoints are up and matches snapshot 1`] = `
+{
+  "endpoints": {
+    "/api/inspection/photos": "up",
+    "/api/mechanic/shifts": "up",
+  },
+  "status": "healthy",
+}
+`;

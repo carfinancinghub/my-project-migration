@@ -1,0 +1,7 @@
+cfh-backend@1.0.0 C:\CFH\backend
+├─┬ @types/cypress@1.1.6
+│ └── cypress@14.5.0
+├── jest@29.7.0
+└─┬ ts-jest@29.4.0
+  └── jest@29.7.0 deduped
+

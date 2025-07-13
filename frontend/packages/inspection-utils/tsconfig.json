@@ -1,0 +1,27 @@
+/*
+ * File: tsconfig.json
+ * Path: C:\\CFH\\frontend\\packages\\inspection-utils\\tsconfig.json
+ * Purpose: TypeScript configuration for building the inspection-utils package
+ * Author: Cod1 Team
+ * Crown Certified: Yes
+ * Batch ID: Inspection-061325
+ */
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@cfh/inspection-utils": ["."]
+    }
+  },
+  "include": ["src/**/*.ts", "index.ts"]
+}

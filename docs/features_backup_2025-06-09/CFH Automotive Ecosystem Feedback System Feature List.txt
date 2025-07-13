@@ -1,0 +1,99 @@
+# CFH Automotive Ecosystem: Feedback System Feature List
+
+This document outlines the finalized features for the Feedback System module, covering `FeedbackForm.jsx` (frontend component for submitting/managing feedback) and `feedbackRoutes.js` (backend API routes). These support a $40K revenue goal through subscriptions ($5-$15/month) and priority fees, enhancing platform and service feedback.
+
+## FeedbackForm.jsx
+**Path**: C:\CFH\frontend\src\components\feedback\FeedbackForm.jsx  
+**Purpose**: Submit and manage feedback on platform, services, and sellers.
+
+### Free Tier
+- Submit feedback: General, service, seller, bug, suggestion.
+- Rate 1-5 stars, add comments.
+- View own feedback history (basic status).
+- Basic acknowledgment (e.g., “Feedback received”).
+- Businesses: View 10 recent reviews/ratings.
+- Accessibility: Screen reader support, keyboard navigation.
+- Error messages for invalid submissions.
+
+### Standard Tier
+- Contextual linking (e.g., transaction IDs).
+- Attach images/videos.
+- Categorize feedback (e.g., complaint, bug).
+- Anonymous feedback option.
+- Businesses: Filter feedback by rating/date.
+- Auctions integration: Auction-related feedback.
+
+### Premium Tier
+- Track feedback status (pending, resolved).
+- Priority review for user feedback.
+- Detailed status updates.
+- Businesses: Advanced dashboard, filters (keywords, segment).
+- Analytics: Rating trends, keyword clouds.
+- Private responses to feedback.
+- Tagging/notes for feedback.
+- Export feedback (CSV/PDF).
+- Custom feedback request templates.
+- Custom surveys with conditional questions.
+- Priority responses for users.
+- Earn 50 points/feedback ($0.10/point).
+
+### Wow++ Tier
+- AI sentiment analysis: Themes, sentiment scores.
+- Public business responses (moderated).
+- “Feedback Loop”: Notify users of actioned feedback.
+- “Voice of CFH” badge for quality feedback.
+- Redeem points for service discounts.
+- Video feedback submission.
+- Community upvote for suggestions.
+- AI-suggested response templates.
+- Analytics dashboard integration.
+- Escalation workflows for critical feedback.
+- Anonymous feedback analytics.
+- Leaderboard for valuable feedback.
+- Monetization: $5-$15/month, $2/API call.
+- **CQS**: <1s load time, audit logging.
+- **Error Handling**: Retry submission failures (1s).
+
+## feedbackRoutes.js
+**Path**: C:\cfh\backend\routes\feedback\feedbackRoutes.js  
+**Purpose**: Backend APIs for feedback management.
+
+### Free Tier
+- Submit feedback: `POST /feedback`.
+- View user feedback: `GET /feedback/user/me`.
+- Businesses: View recent feedback: `GET /feedback/target/:targetType/:targetId`.
+- Secure with JWT login.
+- **CQS**: Rate limiting (100/hour).
+
+### Standard Tier
+- Contextual data: `POST /feedback`.
+- Anonymous submission: `POST /submitAnonymousFeedback`.
+- Categorize feedback: `POST /categorizeFeedback`.
+- Fast, secure API responses (<500ms).
+- **CQS**: HTTPS, encryption.
+- **Error Handling**: 400 invalid inputs, 404 not found.
+
+### Premium Tier
+- Track status: `GET /trackFeedbackStatus`.
+- Update status: `PUT /feedback/:feedbackId/status`.
+- Private responses: `POST /feedback/:feedbackId/responses`.
+- Advanced queries: `GET /feedback/target/:targetType/:targetId`.
+- Analytics: `GET /feedback/target/:targetType/:targetId/analytics`.
+- Export: `POST /feedback/target/:targetType/:targetId/export`.
+- Webhooks: `POST /feedback/target/:targetType/:targetId/webhooks`.
+- Custom surveys: `POST /submitCustomSurvey`.
+- Earn 100 points/engagement ($0.10/point).
+- **CQS**: Redis caching, 99.9% uptime.
+
+### Wow++ Tier
+- AI analysis: `POST /feedback/:feedbackId/analyze`.
+- Gamification: `POST /trackFeedbackPoints`.
+- Public responses: `POST /feedback/:feedbackId/responses`.
+- Suggestion upvotes: `POST /feedback/suggestions/:suggestionId/vote`.
+- AI response templates: `GET /feedback/:feedbackId/suggested-responses`.
+- Proactive prompts: Internal API.
+- Escalation: `POST /escalateFeedback`.
+- Anonymous analytics: `GET /feedback/anonymous-analytics`.
+- Monetization: $2/API call supports $40K goal.
+- **CQS**: <1s response, audit logging.
+- **Error Handling**: 429 rate limits, retry timeouts.

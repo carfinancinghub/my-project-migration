@@ -1,0 +1,94 @@
+// File: InsightGenerator.test.js
+// Path: C:\CFH\backend\tests\analytics\InsightGenerator.test.js
+// Purpose: Unit tests for InsightGenerator service
+// Author: Rivers Auction Dev Team
+// Date: 2025-05-24
+// Cod2 Crown Certified: Yes
+
+const InsightGenerator = require('@services/analytics/InsightGenerator');
+const db = require('@services/db');
+const ai = require('@services/ai');
+const logger = require('@utils/logger');
+
+jest.mock('@services/db');
+jest.mock('@services/ai');
+jest.mock('@utils/logger');
+
+describe('InsightGenerator', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  describe('generateUserInsights', () => {
+    it('generates user insights successfully', async () => {
+      const mockUser = { id: '123', role: 'buyer' };
+      const mockBehaviors = [
+        { action: 'view_auction', timestamp: '2025-05-24T12:00:00Z', details: { auctionId: '789' } }
+      ];
+      const mockInsights = { recommendations: ['Increase bidding frequency to win more auctions.'] };
+      db.getUser.mockResolvedValueOnce(mockUser);
+      db.getBehaviorsByUser.mockResolvedValueOnce(mockBehaviors);
+      ai.generateInsights.mockResolvedValueOnce(mockInsights);
+
+      const result = await InsightGenerator.generateUserInsights('123', '2025-05-24', '2025-05-25');
+      expect(result).toEqual({ userId: '123', insights: ['Increase bidding frequency to win more auctions.'] });
+      expect(ai.generateInsights).toHaveBeenCalledWith(expect.objectContaining({ totalActions: 1 }));
+      expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Generated user insights'));
+    });
+
+    it('throws error when user is not found', async () => {
+      db.getUser.mockResolvedValueOnce(null);
+      await expect(InsightGenerator.generateUserInsights('123', '2025-05-24', '2025-05-25')).rejects.toThrow('User not found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('User not found'));
+    });
+
+    it('throws error when no behavior data is found', async () => {
+      db.getUser.mockResolvedValueOnce({ id: '123' });
+      db.getBehaviorsByUser.mockResolvedValueOnce([]);
+      await expect(InsightGenerator.generateUserInsights('123', '2025-05-24', '2025-05-25')).rejects.toThrow('No behavior data found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('No behavior data found'));
+    });
+  });
+
+  describe('generateAuctionInsights', () => {
+    it('generates auction insights successfully', async () => {
+      const mockAuction = {
+        bids: [{ bidderId: '123', amount: 10000 }],
+        finalBid: 10000,
+        reservePrice: 9000,
+        startTime: '2025-05-24T12:00:00Z',
+        endTime: '2025-05-24T14:00:00Z'
+      };
+      const mockInsights = { recommendations: ['Increase reserve price for better margins.'] };
+      db.getAuction.mockResolvedValueOnce(mockAuction);
+      ai.generateAuctionInsights.mockResolvedValueOnce(mockInsights);
+
+      const result = await InsightGenerator.generateAuctionInsights('789');
+      expect(result).toEqual({ auctionId: '789', insights: ['Increase reserve price for better margins.'] });
+      expect(ai.generateAuctionInsights).toHaveBeenCalledWith(expect.objectContaining({ bidderCount: 1 }));
+      expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Generated auction insights'));
+    });
+
+    it('throws error when auction is not found', async () => {
+      db.getAuction.mockResolvedValueOnce(null);
+      await expect(InsightGenerator.generateAuctionInsights('789')).rejects.toThrow('Auction not found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Auction not found'));
+    });
+
+    it('handles auction with no bids', async () => {
+      const mockAuction = {
+        bids: [],
+        finalBid: 0,
+        reservePrice: 9000,
+        startTime: '2025-05-24T12:00:00Z',
+        endTime: '2025-05-24T14:00:00Z'
+      };
+      const mockInsights = { recommendations: ['Increase marketing to attract more bidders.'] };
+      db.getAuction.mockResolvedValueOnce(mockAuction);
+      ai.generateAuctionInsights.mockResolvedValueOnce(mockInsights);
+
+      const result = await InsightGenerator.generateAuctionInsights('789');
+      expect(result.insights).toEqual(['Increase marketing to attract more bidders.']);
+    });
+  });
+});

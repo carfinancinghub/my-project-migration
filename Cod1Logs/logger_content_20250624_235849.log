@@ -1,0 +1,24 @@
+﻿// (c) 2025 CFH, All Rights Reserved
+// Purpose: Logger utility for the CFH Automotive Ecosystem
+// Author: CFH Dev Team
+// Date: 2025-06-25T06:30:00.000Z
+// Version: 1.0.0
+// Crown Certified: Yes
+// Batch ID: Utils-062525
+// Save Location: C:\CFH\backend\utils\logger.js
+const winston = require('winston');
+
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json()
+  ),
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'C:\\CFH\\logs\\app.log' })
+  ]
+});
+
+module.exports = logger;
+

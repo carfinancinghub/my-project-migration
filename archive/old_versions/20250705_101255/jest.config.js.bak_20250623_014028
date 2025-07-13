@@ -1,0 +1,34 @@
+/**
+
+© 2025 CFH, All Rights Reserved
+Purpose: Jest configuration for the CFH Automotive Ecosystem backend
+Author: CFH Dev Team
+Date: 2025-06-23T01:31:00.000Z
+Version: 1.0.0
+Crown Certified: Yes
+Batch ID: Config-062325
+Save Location: C:\CFH\backend\jest.config.js */
+
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  verbose: true,
+  testMatch: ['**/tests/**/*.test.[jt]s'],
+  testPathIgnorePatterns: ['/node_modules/'],
+  moduleNameMapper: {
+    '^@root$': '<rootdir>',
+    '^@root/(.*)$': '<rootdir>/',
+    '^@routes/(.*)$': '<rootdir>/routes/',
+    '^@utils/(.*)$': '<rootdir>/utils/',
+    '^@services/(.*)$': '<rootdir>/services/',
+    '^@models/(.*)$': '<rootdir>/models/',
+    '^@config/(.*)$': '<rootdir>/config/',
+    '^@middleware/(.*)$': '<rootdir>/middleware/',
+    '^@socket/(.*)$': '<rootdir>/socket/',
+    '^@tests/(.*)$': '<rootdir>/tests/',
+    '^@tools/(.*)$': '<rootdir>/tools/',
+    '^@ai/(.*)$': '<rootdir>/services/ai/',
+    '^@tasks/(.*)$': '<rootdir>/tasks/',
+    '^@frontend/(.*)$': '<rootdir>/../frontend/src/'
+  }
+};

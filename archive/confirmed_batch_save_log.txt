@@ -1,0 +1,15 @@
+2025-07-02 23:43:26 | FOUND   | FilterPanel.tsx | h9i0j1k2-l3m4-n5o6-p7q8-r9s0t1u2v3w4 | i0j1k2l3-m4n5-o6p7-q8r9-s0t1u2v3w4x5 | C:\CFH\frontend\src\components\analytics\FilterPanel.tsx
+2025-07-02 23:43:26 | FOUND   | ChartWidget.tsx | j1k2l3m4-n5o6-p7q8-r9s0-t1u2v3w4x5y6 | k2l3m4n5-o6p7-q8r9-s0t1-u2v3w4x5y6z7 | C:\CFH\frontend\src\components\analytics\ChartWidget.tsx
+2025-07-02 23:43:26 | FOUND   | DataTable.tsx | l3m4n5o6-p7q8-r9s0-t1u2-v3w4x5y6z7a8 | m4n5o6p7-q8r9-s0t1-u2v3-w4x5y6z7a8b9 | C:\CFH\frontend\src\components\analytics\DataTable.tsx
+2025-07-02 23:43:26 | FOUND   | PredictiveGraph.tsx | n5o6p7q8-r9s0-t1u2-v3w4-x5y6z7a8b9c0 | o6p7q8r9-s0t1-u2v3-w4x5-y6z7a8b9c0d1 | C:\CFH\frontend\src\components\analytics\PredictiveGraph.tsx
+2025-07-02 23:43:26 | FOUND   | NLPQueryInput.tsx | p7q8r9s0-t1u2-v3w4-x5y6-z7a8b9c0d1e2 | q8r9s0t1-u2v3-w4x5-y6z7-a8b9c0d1e2f3 | C:\CFH\frontend\src\components\analytics\NLPQueryInput.tsx
+2025-07-02 23:43:26 | FOUND   | BIIntegrationPanel.tsx | r9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2f3g4 | s0t1u2v3-w4x5-y6z7-a8b9-c0d1e2f3g4h5 | C:\CFH\frontend\src\components\analytics\BIIntegrationPanel.tsx
+2025-07-02 23:43:26 | FOUND   | test.tsx | t1u2v3w4-x5y6-z7a8-b9c0-d1e2f3g4h5i6 | u2v3w4x5-y6z7-a8b9-c0d1-e2f3g4h5i6j7 | C:\CFH\frontend\src\tests\analytics\test.tsx
+2025-07-02 23:43:26 | FOUND   | QualityCheckComponent.tsx | v3w4x5y6-z7a8-b9c0-d1e2-f3g4h5i6j7k8 | w4x5y6z7-a8b9-c0d1-e2f3-g4h5i6j7k8l9 | C:\CFH\frontend\src\components\analytics\QualityCheckComponent.tsx
+2025-07-02 23:43:26 | FOUND   | routes.ts | x5y6z7a8-b9c0-d1e2-f3g4-h5i6j7k8l9m0 | y6z7a8b9-c0d1-e2f3-g4h5-i6j7k8l9m0n1 | C:\CFH\backend\routes\analytics\routes.ts
+2025-07-02 23:43:26 | FOUND   | validation.ts | z7a8b9c0-d1e2-f3g4-h5i6-j7k8l9m0n1o2 | a8b9c0d1-e2f3-g4h5-i6j7-k8l9m0n1o2p3 | C:\CFH\backend\validation\analytics\validation.ts
+2025-07-02 23:43:26 | FOUND   | service.ts | b9c0d1e2-f3g4-h5i6-j7k8-l9m0n1o2p3q4 | c0d1e2f3-g4h5-i6j7-k8l9-m0n1o2p3q4r5 | C:\CFH\backend\services\analytics\service.ts
+2025-07-02 23:43:26 | FOUND   | test.ts | o2p3q4r5-s6t7-u8v9-w0x1-y2z3a4b5c6d7 | p3q4r5s6-t7u8-v9w0-x1y2-z3a4b5c6d7e8 | C:\CFH\backend\tests\services\analytics\test.ts
+2025-07-02 23:43:26 | FOUND   | AuctionManagement.tsx | x7y8z9a0-b1c2-d3e4-f5g6-h7i8j9k0l1m2 | y8z9a0b1-c2d3-e4f5-g6h7-i8j9k0l1m2n3 | C:\CFH\frontend\src\components\auction\AuctionManagement.tsx
+2025-07-02 23:43:26 | FOUND   | auctionManagementRoutes.ts | x9y0z1a2-b3c4-d5e6-f7g8-h9i0j1k2l3m4 | y0z1a2b3-c4d5-e6f7-g8h9-i0j1k2l3m4n5 | C:\CFH\backend\routes\auction\auctionManagementRoutes.ts
+2025-07-02 23:43:26 | FOUND   | auctionService.ts | k0l1m2n3-o4p5-q6r7-s8t9-u0v1w2x3y4z5 | l1m2n3o4-p5q6-r7s8-t9u0-v1w2x3y4z5a6 | C:\CFH\backend\services\auction\auctionService.ts

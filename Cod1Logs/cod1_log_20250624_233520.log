@@ -1,0 +1,5 @@
+﻿[2025-06-25T06:35:20.1736968Z] Starting conversion of test files to logs.
+[2025-06-25T06:35:20.1906994Z] Converted C:\CFH\backend\tests\integration\CrossModuleIntegration.test.js to C:\CFH\Cod1Logs\CrossModuleIntegration.test.js_converted_20250624_233520.log
+[2025-06-25T06:35:20.2076970Z] Converted C:\CFH\backend\tests\regression\WowRegression.test.js to C:\CFH\Cod1Logs\WowRegression.test.js_converted_20250624_233520.log
+[2025-06-25T06:35:20.2240142Z] Converted C:\CFH\backend\tests\services\ai\TrustScoreEngine.test.js to C:\CFH\Cod1Logs\TrustScoreEngine.test.js_converted_20250624_233520.log
+[2025-06-25T06:35:20.2320134Z] Test file conversion completed.

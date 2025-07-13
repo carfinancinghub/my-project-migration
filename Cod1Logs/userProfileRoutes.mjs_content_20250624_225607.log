@@ -1,0 +1,18 @@
+﻿// (c) 2025 CFH, All Rights Reserved
+// Purpose: Mock user profile routes for the CFH Automotive Ecosystem
+// Author: CFH Dev Team
+// Date: 2025-06-24T22:00:00.000Z
+// Version: 1.0.0
+// Crown Certified: Yes
+// Batch ID: Routes-062325
+// Save Location: C:\CFH\backend\routes\user\userProfileRoutes.mjs
+import express from 'express';
+
+const router = express.Router();
+
+router.get('/profile', (req, res) => {
+  res.status(200).json({ message: 'Mock user profile' });
+});
+
+export default router;
+

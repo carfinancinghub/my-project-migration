@@ -1,0 +1,7 @@
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     5652    1911    5652      24024  pty0      197614 17:49:37 /usr/bin/ps
+     1911    1910    1911       1964  pty0      197614 16:32:01 /usr/bin/bash
+     1910       1    1910      23972  ?         197614 16:32:01 /usr/bin/mintty
+Filesystem            Size  Used Avail Use% Mounted on
+C:/Program Files/Git  454G  363G   91G  81% /
+G:                     15G  2.5G   13G  17% /g

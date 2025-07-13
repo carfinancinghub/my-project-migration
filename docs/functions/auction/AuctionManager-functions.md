@@ -1,0 +1,13 @@
+## AuctionManager.js Functions Summary
+- **startAuction**: Starts an auction and sets status to active.
+  - **Inputs**: `auctionId: string`.
+  - **Outputs**: Object with auction status.
+  - **Dependencies**: `services/db`.
+- **endAuction**: Ends an auction and determines sold/unsold status.
+  - **Inputs**: `auctionId: string`.
+  - **Outputs**: Object with auction status and final bid.
+  - **Dependencies**: `services/db`.
+- **placeBid**: Places a bid on an active auction.
+  - **Inputs**: `auctionId: string`, `bidderId: string`, `amount: number`.
+  - **Outputs**: Object with bid status and details.
+  - **Dependencies**: `services/db`.

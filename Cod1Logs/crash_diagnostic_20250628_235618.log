@@ -1,0 +1,25 @@
+cfh-backend@1.0.0 C:\CFH\backend
+├─┬ @types/cypress@1.1.6
+│ └── cypress@14.5.0
+├─┬ firebase-admin@10.3.0
+│ └─┬ @google-cloud/storage@5.20.5
+│   └── p-limit@3.1.0 deduped
+├─┬ jest@29.7.0
+│ ├─┬ @jest/core@29.7.0
+│ │ ├─┬ jest-changed-files@29.7.0
+│ │ │ └── p-limit@3.1.0 deduped
+│ │ ├─┬ jest-config@29.7.0
+│ │ │ └─┬ jest-circus@29.7.0
+│ │ │   └── p-limit@3.1.0 deduped
+│ │ └─┬ jest-runner@29.7.0
+│ │   └── p-limit@3.1.0 deduped
+│ └─┬ import-local@3.2.0
+│   └─┬ pkg-dir@4.2.0
+│     └─┬ find-up@4.1.0
+│       └─┬ locate-path@5.0.0
+│         └─┬ p-locate@4.1.0
+│           └── p-limit@2.3.0
+├── p-limit@3.1.0
+└─┬ ts-jest@29.4.0
+  └── jest@29.7.0 deduped
+

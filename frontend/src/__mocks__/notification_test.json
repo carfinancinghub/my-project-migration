@@ -1,0 +1,35 @@
+{
+  "userId": 1001,
+  "notifications": [
+    {
+      "id": 101,
+      "message": "Your offer of $18,000 on a '2020 Mazda CX-5' has been placed.",
+      "timestamp": "2025-04-29T09:30:00Z",
+      "read": false
+    },
+    {
+      "id": 102,
+      "message": "The seller has responded to your inquiry about the '1970 Volkswagen Beetle'.",
+      "timestamp": "2025-04-29T08:45:15Z",
+      "read": false
+    },
+    {
+      "id": 103,
+      "message": "A new listing matching your saved search for 'Electric Vehicles under $30,000' is available.",
+      "timestamp": "2025-04-28T22:00:00Z",
+      "read": true
+    },
+    {
+      "id": 104,
+      "message": "Reminder: Your saved search alert for 'Convertibles' will be sent tomorrow.",
+      "timestamp": "2025-04-28T16:20:30Z",
+      "read": true
+    },
+    {
+      "id": 105,
+      "message": "The listing for the '2015 Jeep Wrangler' you were watching has been updated.",
+      "timestamp": "2025-04-28T11:10:00Z",
+      "read": true
+    }
+  ]
+}

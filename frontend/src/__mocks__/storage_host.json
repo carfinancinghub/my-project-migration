@@ -1,0 +1,34 @@
+{
+  "hostId": 789,
+  "listings": [
+    {
+      "id": 101,
+      "title": "Indoor Car Storage - Secure Location",
+      "status": "available"
+    },
+    {
+      "id": 102,
+      "title": "Climate-Controlled Vehicle Storage",
+      "status": "booked"
+    },
+    {
+      "id": 103,
+      "title": "Outdoor Car Parking Space",
+      "status": "available"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 201,
+      "date": "2025-05-05"
+    },
+    {
+      "id": 202,
+      "date": "2025-05-12"
+    },
+    {
+      "id": 203,
+      "date": "2025-06-01"
+    }
+  ]
+}

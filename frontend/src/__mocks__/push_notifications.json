@@ -1,0 +1,37 @@
+[
+  {
+    "eventId": 1,
+    "userId": 456,
+    "message": "Your offer on 'Classic Motorcycle' has been accepted!",
+    "sentTimestamp": "2025-04-28T21:00:00Z",
+    "status": "sent"
+  },
+  {
+    "eventId": 2,
+    "userId": 789,
+    "message": "New message received from buyer regarding your 'Vintage Scooter' listing.",
+    "sentTimestamp": "2025-04-28T21:15:30Z",
+    "status": "sent"
+  },
+  {
+    "eventId": 3,
+    "userId": 101,
+    "message": "Reminder: Your booking for car storage on 2025-05-05 is approaching.",
+    "sentTimestamp": "2025-04-28T21:30:00Z",
+    "status": "sent"
+  },
+  {
+    "eventId": 4,
+    "userId": 123,
+    "message": "Payment of $250 successfully processed for storage booking #201.",
+    "sentTimestamp": "2025-04-28T21:45:45Z",
+    "status": "sent"
+  },
+  {
+    "eventId": 5,
+    "userId": 456,
+    "message": "Your listed item 'Antique Road Sign' has a new follower!",
+    "sentTimestamp": "2025-04-28T22:00:00Z",
+    "status": "sent"
+  }
+]

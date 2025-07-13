@@ -1,0 +1,18 @@
+{
+  "testSuite": "AIDisputePredictor.test.js",
+  "results": [
+    { "test": "Predict outcome (buyer/seller)", "status": "passed" },
+    { "test": "Tone analysis", "status": "passed" },
+    { "test": "Bias index", "status": "passed" },
+    { "test": "AI Escalation logic", "status": "passed" },
+    { "test": "WebSocket push", "status": "passed" },
+    { "test": "Error fallback", "status": "passed" }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "status": "✅ All tests passed"
+  },
+  "generatedAt": "2025-05-01T..."
+}

@@ -1,0 +1,93 @@
+{
+  // Author: Cod4 (05042316)
+  "marketplaceInsightsDashboard": "[ES] Marketplace Insights Dashboard",
+  "bestFinancingDeal": "[ES] Best Financing Deal",
+  "saveWith": "[ES] Save with",
+  "with": "[ES] with",
+  "noFinancingDeals": "[ES] No financing deals available.",
+  "haulerSummary": "[ES] Hauler Summary",
+  "hired": "[ES] Hired",
+  "times": "[ES] times",
+  "noHaulerHires": "[ES] No hauler hires yet.",
+  "yourBadges": "[ES] Your Badges",
+  "noBadgesEarned": "[ES] No badges earned yet.",
+  "activityOverview": "[ES] Activity Overview",
+  "totalAuctions": "[ES] Total Auctions",
+  "totalSpent": "[ES] Total Spent",
+  "spendingTrends": "[ES] Spending Trends",
+  "serviceUsage": "[ES] Service Usage",
+  "error": "[ES] Error",
+  "errorFetchingInsights": "[ES] Error fetching marketplace insights",
+  "noInsightsAvailable": "[ES] No insights data available.",
+  "previewPDF": "[ES] Preview PDF",
+  "exportPDF": "[ES] Export to PDF",
+  "downloadCSV": "[ES] Download as CSV",
+  "newFinancingDeal": "[ES] New Financing Deal",
+  "lender": "[ES] Lender",
+  "isOfferingADeal": "[ES] is offering a deal at",
+  "for": "[ES] for",
+  "pdfPreview": "[ES] PDF Preview",
+  "view": "[ES] View",
+  "newFinancingDealAvailable": "[ES] New financing deal available: 0.5% lower rate!",
+  "forum": {
+    "title": "Foro Comunitario de Compradores",
+    "description": "[ES] Start a New Discussion",
+    "createThread": "[ES] Create Thread",
+    "createPoll": "[ES] Create Poll",
+    "newThread": "[ES] New Thread",
+    "postThread": "[ES] Post Thread",
+    "postPoll": "[ES] Post Poll",
+    "pollTitlePlaceholder": "[ES] Poll Title",
+    "pollOptionPlaceholder": "[ES] Option",
+    "addPollOption": "[ES] Add Poll Option",
+    "threadTitlePlaceholder": "[ES] Thread Title",
+    "threadContentPlaceholder": "[ES] Thread Content",
+    "pinned": "[ES] Pinned",
+    "by": "[ES] By",
+    "replies": "[ES] Replies",
+    "you": "[ES] You",
+    "error": {
+      "titleRequired": "[ES] Title is required.",
+      "titleTooLong": "[ES] Title must be less than 100 characters.",
+      "contentRequired": "[ES] Content is required.",
+      "contentTooLong": "[ES] Content must be under 5000 characters.",
+      "pollTitleRequired": "[ES] Poll title is required.",
+      "pollTitleTooLong": "[ES] Poll title must be under 100 characters.",
+      "pollOptionsMin": "[ES] At least two options are required.",
+      "formInvalid": "[ES] Please fix the errors above."
+    }
+  },
+  "mechanic": {
+    "vinDecoder": {
+      "title": "Decodificador VIN",
+      "inputPlaceholder": "Ingresar VIN",
+      "button": "Decodificar VIN"
+    },
+    "shiftPlanner": {
+      "title": "Planificador de Turnos"
+    },
+    "escrowSync": {
+      "notifyButton": "Notificar a Escrow",
+      "inputPlaceholder": "ID del Vehículo",
+      "statusSent": "Notificación Enviada",
+      "statusFailed": "Error al Notificar"
+    },
+    "taskFeed": {
+      "newTask": "Nueva Tarea Asignada"
+    }
+  },
+  "escrow": {
+    "propose_condition": "Proponer una nueva condición",
+    "propose_form_label": "Formulario para proponer una nueva condición de depósito",
+    "condition_description": "Descripción de la condición",
+    "submit_proposal": "Enviar propuesta",
+    "close_dialog": "Cerrar diálogo de propuesta de condición",
+    "close": "Cerrar",
+    "transaction_title": "Transacción de depósito: {{id}}",
+    "propose_condition_aria": "Proponer una nueva condición personalizada para esta transacción",
+    "errors": {
+      "api_error": "Ocurrió un error en la API.",
+      "transaction_fetch": "No se pudo recuperar la transacción."
+    }
+  }
+}

@@ -1,0 +1,288 @@
+param (
+    [string]$TestFile = $null,  # Test a single file (e.g., "EscrowFeatureList.md")
+    [string]$BackupDir = $null,  # Backup directory
+    [switch]$ExcludeFileName,    # Exclude file_name field
+    [switch]$ExcludeLastUpdated  # Exclude last_updated field
+)
+
+# Prompt for backup directory if not specified
+if (-not $BackupDir) {
+    $BackupDir = Read-Host "Enter backup directory [C:\CFH\docs\features_backup]"
+    if (-not $BackupDir) { $BackupDir = "C:\CFH\docs\features_backup" }
+}
+
+# Ensure backup directory exists
+if (-not (Test-Path $BackupDir)) {
+    Write-Host "Creating backup directory: $BackupDir"
+    try { 
+        New-Item -ItemType Directory -Path $BackupDir -Force | Out-Null
+    }
+    catch {
+        Write-Error "Failed to create backup directory: $($_.Exception.Message)"
+        exit 1
+    }
+}
+
+# Metadata for all 31 files
+$metadata = @{
+    "ShippingTransportFeatureList.md" = @{
+        artifact_id = "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+        artifact_version_id = "1b2c3d4e-5678-90ab-cdef-1234567890ab"
+        title = "Shipping Transport Feature List"
+        file_name = "ShippingTransportFeatureList.md"
+    }
+    "KnowledgeBaseFeatureList.md" = @{
+        artifact_id = "b2c3d4e5-6789-0abc-def1-234567890abc"
+        artifact_version_id = "2c3d4e5f-6789-0abc-def1-234567890abc"
+        title = "Knowledge Base Feature List"
+        file_name = "KnowledgeBaseFeatureList.md"
+    }
+    "SupportTicketsFeatureList.md" = @{
+        artifact_id = "c3d4e5f6-7890-abcd-ef12-3456789012bc"
+        artifact_version_id = "3d4e5f6a-7890-abcd-ef12-3456789012bc"
+        title = "Support Tickets Feature List"
+        file_name = "SupportTicketsFeatureList.md"
+    }
+    "DisputeResolutionFeatureList.md" = @{
+        artifact_id = "d4e5f6a7-8901-bcde-f123-4567890123cd"
+        artifact_version_id = "4e5f6a7b-8901-bcde-f123-4567890123cd"
+        title = "Dispute Resolution Feature List"
+        file_name = "DisputeResolutionFeatureList.md"
+    }
+    "DisputesArbitrationFeatureList.md" = @{
+        artifact_id = "d1e2f3a4-5678-90ab-cdef-1234567890ab"
+        artifact_version_id = "37dbc298-b216-498e-b3f7-ef6866c2f4be"
+        title = "Disputes Arbitration Feature List"
+        file_name = "DisputesArbitrationFeatureList.md"
+    }
+    "EscrowServiceFeatureList.md" = @{
+        artifact_id = "b7c8d9e0-f1a2-4b3c-9d4e-567890abcdef"
+        artifact_version_id = "d9e0f1a2-4b3c-9d4e-5678-90abcdef1234"
+        title = "Escrow Service Feature List"
+        file_name = "EscrowServiceFeatureList.md"
+    }
+    "EscrowFeatureList.md" = @{
+        artifact_id = "e2f3a4b5-6789-0abc-def1-234567890abc"
+        artifact_version_id = "8c8085a6-cc50-4d87-ba9a-2e747c15a9e2"
+        title = "Escrow Feature List"
+        file_name = "EscrowFeatureList.md"
+    }
+    "FinancingApplicationFeatureList.md" = @{
+        artifact_id = "faef9993-1cda-4126-b278-ede318fdd7fe"
+        artifact_version_id = "9993f1cd-a412-6278-bede-318fdd7fe999"
+        title = "Financing Application Feature List"
+        file_name = "FinancingApplicationFeatureList.md"
+    }
+    "FinancingLenderFeatureList.md" = @{
+        artifact_id = "f3a4b5c6-7890-abcd-ef12-3456789012bc"
+        artifact_version_id = "8bf108a6-39af-4903-bf40-423ecb5b8e50"
+        title = "Financing Lender Feature List"
+        file_name = "FinancingLenderFeatureList.md"
+    }
+    "AuctionsFeatureList.md" = @{
+        artifact_id = "e5f6a7b8-9012-cdef-1234-5678901234de"
+        artifact_version_id = "5f6a7b8c-9012-cdef-1234-5678901234de"
+        title = "Auctions Feature List"
+        file_name = "AuctionsFeatureList.md"
+    }
+    "MechanicServicesFeatureList.md" = @{
+        artifact_id = "f6a7b8c9-0123-def1-2345-6789012345ef"
+        artifact_version_id = "6a7b8c9d-0123-def1-2345-6789012345ef"
+        title = "Mechanic Services Feature List"
+        file_name = "MechanicServicesFeatureList.md"
+    }
+    "BodyShopFeatureList.md" = @{
+        artifact_id = "a7b8c9d0-1234-ef12-3456-7890123456f0"
+        artifact_version_id = "7b8c9d0e-1234-ef12-3456-7890123456f0"
+        title = "Body Shop Feature List"
+        file_name = "BodyShopFeatureList.md"
+    }
+    "CarDetailingFeatureList.md" = @{
+        artifact_id = "b8c9d0e1-2345-f123-4567-8901234567a1"
+        artifact_version_id = "8c9d0e1f-2345-f123-4567-8901234567a1"
+        title = "Car Detailing Feature List"
+        file_name = "CarDetailingFeatureList.md"
+    }
+    "WindowTintingFeatureList.md" = @{
+        artifact_id = "c9d0e1f2-3456-1234-5678-9012345678b2"
+        artifact_version_id = "9d0e1f2a-3456-1234-5678-9012345678b2"
+        title = "Window Tinting Feature List"
+        file_name = "WindowTintingFeatureList.md"
+    }
+    "CommunityEventsFeatureList.md" = @{
+        artifact_id = "d0e1f2a3-4567-2345-6789-0123456789c3"
+        artifact_version_id = "0e1f2a3b-4567-2345-6789-0123456789c3"
+        title = "Community Events Feature List"
+        file_name = "CommunityEventsFeatureList.md"
+    }
+    "UserReviewsFeatureList.md" = @{
+        artifact_id = "e1f2a3b4-5678-3456-7890-1234567890d4"
+        artifact_version_id = "1f2a3b4c-5678-3456-7890-1234567890d4"
+        title = "User Reviews Feature List"
+        file_name = "UserReviewsFeatureList.md"
+    }
+    "ReferralProgramFeatureList.md" = @{
+        artifact_id = "f2a3b4c5-6789-4567-8901-2345678901e5"
+        artifact_version_id = "2a3b4c5d-6789-4567-8901-2345678901e5"
+        title = "Referral Program Feature List"
+        file_name = "ReferralProgramFeatureList.md"
+    }
+    "LoyaltyProgramFeatureList.md" = @{
+        artifact_id = "15db876a-3402-46e6-a42c-4c7d8dc94214"
+        artifact_version_id = "876a3402-46e6-a42c-4c7d-8dc94214db15"
+        title = "Loyalty Program Feature List"
+        file_name = "LoyaltyProgramFeatureList.md"
+    }
+    "MarketplaceFeatureList.md" = @{
+        artifact_id = "e3f4a5b6-7c8d-9e0f-1a2b-3c4d5e6f7a8b"
+        artifact_version_id = "492e4f66-e8a3-46d9-bbfd-323d2beee76f"
+        title = "Marketplace Feature List"
+        file_name = "MarketplaceFeatureList.md"
+    }
+    "MarketplaceListingsFeatureList.md" = @{
+        artifact_id = "ac2104c1-b191-45f7-94ec-780f53056865"
+        artifact_version_id = "95421319-e77f-48bb-ac3b-f4cdc7700cb3"
+        title = "Marketplace Listings Feature List"
+        file_name = "MarketplaceListingsFeatureList.md"
+    }
+    "AuctionManagementFeatureList.md" = @{
+        artifact_id = "415b011c-5b22-4a95-9a01-b660abd584df"
+        artifact_version_id = "011c5b22-4a95-9a01-b660-abd584df415b"
+        title = "Auction Management Feature List"
+        file_name = "AuctionManagementFeatureList.md"
+    }
+    "ServiceBookingFeatureList.md" = @{
+        artifact_id = "3061118d-eb97-427c-b01b-d339a35cc154"
+        artifact_version_id = "118deb97-427c-b01b-d339-a35cc1543061"
+        title = "Service Booking Feature List"
+        file_name = "ServiceBookingFeatureList.md"
+    }
+    "TelematicsIntegrationFeatureList.md" = @{
+        artifact_id = "8ba594f4-053e-4a36-bc84-5eeca7f23240"
+        artifact_version_id = "94f4053e-4a36-bc84-5eec-a7f232408ba5"
+        title = "Telematics Integration Feature List"
+        file_name = "TelematicsIntegrationFeatureList.md"
+    }
+    "VehicleValuationFeatureList.md" = @{
+        artifact_id = "787d3e67-45a1-4e2e-9556-5705c885f1c5"
+        artifact_version_id = "3e6745a1-4e2e-9556-5705-c885f1c5787d"
+        title = "Vehicle Valuation Feature List"
+        file_name = "VehicleValuationFeatureList.md"
+    }
+    "InsuranceQuoteFeatureList.md" = @{
+        artifact_id = "1052a601-9750-43de-a184-4976d2fad3a3"
+        artifact_version_id = "a6019750-43de-a184-4976-d2fad3a31052"
+        title = "Insurance Quote Integration Feature List"
+        file_name = "InsuranceQuoteFeatureList.md"
+    }
+    "UserProfileCustomizationFeatureList.md" = @{
+        artifact_id = "775b6525-8360-45df-ac12-850e899b4982"
+        artifact_version_id = "65258360-45df-ac12-850e-899b4982775b"
+        title = "User Profile Customization Feature List"
+        file_name = "UserProfileCustomizationFeatureList.md"
+    }
+    "ForumEngagementFeatureList.md" = @{
+        artifact_id = "64ddb2d9-2522-49af-b774-47cf23fec8c6"
+        artifact_version_id = "b2d92522-49af-b774-47cf-23fec8c664dd"
+        title = "Forum Engagement Feature List"
+        file_name = "ForumEngagementFeatureList.md"
+    }
+    "PartnerMarketplaceFeatureList.md" = @{
+        artifact_id = "0696dbaf-ecce-4395-b058-ff6b44b86046"
+        artifact_version_id = "dbafecce-4395-b058-ff6b-44b860460696"
+        title = "Partner Marketplace Feature List"
+        file_name = "PartnerMarketplaceFeatureList.md"
+    }
+    "MobileAppEnhancementsFeatureList.md" = @{
+        artifact_id = "98c9ebfd-6d8d-4320-a578-189c1c052020"
+        artifact_version_id = "ebfd6d8d-4320-a578-189c-1c05202098c9"
+        title = "Mobile App Enhancements Feature List"
+        file_name = "MobileAppEnhancementsFeatureList.md"
+    }
+    "MaintenanceSchedulingFeatureList.md" = @{
+        artifact_id = "e584bb57-4beb-4d69-b8fc-32dafeb8ad41"
+        artifact_version_id = "bb574beb-4d69-b8fc-32da-feb8ad41e584"
+        title = "Maintenance Scheduling Feature List"
+        file_name = "MaintenanceSchedulingFeatureList.md"
+    }
+    "RoadsideAssistanceFeatureList.md" = @{
+        artifact_id = "2c016fee-e95c-408b-b17e-9b4b1e24e381"
+        artifact_version_id = "6fee955c-408b-b17e-9b4b-1e24e3812c01"
+        title = "Roadside Assistance Feature List"
+        file_name = "RoadsideAssistanceFeatureList.md"
+    }
+    "NotificationsSystemFeatureList.md" = @{
+        artifact_id = "fde9a93c-1f5a-4d51-9154-24d9c02bf929"
+        artifact_version_id = "a93c1f5a-4d51-9154-24d9-c02bf929fde9"
+        title = "Notifications System Feature List"
+        file_name = "NotificationsSystemFeatureList.md"
+    }
+    "FeatureListIndex.md" = @{
+        artifact_id = "56b70cdb-6752-45d9-8c78-c5ef960c1550"
+        artifact_version_id = "2568bb5f-8c8b-462c-a667-08113fc1ee52"
+        title = "Feature List Index"
+        file_name = "FeatureListIndex.md"
+    }
+}
+
+# Function to add metadata to each file
+function Add-MetadataToFile($fileName, $metadata) {
+    $filePath = "C:\CFH\docs\features\$fileName"
+
+    # Check if file already has YAML front matter
+    $content = Get-Content -Path $filePath
+    if ($content -match "^---\s*[\s\S]*?---\s*$") {
+        Write-Host "Skipping: $fileName (YAML already present)"
+        return
+    }
+
+    # Prepare YAML front matter
+    $yaml = @"
+---
+artifact_id: $($metadata.artifact_id)
+artifact_version_id: $($metadata.artifact_version_id)
+title: $($metadata.title)
+file_name: $($metadata.file_name)
+content_type: text/markdown
+last_updated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
+---
+"@
+
+    # Prepend YAML front matter to file
+    $newContent = $yaml + "`n" + $content
+
+    # Write updated content to the file
+    Set-Content -Path $filePath -Value $newContent -Force -ErrorAction Stop
+    Write-Host "Updated: $fileName"
+}
+
+# Process files
+function Process-Files($TestFile, $BackupDir) {
+    if ($TestFile) {
+        Add-MetadataToFile $TestFile $metadata[$TestFile]
+    } else {
+        Get-ChildItem -Path "C:\CFH\docs\features" -Filter *.md | ForEach-Object {
+            $fileName = $_.Name
+            if ($metadata.ContainsKey($fileName)) {
+                Add-MetadataToFile $fileName $metadata[$fileName]
+            } else {
+                Write-Host "Unknown file: $fileName"
+            }
+        }
+    }
+}
+
+# Backup Directory Handling
+if (-not (Test-Path $BackupDir)) {
+    $BackupDir = Read-Host "Enter backup directory path (or press Enter to skip)"
+}
+
+if ($BackupDir) {
+    Write-Host "Backing up files to: $BackupDir"
+    Get-ChildItem -Path "C:\CFH\docs\features" -Filter *.md | ForEach-Object {
+        Copy-Item -Path $_.FullName -Destination "$BackupDir\$($_.Name)" -Force
+    }
+}
+
+# Run the script
+Process-Files $TestFile $BackupDir

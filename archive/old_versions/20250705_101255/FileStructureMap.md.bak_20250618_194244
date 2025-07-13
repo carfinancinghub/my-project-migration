@@ -1,0 +1,84 @@
+<!--
+File: FileStructureMap.md
+Path: C:\CFH\docs\FileStructureMap.md
+Purpose: Document the expected file structure for the CFH Automotive Ecosystem to ensure consistency across tabs.
+Author: CFH Dev Team
+Date: 061825 [1830]
+Cod2 Crown Certified: Yes
+Save Location: C:\CFH\docs\FileStructureMap.md
+Batch ID: Compliance-061825
+-->
+
+© 2025 CFH, All Rights Reserved. 
+Purpose: Document the expected file structure for the CFH Automotive Ecosystem to ensure consistency across tabs. 
+Author: CFH Dev Team Date: 061825 [1848] 
+Save Location: C:\CFH\docs\FileStructureMap.md
+
+CFH Automotive Ecosystem File Structure Map
+
+Purpose
+
+Define the directory structure for source code, tests, and documentation to prevent location discrepancies and ensure SG Man compliance.
+
+Directory Structure
+
+
+Frontend Source Code:
+
+C:\CFH\frontend\src\components\<module>: Module-specific components (e.g., user, common, escrow).
+
+Example: C:\CFH\frontend\src\components\user\PointsHistory.jsx
+
+C:\CFH\frontend\src\utils: Utility functions and hooks.
+
+Example: C:\CFH\frontend\src\utils\UserAuth.js
+
+C:\CFH\frontend\src\services: API service files.
+
+Example: C:\CFH\frontend\src\services\analyticsApi.ts
+
+Frontend Tests:
+
+C:\CFH\frontend\src\tests\<module>: Module-specific test files.
+
+Example: C:\CFH\frontend\src\tests\user\UserProfilePage.test.jsx
+
+C:\CFH\frontend\src\tests\common: Tests for shared components.
+
+Example: C:\CFH\frontend\src\tests\common\ErrorBoundary.test.jsx
+
+Documentation:
+
+C:\CFH\docs\features: Feature definitions for modules.
+
+Example: C:\CFH\docs\features\UserProfileFeatureList.md
+
+C:\CFH\docs: General documentation, including compliance and structure maps.
+
+Example: C:\CFH\docs\FileStructureMap.md
+
+C:\CFH\docs\backend: Backend-specific documentation.
+
+Example: C:\CFH\docs\backend\constants.md
+
+Backend:
+
+C:\CFH\backend\routes\<module>: Module-specific API routes.
+
+Example: C:\CFH\backend\routes\user\userProfileRoutes.js
+
+C:\CFH\backend\tests\<module>: Module-specific backend tests.
+
+Example: C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js
+
+Compliance
+
+All files must include SG Man headers with © 2025 CFH, All Rights Reserved, Purpose, Author, Date in MMDDYY [HHMM] format, and Save Location.
+
+Test files must achieve ~95% coverage.
+
+Use alias imports (e.g., @components/, @services/, @utils/).
+
+Sync to Google Drive: https://drive.google.com/drive/folders/1-0kXjlGMx2RAys8in-ise5imXkQywdwO?usp=drive_link.
+
+Verify locations via "G Echo system Project Management" tab.

@@ -1,0 +1,33 @@
+{
+  "testSuites": [
+    {
+      "testSuite": "userAuthTests.js",
+      "passCount": 15,
+      "failCount": 0,
+      "errors": []
+    },
+    {
+      "testSuite": "notificationCenterTests.js",
+      "passCount": 12,
+      "failCount": 2,
+      "errors": [
+        "GET /api/notifications/:sellerId: timed out",
+        "Assertion failed: notification count mismatch"
+      ]
+    },
+    {
+      "testSuite": "storageBookingTests.js",
+      "passCount": 7,
+      "failCount": 0,
+      "errors": []
+    },
+    {
+      "testSuite": "consentSettingsTests.js",
+      "passCount": 9,
+      "failCount": 1,
+      "errors": [
+        "PUT /api/user/:userId/consent returned unexpected status code"
+      ]
+    }
+  ]
+}

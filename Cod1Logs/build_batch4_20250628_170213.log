@@ -1,0 +1,11 @@
+
+> cfh-backend@1.0.0 build
+> tsc && tsc-alias
+
+tsconfig.json(16,619): error TS1002: Unterminated string literal.
+tsconfig.json(16,619): error TS1328: Property value can only be string literal, numeric literal, 'true', 'false', 'null', object literal or array literal.
+tsconfig.json(16,619): error TS5063: Substitutions for pattern '@ AscrowAuditService.test.ts', 'tests/services/escrow/EscrowAuditService.test.ts', 'utils/AIChatModerator.test.ts', 'utils/AIDisputePredictor.test.ts', 'utils/AISellerNegotiationCoach.test.ts', 'utils/HaulerMissionsEngine.test.ts', 'utils/SmartDelayPredictor.test.ts', 'workers/notificationQueueWorker.ts', 'workers/NotificationWorker.ts', 'services/notification/NotificationService.ts', 'routes/escrow/EscrowRoutes.test.ts', 'app.ts', 'routes/analytics/bid.ts', 'services/escrow/EscrowAuditService.ts', 'services/auction/BidHeatmapService.ts', 'validation/escrow.validation.ts', 'utils/notificationQueue.ts'] }' should be an array.
+tsconfig.json(17,3): error TS1005: ':' expected.
+tsconfig.json(18,3): error TS5023: Unknown compiler option 'include'.
+tsconfig.json(19,3): error TS5023: Unknown compiler option 'exclude'.
+tsconfig.json(21,1): error TS1005: '}' expected.

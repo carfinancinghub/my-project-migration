@@ -1,0 +1,35 @@
+{
+  "userId": 2002,
+  "notifications": [
+    {
+      "id": 201,
+      "message": "Your bid on the '1995 Toyota Supra' was outbid.",
+      "timestamp": "2025-04-29T10:45:00Z",
+      "read": false
+    },
+    {
+      "id": 202,
+      "message": "A seller has responded to your offer on the '2010 Honda CR-V'.",
+      "timestamp": "2025-04-29T10:10:30Z",
+      "read": false
+    },
+    {
+      "id": 203,
+      "message": "Don't miss out! The auction for the '2017 Subaru Outback' ends in 3 hours.",
+      "timestamp": "2025-04-29T08:00:00Z",
+      "read": true
+    },
+    {
+      "id": 204,
+      "message": "Your watchlist has a new item: '2024 Kia Telluride'.",
+      "timestamp": "2025-04-28T23:30:15Z",
+      "read": true
+    },
+    {
+      "id": 205,
+      "message": "Thank you for your purchase of the '2008 Nissan Altima'!",
+      "timestamp": "2025-04-28T15:55:00Z",
+      "read": true
+    }
+  ]
+}

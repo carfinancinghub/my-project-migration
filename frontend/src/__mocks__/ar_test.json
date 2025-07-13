@@ -1,0 +1,52 @@
+[
+  {
+    "carId": 100,
+    "model": "1965 Ford Mustang",
+    "dimensions": {
+      "length": 4.61,
+      "width": 1.73,
+      "height": 1.30
+    },
+    "textureUrl": "/assets/mustang_1965.glb"
+  },
+  {
+    "carId": 101,
+    "model": "2024 Porsche 911 GT3 RS",
+    "dimensions": {
+      "length": 4.57,
+      "width": 1.88,
+      "height": 1.32
+    },
+    "textureUrl": "/assets/porsche_911_gt3rs.glb"
+  },
+  {
+    "carId": 102,
+    "model": "2023 Toyota GR86",
+    "dimensions": {
+      "length": 4.26,
+      "width": 1.78,
+      "height": 1.31
+    },
+    "textureUrl": "/assets/toyota_gr86.glb"
+  },
+  {
+    "carId": 103,
+    "model": "1970 Chevrolet Chevelle SS",
+    "dimensions": {
+      "length": 5.03,
+      "width": 1.90,
+      "height": 1.37
+    },
+    "textureUrl": "/assets/chevelle_ss_1970.glb"
+  },
+  {
+    "carId": 104,
+    "model": "2022 Hyundai IONIQ 5",
+    "dimensions": {
+      "length": 4.63,
+      "width": 1.89,
+      "height": 1.61
+    },
+    "textureUrl": "/assets/hyundai_ioniq5.glb"
+  }
+]

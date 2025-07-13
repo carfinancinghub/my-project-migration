@@ -1,0 +1,910 @@
+npm WARN cleanup Failed to remove some directories [
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@babel\\core\\node_modules\\.convert-source-map-cT6UIAHN',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@babel\core\node_modules\.convert-source-map-cT6UIAHN'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@babel\\core\\node_modules\\.convert-source-map-cT6UIAHN'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@eslint-community\\.eslint-utils-gzz85AJv',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@eslint-community\.eslint-utils-gzz85AJv'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@eslint-community\\.eslint-utils-gzz85AJv'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@esbuild\\.win32-x64-IAn9pKfW',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@esbuild\.win32-x64-IAn9pKfW'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@esbuild\\.win32-x64-IAn9pKfW'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@eslint-community\\.regexpp-C0gb7deo',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@eslint-community\.regexpp-C0gb7deo'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@eslint-community\\.regexpp-C0gb7deo'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@firebase\\.app-types-KZZatACb',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@firebase\.app-types-KZZatACb'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@firebase\\.app-types-KZZatACb'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@firebase\\.auth-interop-types-Z3y1K6gr',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@firebase\.auth-interop-types-Z3y1K6gr'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@firebase\\.auth-interop-types-Z3y1K6gr'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@firebase\\.database-types-pswtbxih',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@firebase\.database-types-pswtbxih'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@firebase\\.database-types-pswtbxih'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@humanwhocodes\\.config-array-hxjesGuw',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@humanwhocodes\.config-array-hxjesGuw'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@humanwhocodes\\.config-array-hxjesGuw'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.chai-EHCv7QlX',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.chai-EHCv7QlX'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.chai-EHCv7QlX'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.joi-HpWJcGI4',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.joi-HpWJcGI4'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.joi-HpWJcGI4'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.chai-as-promised-cZxZmYPY',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.chai-as-promised-cZxZmYPY'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.chai-as-promised-cZxZmYPY'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.jest-7ZPdTTWA',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.jest-7ZPdTTWA'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.jest-7ZPdTTWA'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.long-RWEhNcIR',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.long-RWEhNcIR'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.long-RWEhNcIR'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.json-schema-81vrKPHC',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.json-schema-81vrKPHC'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.json-schema-81vrKPHC'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.mongoose-heTxsYLP',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.mongoose-heTxsYLP'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.mongoose-heTxsYLP'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.jsonwebtoken-lfXVSOXY',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.jsonwebtoken-lfXVSOXY'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.jsonwebtoken-lfXVSOXY'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.prettier-EhcB6bB6',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.prettier-EhcB6bB6'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.prettier-EhcB6bB6'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.node-cron-9ZTDb5AV',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.node-cron-9ZTDb5AV'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.node-cron-9ZTDb5AV'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.sinonjs__fake-timers-kBXhGONL',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.sinonjs__fake-timers-kBXhGONL'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.sinonjs__fake-timers-kBXhGONL'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.triple-beam-pM7yaZ5K',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.triple-beam-pM7yaZ5K'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.triple-beam-pM7yaZ5K'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.sizzle-PrQkr1pQ',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.sizzle-PrQkr1pQ'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.sizzle-PrQkr1pQ'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.uuid-1efa3oDS',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.uuid-1efa3oDS'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.uuid-1efa3oDS'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.yauzl-l8nqHf7X',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.yauzl-l8nqHf7X'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.yauzl-l8nqHf7X'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.yargs-bfxh6rPI',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.yargs-bfxh6rPI'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.yargs-bfxh6rPI'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\@types\\.normalize-package-data-cLNZmLLI',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\@types\.normalize-package-data-cLNZmLLI'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\@types\\.normalize-package-data-cLNZmLLI'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.acorn-globals-SF7gSxA0',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.acorn-globals-SF7gSxA0'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.acorn-globals-SF7gSxA0'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.aggregate-error-OFEiG2WU',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.aggregate-error-OFEiG2WU'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.aggregate-error-OFEiG2WU'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.acorn-jsx-gFFHg2IM',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.acorn-jsx-gFFHg2IM'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.acorn-jsx-gFFHg2IM'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.ansi-regex-ChodNNcc',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.ansi-regex-ChodNNcc'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.ansi-regex-ChodNNcc'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.arrify-YtQmhqix',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.arrify-YtQmhqix'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.arrify-YtQmhqix'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.assert-plus-dCstn2qw',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.assert-plus-dCstn2qw'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.assert-plus-dCstn2qw'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.arch-EyUJynpA',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.arch-EyUJynpA'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.arch-EyUJynpA'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.at-least-node-3Jdtuj9w',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.at-least-node-3Jdtuj9w'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.at-least-node-3Jdtuj9w'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.aws4-sKwX6VVJ',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.aws4-sKwX6VVJ'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.aws4-sKwX6VVJ'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.babel-preset-jest-APNFMeHK',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.babel-preset-jest-APNFMeHK'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.babel-preset-jest-APNFMeHK'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.bcrypt-pbkdf-jA972Qey',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.bcrypt-pbkdf-jA972Qey'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.bcrypt-pbkdf-jA972Qey'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.astral-regex-r3L5bUnG',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.astral-regex-r3L5bUnG'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.astral-regex-r3L5bUnG'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.browser-process-hrtime-Q2x10fZ3',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.browser-process-hrtime-Q2x10fZ3'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.browser-process-hrtime-Q2x10fZ3'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.buffer-crc32-9GxwELGr',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.buffer-crc32-9GxwELGr'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.buffer-crc32-9GxwELGr'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.browser-stdout-LOgFskGw',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.browser-stdout-LOgFskGw'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.browser-stdout-LOgFskGw'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.buffer-equal-constant-time-brBSHOsF',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.buffer-equal-constant-time-brBSHOsF'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.buffer-equal-constant-time-brBSHOsF'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.caseless-bRKg5Kvl',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.caseless-bRKg5Kvl'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.caseless-bRKg5Kvl'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.cachedir-ZLPGHPww',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.cachedir-ZLPGHPww'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.cachedir-ZLPGHPww'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.ci-info-Y8v4099V',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.ci-info-Y8v4099V'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.ci-info-Y8v4099V'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.clean-stack-yqesN8vq',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.clean-stack-yqesN8vq'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.clean-stack-yqesN8vq'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.cli-truncate-qNnY1mpA',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.cli-truncate-qNnY1mpA'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.cli-truncate-qNnY1mpA'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.color-RhP4h96g',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.color-RhP4h96g'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.color-RhP4h96g'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.colorette-7eM5ZDa6',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.colorette-7eM5ZDa6'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.colorette-7eM5ZDa6'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.color-string-ua7XNyCu',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.color-string-ua7XNyCu'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.color-string-ua7XNyCu'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.cli-cursor-7KRYZm9H',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.cli-cursor-7KRYZm9H'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.cli-cursor-7KRYZm9H'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.colorspace-RLZgtSi9',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.colorspace-RLZgtSi9'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.colorspace-RLZgtSi9'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.compressible-qsx28BMd',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.compressible-qsx28BMd'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.compressible-qsx28BMd'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.common-ancestor-path-RGWTCxV2',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.common-ancestor-path-RGWTCxV2'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.common-ancestor-path-RGWTCxV2'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.convert-source-map-UkIcnBhp',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.convert-source-map-UkIcnBhp'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.convert-source-map-UkIcnBhp'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.aws-sign2-SMKR489k',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.aws-sign2-SMKR489k'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.aws-sign2-SMKR489k'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.crypto-random-string-2XQGHA0L',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.crypto-random-string-2XQGHA0L'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.crypto-random-string-2XQGHA0L'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.configstore-9ZYkgQYq',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.configstore-9ZYkgQYq'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.configstore-9ZYkgQYq'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.decamelize-AK1MiZXX',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.decamelize-AK1MiZXX'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.decamelize-AK1MiZXX'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.decimal.js-uNznxRBV',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.decimal.js-uNznxRBV'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.decimal.js-uNznxRBV'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.dot-prop-4Tni5aWA',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.dot-prop-4Tni5aWA'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.dot-prop-4Tni5aWA'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.duplexify-7iAuHVdP',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.duplexify-7iAuHVdP'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.duplexify-7iAuHVdP'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.emittery-AvPFDat4',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.emittery-AvPFDat4'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.emittery-AvPFDat4'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.eastasianwidth-Oft9lM2c',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.eastasianwidth-Oft9lM2c'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.eastasianwidth-Oft9lM2c'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.enabled-Ivpfu0Li',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.enabled-Ivpfu0Li'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.enabled-Ivpfu0Li'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.end-of-stream-SHMUxsbR',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.end-of-stream-SHMUxsbR'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.end-of-stream-SHMUxsbR'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.escape-string-regexp-J7onRV7y',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.escape-string-regexp-J7onRV7y'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.escape-string-regexp-J7onRV7y'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.env-paths-8pu3O9fY',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.env-paths-8pu3O9fY'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.env-paths-8pu3O9fY'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.estraverse-YSHeycoQ',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.estraverse-YSHeycoQ'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.estraverse-YSHeycoQ'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.executable-XdIFG1oP',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.executable-XdIFG1oP'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.executable-XdIFG1oP'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.extract-zip-myJYIu48',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.extract-zip-myJYIu48'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.extract-zip-myJYIu48'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.extend-OXf9IpGl',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.extend-OXf9IpGl'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.extend-OXf9IpGl'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.fast-levenshtein-Uriy9wwn',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.fast-levenshtein-Uriy9wwn'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.fast-levenshtein-Uriy9wwn'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.fast-text-encoding-VJgnA5BQ',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.fast-text-encoding-VJgnA5BQ'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.fast-text-encoding-VJgnA5BQ'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.file-entry-cache-dR058Vn7',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.file-entry-cache-dR058Vn7'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.file-entry-cache-dR058Vn7'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.forever-agent-5U2X2xdX',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.forever-agent-5U2X2xdX'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.forever-agent-5U2X2xdX'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.follow-redirects-RexYfjXC',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.follow-redirects-RexYfjXC'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.follow-redirects-RexYfjXC'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.fn.name-IwIiQIrS',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.fn.name-IwIiQIrS'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.fn.name-IwIiQIrS'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.get-stream-3jlL3npX',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.get-stream-3jlL3npX'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.get-stream-3jlL3npX'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.global-dirs-82xUEyny',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.global-dirs-82xUEyny'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.global-dirs-82xUEyny'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.has-ansi-OOUedj7l',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.has-ansi-OOUedj7l'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.has-ansi-OOUedj7l'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.hash-stream-validation-Ul4mhB8G',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.hash-stream-validation-Ul4mhB8G'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.hash-stream-validation-Ul4mhB8G'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.hosted-git-info-ALwtq2sW',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.hosted-git-info-ALwtq2sW'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.hosted-git-info-ALwtq2sW'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.http-parser-js-LWgBwVkQ',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.http-parser-js-LWgBwVkQ'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.http-parser-js-LWgBwVkQ'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.import-fresh-4kjmSxbe',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.import-fresh-4kjmSxbe'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.import-fresh-4kjmSxbe'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.ini-YFuj9f5X',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.ini-YFuj9f5X'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.ini-YFuj9f5X'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.indent-string-HG3Tk3mR',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.indent-string-HG3Tk3mR'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.indent-string-HG3Tk3mR'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-obj-gDxBmxms',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-obj-gDxBmxms'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-obj-gDxBmxms'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-path-inside-xVWDm6Sy',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-path-inside-xVWDm6Sy'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-path-inside-xVWDm6Sy'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-potential-custom-element-name-njWSf9xs',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-potential-custom-element-name-njWSf9xs'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-potential-custom-element-name-njWSf9xs'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-installed-globally-clwyl5hd',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-installed-globally-clwyl5hd'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-installed-globally-clwyl5hd'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-plain-obj-vMaeHYvG',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-plain-obj-vMaeHYvG'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-plain-obj-vMaeHYvG'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-unicode-supported-472fa2dU',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-unicode-supported-472fa2dU'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-unicode-supported-472fa2dU'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-stream-ended-vpHDmkz8',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-stream-ended-vpHDmkz8'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-stream-ended-vpHDmkz8'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.is-typedarray-tCnb2rft',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.is-typedarray-tCnb2rft'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.is-typedarray-tCnb2rft'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.isstream-mbxz6kCc',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.isstream-mbxz6kCc'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.isstream-mbxz6kCc'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.jwa-WaFZoC2Y',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.jwa-WaFZoC2Y'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.jwa-WaFZoC2Y'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.jsonfile-Vw4ycD1r',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.jsonfile-Vw4ycD1r'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.jsonfile-Vw4ycD1r'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.lodash.camelcase-OYKMwUyZ',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.lodash.camelcase-OYKMwUyZ'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.lodash.camelcase-OYKMwUyZ'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.kuler-KQocoFGz',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.kuler-KQocoFGz'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.kuler-KQocoFGz'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\CFH\\backend\\node_modules\\.lodash.clonedeep-aLC9rfR0',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\CFH\backend\node_modules\.lodash.clonedeep-aLC9rfR0'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\CFH\\backend\\node_modules\\.lodash.clonedeep-aLC9rfR0'
+npm WARN cleanup     }
+npm WARN cleanup   ],
+npm WARN cleanup   ... 400 more items
+npm WARN cleanup ]
+
+added 27 packages, removed 591 packages, changed 55 packages, and audited 563 packages in 12s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

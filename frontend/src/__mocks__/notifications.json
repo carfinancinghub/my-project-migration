@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "message": "Congratulations! Your item 'Vintage Camera' has been sold.",
+    "timestamp": "2025-04-28T12:30:00Z",
+    "read": false
+  },
+  {
+    "id": 2,
+    "message": "A buyer has inquired about your 'Antique Book' listing.",
+    "timestamp": "2025-04-28T14:15:30Z",
+    "read": false
+  },
+  {
+    "id": 3,
+    "message": "You have received a new offer of $45 for your 'Handmade Scarf'.",
+    "timestamp": "2025-04-28T16:00:00Z",
+    "read": true
+  },
+  {
+    "id": 4,
+    "message": "Your listing 'Collectible Coin Set' is about to expire in 24 hours.",
+    "timestamp": "2025-04-27T20:45:00Z",
+    "read": true
+  },
+  {
+    "id": 5,
+    "message": "Payment received for 'Art Deco Vase'. Please prepare for shipment.",
+    "timestamp": "2025-04-28T18:50:15Z",
+    "read": false
+  }
+]

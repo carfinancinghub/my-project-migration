@@ -1,0 +1,18 @@
+// File: index.js
+// Path: backend/routes/auth/index.js
+
+const express = require('express');
+const router = express.Router();
+const { registerUser, loginUser } = require('@/controllers/auth/authController');
+
+// @route   POST /api/auth/register
+// @desc    Register a new user
+// @access  Public
+router.post('/register', registerUser);
+
+// @route   POST /api/auth/login
+// @desc    Authenticate user & return JWT
+// @access  Public
+router.post('/login', loginUser);
+
+module.exports = router;

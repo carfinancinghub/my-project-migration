@@ -1,0 +1,35 @@
+{
+  "//": [
+    "File: test_runner_report.json",
+    "Path: backend/tests/test_runner_report.json",
+    "Purpose: Placeholder for test runner results",
+    "Author: Cod2",
+    "Date: 2025-04-28",
+    "👑 Cod2 Crown Certified",
+    "This file stores the latest test run results from testRunner.js.",
+    "Structure: { testSuites: [{ testSuite: string, passCount: number, failCount: number, errors: array of strings }] }",
+    "Example data is provided below to ensure a valid JSON structure."
+  ],
+  "testSuites": [
+    {
+      "testSuite": "dashboardTests.js",
+      "passCount": 10,
+      "failCount": 0,
+      "errors": []
+    },
+    {
+      "testSuite": "storageApiTests.js",
+      "passCount": 8,
+      "failCount": 1,
+      "errors": [
+        "POST /api/storage/:hostId failed"
+      ]
+    },
+    {
+      "testSuite": "judgeApiTests.js",
+      "passCount": 5,
+      "failCount": 0,
+      "errors": []
+    }
+  ]
+}

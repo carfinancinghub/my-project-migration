@@ -1,0 +1,27 @@
+﻿/*
+ * File: notificationQueue.ts
+ * Path: C:\CFH\backend\utils\notificationQueue.ts
+ * Created: 06/29/2025 02:30 PM PDT
+ * Modified: 06/29/2025 02:30 PM PDT
+ * Description: Manages the notification queue using Bull with Redis integration.
+ * Author: Automated by Grok 3 (xAI)
+ * Version: 1.0
+ * Notes: Uses default export for consistent module resolution and error logging.
+ */
+
+import Bull from 'bull';
+import pLimit from 'p-limit';
+import logger from '@config/logger';
+
+const limit = pLimit(1); // Strictest concurrency limit
+
+const notificationQueue: Bull.Queue = new Bull('notifications', {
+  redis: { host: 'localhost', port: 6379 },
+  limiter: { max: 1, duration: 1000 }
+});
+
+notificationQueue.on('error', (error: Error) => {
+  logger.error(Redis queue error: , { error });
+});
+
+export default notificationQueue; // Default export for module resolution

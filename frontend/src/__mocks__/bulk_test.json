@@ -1,0 +1,10 @@
+{
+  "testMetrics": {
+    "passCount": 98,
+    "failCount": 2,
+    "errors": [
+      "Test case X failed: expected Y, got Z",
+      "Test case Q failed: connection timeout"
+    ]
+  }
+}

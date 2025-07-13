@@ -1,0 +1,6 @@
+{
+  "metrics": {
+    "throughput": 200,
+    "responseTime": 0.2
+  }
+}

@@ -1,0 +1,258 @@
+// File: SellerDashboard.js
+// Path: frontend/src/components/seller/SellerDashboard.js
+// 👑 Cod1 Crown Certified — Seller HQ with Live Listings, Stats, and Controls
+
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import Button from '../../common/Button';
+import Card from '../../common/Card';
+import LoadingSpinner from '../../common/LoadingSpinner';
+
+const SellerDashboard = () => {
+  const [listings, setListings] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const token = localStorage.getItem('token');
+
+  const fetchListings = async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/seller/listings`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      setListings(res.data);
+    } catch (err) {
+      console.error('Error loading listings:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchListings();
+  }, []);
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/seller/listings/${id}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      fetchListings();
+    } catch (err) {
+      console.error('Delete failed:', err);
+      alert('❌ Could not delete listing');
+    }
+  };
+
+  return (
+    <div className="p-6 space-y-6">
+      <h1 className="text-2xl font-bold">🏪 Seller Dashboard</h1>
+      <p className="text-gray-600">Manage your vehicle listings and view engagement.</p>
+
+      <Button variant="primary" onClick={() => window.location.href = '/seller/create'}>
+        + Create New Listing
+      </Button>
+
+      {loading && <LoadingSpinner />}
+
+      {!loading && listings.length === 0 && (
+        <p className="text-gray-500">No listings created yet.</p>
+      )}
+
+      {!loading && listings.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          {listings.map((car) => (
+            <Card key={car._id}>
+              <h3 className="text-lg font-semibold">{car.year} {car.make} {car.model}</h3>
+              <p>Status: <span className="font-medium text-blue-600">{car.status}</span></p>
+              <p>Price: ${car.price.toLocaleString()}</p>
+              <div className="flex gap-2 mt-3">
+                <Button variant="danger" onClick={() => handleDelete(car._id)}>Delete</Button>
+                <Button onClick={() => window.location.href = `/seller/view/${car._id}`}>View</Button>
+              </div>
+            </Card>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default SellerDashboard;
+
+
+// File: SellerCreateListing.js
+// Path: frontend/src/components/seller/SellerCreateListing.js
+// 👑 Cod1 Crown Certified — Secure Form for Creating Car Listings
+
+import React, { useState } from 'react';
+import axios from 'axios';
+import Button from '../../common/Button';
+
+const SellerCreateListing = () => {
+  const [form, setForm] = useState({ make: '', model: '', year: '', price: '', status: 'Available' });
+  const [error, setError] = useState(null);
+  const token = localStorage.getItem('token');
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/seller/listings`, form, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      window.location.href = '/seller';
+    } catch (err) {
+      console.error('Error creating listing:', err);
+      setError('❌ Failed to create listing');
+    }
+  };
+
+  return (
+    <div className="p-6 max-w-xl mx-auto">
+      <h1 className="text-2xl font-bold mb-4">➕ Create New Listing</h1>
+      {error && <p className="text-red-500 mb-4">{error}</p>}
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input name="make" placeholder="Make" value={form.make} onChange={handleChange} className="border p-2 w-full" required />
+        <input name="model" placeholder="Model" value={form.model} onChange={handleChange} className="border p-2 w-full" required />
+        <input name="year" placeholder="Year" value={form.year} onChange={handleChange} className="border p-2 w-full" required />
+        <input name="price" placeholder="Price" value={form.price} onChange={handleChange} className="border p-2 w-full" required />
+        <Button type="submit" variant="primary">Submit Listing</Button>
+      </form>
+    </div>
+  );
+};
+
+export default SellerCreateListing;
+
+// File: SellerViewListings.js
+// Path: frontend/src/components/seller/SellerViewListings.js
+// 👑 Cod1 Crown Certified — Detailed View of Seller's Individual Listing
+
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import LoadingSpinner from '../../common/LoadingSpinner';
+
+const SellerViewListings = () => {
+  const { id } = useParams();
+  const [car, setCar] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const token = localStorage.getItem('token');
+
+  useEffect(() => {
+    const fetchCar = async () => {
+      try {
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/seller/listings/${id}`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        setCar(res.data);
+      } catch (err) {
+        console.error('Error loading listing:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchCar();
+  }, [id]);
+
+  if (loading) return <LoadingSpinner />;
+  if (!car) return <p className="text-red-500">Listing not found.</p>;
+
+  return (
+    <div className="p-6 max-w-2xl mx-auto space-y-4">
+      <h1 className="text-2xl font-bold">🚘 {car.year} {car.make} {car.model}</h1>
+      <p>Status: <span className="text-blue-600 font-semibold">{car.status}</span></p>
+      <p>Price: <strong>${car.price.toLocaleString()}</strong></p>
+      <p>Listed on: {new Date(car.createdAt).toLocaleDateString()}</p>
+    </div>
+  );
+};
+
+export default SellerViewListings;
+
+// File: seller.js
+// Path: backend/routes/seller.js
+// 👑 Cod1 Crown Certified — Seller API Route for Managing Listings
+
+const express = require('express');
+const router = express.Router();
+const authenticate = require('../../middleware/authenticate');
+const Car = require('../../models/Car');
+
+// Get all listings for the logged-in seller
+router.get('/listings', authenticate, async (req, res) => {
+  try {
+    const listings = await Car.find({ sellerId: req.user.id });
+    res.json(listings);
+  } catch (err) {
+    console.error('Error fetching seller listings:', err);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+// Create a new listing
+router.post('/listings', authenticate, async (req, res) => {
+  try {
+    const car = new Car({ ...req.body, sellerId: req.user.id });
+    await car.save();
+    res.status(201).json(car);
+  } catch (err) {
+    console.error('Error creating listing:', err);
+    res.status(400).json({ message: 'Invalid data' });
+  }
+});
+
+// Get single listing by ID
+router.get('/listings/:id', authenticate, async (req, res) => {
+  try {
+    const car = await Car.findOne({ _id: req.params.id, sellerId: req.user.id });
+    if (!car) return res.status(404).json({ message: 'Listing not found' });
+    res.json(car);
+  } catch (err) {
+    res.status(400).json({ message: 'Invalid request' });
+  }
+});
+
+// Delete a listing
+router.delete('/listings/:id', authenticate, async (req, res) => {
+  try {
+    await Car.deleteOne({ _id: req.params.id, sellerId: req.user.id });
+    res.status(204).end();
+  } catch (err) {
+    console.error('Error deleting listing:', err);
+    res.status(500).json({ message: 'Could not delete' });
+  }
+});
+
+module.exports = router;
+
+// File: Car.js
+// Path: backend/models/Car.js
+// 👑 Cod1 Crown Certified — Car Listing Schema for Seller, Auction, Inspection Integration
+
+const mongoose = require('mongoose');
+
+const carSchema = new mongoose.Schema({
+  make: { type: String, required: true },
+  model: { type: String, required: true },
+  year: { type: Number, required: true },
+  price: { type: Number, required: true },
+  status: { type: String, default: 'Available' },
+  sellerId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true,
+    index: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+}, {
+  timestamps: true,
+});
+
+module.exports = mongoose.model('Car', carSchema);
+

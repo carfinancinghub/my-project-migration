@@ -1,0 +1,2009 @@
+﻿node.exe : FAIL tests/routes/disputes/analytics/arbitrator-performance.test.js
+At C:\Users\Agasi5\AppData\Roaming\npm\npx.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/npm/bin/npx-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (FAIL tests/rout...ormance.test.js:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/lender/LenderTermsExporter.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/escrow/EscrowAuditService.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/ai/PredictionEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/user/userProfileRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/ai/ValuationMetricsService.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/escrow/EscrowNotificationService.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/auction/insights.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/escrow/escrowRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/escrow/EscrowChainSync.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/buyer/auctions.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/mechanic/mechanicRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/escrow/escrowPaymentRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/escrow/sync.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/ai/TrustScoreEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/ai/insights.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/utils/logger.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserProfile.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserSettings.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserNotifications.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserPreferences.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/SecurityLogger.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/regression/WowRegression.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/VRVehicleTour.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserActivity.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/socket/socket.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/security/RateLimiter.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/security/SessionValidator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/security/DDoSProtector.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/VoiceBidAssistant.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/VirtualAuctionRoom.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/SocialShareHelper.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserAuth.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/PremiumSupportChat.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/RealTimePredictor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/SocialGamification.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/AIInsightSeller.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/PostAuctionInsights.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/CrossBorderCommerce.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/ARVehicleView.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/LoyaltyRewards.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/DynamicPricing.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/BlockchainAudit.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/AIInsightBuyer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/PerformanceOptimizer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/PaymentProcessor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/LaunchChecklist.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/AIAuctionSimulator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/FeedbackSystem.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/ErrorHandler.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/ComplianceEnhancer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/onboarding/UserOnboarding.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/UserManagement.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/DisputeManager.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/onboarding/PreferencesSetup.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/AuditLogViewer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/ComplianceChecker.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/onboarding/WelcomeNotification.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/integration/CrossModuleIntegration.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/PlatformMonitor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/mobile/MobileNotifications.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/ListingApproval.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/mobile/MobileBidHandler.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/final/UserAnalyticsReport.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/final/SecurityAudit.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/config/AuctionConfig.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/final/FinalTesting.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionScheduler.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/BidValidator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionNotifier.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionReputationTracker.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionManager.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/TrendAnimation.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionHistory.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionMetrics.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/RecommendationEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/PredictionEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/SmartDelayPredictor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/Heatmap.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL routes/hauler/haulerHealthCheck.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/HaulerMissionsEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/AIDisputePredictor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/AIChatModerator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/coachPlanRoute.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/AISellerNegotiationCoach.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/escrow/escrow.service.test.ts
+  ΓùÅ Test suite failed to run
+
+    [96mtests/escrow/escrow.service.test.ts[0m:[93m67[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 
+'tier' does not exist on type 'IEscrowTransaction'.
+
+    [7m67[0m         expect(transaction.tier).toBe('premium');
+    [7m  [0m [91m                           ~~~~[0m
+
+FAIL tests/auctions/auctions.test.ts
+  ΓùÅ Test suite failed to run
+
+    [96mtests/auctions/auctions.test.ts[0m:[93m19[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'uctions_test_exec_'.
+
+    [7m19[0m   const logFile = path.resolve(logDir, uctions_test_exec_.log);
+    [7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m9[0m - [91merror[0m[90m TS7034: [0mVariable 
+'logData' implicitly has type 'any[]' in some locations where its type cannot be determined.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m        ~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m41[0m - [91merror[0m[90m TS7005: [0mVariable 'n' 
+implicitly has an 'any' type.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                                        ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m21[0m:[93m30[0m - [91merror[0m[90m TS2345: [0mArgument of 
+type 'any[]' is not assignable to parameter of type 'string | Uint8Array<ArrayBufferLike>'.
+      Type 'any[]' is missing the following properties from type 'Uint8Array<ArrayBufferLike>': BYTES_PER_ELEMENT, 
+buffer, byteLength, byteOffset, and 3 more.
+
+    [7m21[0m   fs.appendFileSync(logFile, logData);
+    [7m  [0m [91m                             ~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m21[0m:[93m30[0m - [91merror[0m[90m TS7005: [0mVariable 
+'logData' implicitly has an 'any[]' type.
+
+    [7m21[0m   fs.appendFileSync(logFile, logData);
+    [7m  [0m [91m                             ~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m34[0m:[93m12[0m - [91merror[0m[90m TS2362: [0mThe left-hand 
+side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+
+    [7m34[0m       .get(/api/auctions/)
+    [7m  [0m [91m           ~~~~~~~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m34[0m:[93m12[0m - [91merror[0m[90m TS2345: [0mArgument of 
+type 'number' is not assignable to parameter of type 'string'.
+
+    [7m34[0m       .get(/api/auctions/)
+    [7m  [0m [91m           ~~~~~~~~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m35[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'Bearer'.
+
+    [7m35[0m       .set('Authorization', Bearer );
+    [7m  [0m [91m                            ~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m44[0m:[93m8[0m - [91merror[0m[90m TS2339: [0mProperty 'set' 
+does not exist on type 'RegExp'.
+
+    [7m44[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m       ~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m44[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'Bearer'.
+
+    [7m44[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m                            ~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m54[0m:[93m8[0m - [91merror[0m[90m TS2339: [0mProperty 'set' 
+does not exist on type 'RegExp'.
+
+    [7m54[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m       ~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m54[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'Bearer'.
+
+    [7m54[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m                            ~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m19[0m:[93m40[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m19[0m   const logFile = path.resolve(logDir, uctions_test_exec_.log);
+    [7m  [0m [91m                                       ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m22[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                     [0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m32[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                               [0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m40[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                                       [0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m34[0m:[93m26[0m - [91merror[0m[90m TS1109: [0mExpression 
+expected.
+
+    [7m34[0m       .get(/api/auctions/)
+    [7m  [0m [91m                         ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m45[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m')' expected.
+
+    [7m45[0m       .send({ amount: -100 });
+    [7m  [0m [91m                             ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m55[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m')' expected.
+
+    [7m55[0m       .send({ amount: 1000 });
+    [7m  [0m [91m                             ~[0m
+
+FAIL tests/analytics/analytics.service.test.ts
+  ΓùÅ Test suite failed to run
+
+    Configuration error:
+
+    Could not locate module @routes/user/userProfileRoutes.mjs mapped as:
+    C:\CFH\backend\routes.
+
+    Please check your configuration for these entries:
+    {
+      "moduleNameMapper": {
+        "/^@routes\/(.*)$/": "C:\CFH\backend\routes"
+      },
+      "resolver": undefined
+    }
+
+    [0m [90m  9 |[39m [36mimport[39m express [36mfrom[39m [32m'express'[39m[33m;[39m
+     [90m 10 |[39m [36mimport[39m logger [36mfrom[39m [32m'@utils/logger'[39m[33m;[39m
+    [31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m userProfileRoutes [36mfrom[39m 
+[32m'@routes/user/userProfileRoutes.mjs'[39m[33m;[39m
+     [90m    |[39m [31m[1m^[22m[39m
+     [90m 12 |[39m [36mimport[39m marketplaceRoutes [36mfrom[39m 
+[32m'@routes/marketplace/marketplaceRoutes.mjs'[39m[33m;[39m
+     [90m 13 |[39m [36mimport[39m auctionRoutes [36mfrom[39m [32m'@routes/auctions/auctions'[39m[33m;[39m
+     [90m 14 |[39m[0m
+
+      at createNoMappedModuleFoundError (node_modules/jest-resolve/build/resolver.js:759:17)
+      at Object.require (app.ts:11:1)
+      at Object.<anonymous> (tests/analytics/analytics.service.test.ts:11:1)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------
+
+        Failed to write coverage reports:
+        ERROR: Error: EPERM: operation not permitted, open 'C:\CFH\backend\coverage\lcov-report\desktop.ini'
+        STACK: Error: EPERM: operation not permitted, open 'C:\CFH\backend\coverage\lcov-report\desktop.ini'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at FileWriter.copyFile (C:\CFH\backend\node_modules\istanbul-lib-report\lib\file-writer.js:167:12)
+    at C:\CFH\backend\node_modules\istanbul-reports\lib\html\index.js:347:28
+    at Array.forEach (<anonymous>)
+    at C:\CFH\backend\node_modules\istanbul-reports\lib\html\index.js:336:36
+    at Array.forEach (<anonymous>)
+    at HtmlReport.onStart (C:\CFH\backend\node_modules\istanbul-reports\lib\html\index.js:333:25)
+    at LcovReport.<computed> [as onStart] (C:\CFH\backend\node_modules\istanbul-reports\lib\lcov\index.js:28:23)
+    at Visitor.value (C:\CFH\backend\node_modules\istanbul-lib-report\lib\tree.js:38:38)
+      
+Summary of all failing tests
+FAIL tests/routes/disputes/analytics/arbitrator-performance.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/lender/LenderTermsExporter.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/escrow/EscrowAuditService.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/ai/PredictionEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/user/userProfileRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/ai/ValuationMetricsService.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/escrow/EscrowNotificationService.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/auction/insights.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/escrow/escrowRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/escrow/EscrowChainSync.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/buyer/auctions.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/mechanic/mechanicRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/escrow/escrowPaymentRoutes.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/escrow/sync.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/ai/TrustScoreEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/routes/ai/insights.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/utils/logger.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserProfile.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserSettings.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserNotifications.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserPreferences.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/services/SecurityLogger.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/regression/WowRegression.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/VRVehicleTour.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserActivity.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/socket/socket.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/security/RateLimiter.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/security/SessionValidator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/security/DDoSProtector.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/VoiceBidAssistant.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/VirtualAuctionRoom.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/SocialShareHelper.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/user/UserAuth.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/PremiumSupportChat.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/RealTimePredictor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/SocialGamification.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/AIInsightSeller.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/PostAuctionInsights.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/CrossBorderCommerce.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/ARVehicleView.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/LoyaltyRewards.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/DynamicPricing.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/BlockchainAudit.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/AIInsightBuyer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/PerformanceOptimizer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/PaymentProcessor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/LaunchChecklist.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/premium/AIAuctionSimulator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/FeedbackSystem.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/ErrorHandler.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/operational/ComplianceEnhancer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/onboarding/UserOnboarding.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/UserManagement.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/DisputeManager.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/onboarding/PreferencesSetup.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/AuditLogViewer.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/ComplianceChecker.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/onboarding/WelcomeNotification.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/integration/CrossModuleIntegration.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/PlatformMonitor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/mobile/MobileNotifications.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/officer/ListingApproval.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/mobile/MobileBidHandler.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/final/UserAnalyticsReport.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/final/SecurityAudit.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/config/AuctionConfig.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/final/FinalTesting.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionScheduler.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/BidValidator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionNotifier.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionReputationTracker.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionManager.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/TrendAnimation.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionHistory.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/auction/AuctionMetrics.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/RecommendationEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/PredictionEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/SmartDelayPredictor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/ai/Heatmap.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL routes/hauler/haulerHealthCheck.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/HaulerMissionsEngine.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/AIDisputePredictor.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/AIChatModerator.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/coachPlanRoute.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL utils/AISellerNegotiationCoach.test.js
+  ΓùÅ Test suite failed to run
+
+    You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel 
+asynchronously or when using the Node.js `--experimental-require-module` flag.
+        at C:\CFH\backend\babel.config.js
+
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:50:60)
+      at loadPartialConfigSync (node_modules/@babel/core/src/config/index.ts:69:14)
+
+FAIL tests/escrow/escrow.service.test.ts
+  ΓùÅ Test suite failed to run
+
+    [96mtests/escrow/escrow.service.test.ts[0m:[93m67[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 
+'tier' does not exist on type 'IEscrowTransaction'.
+
+    [7m67[0m         expect(transaction.tier).toBe('premium');
+    [7m  [0m [91m                           ~~~~[0m
+
+FAIL tests/auctions/auctions.test.ts
+  ΓùÅ Test suite failed to run
+
+    [96mtests/auctions/auctions.test.ts[0m:[93m19[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'uctions_test_exec_'.
+
+    [7m19[0m   const logFile = path.resolve(logDir, uctions_test_exec_.log);
+    [7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m9[0m - [91merror[0m[90m TS7034: [0mVariable 
+'logData' implicitly has type 'any[]' in some locations where its type cannot be determined.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m        ~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m41[0m - [91merror[0m[90m TS7005: [0mVariable 'n' 
+implicitly has an 'any' type.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                                        ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m21[0m:[93m30[0m - [91merror[0m[90m TS2345: [0mArgument of 
+type 'any[]' is not assignable to parameter of type 'string | Uint8Array<ArrayBufferLike>'.
+      Type 'any[]' is missing the following properties from type 'Uint8Array<ArrayBufferLike>': BYTES_PER_ELEMENT, 
+buffer, byteLength, byteOffset, and 3 more.
+
+    [7m21[0m   fs.appendFileSync(logFile, logData);
+    [7m  [0m [91m                             ~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m21[0m:[93m30[0m - [91merror[0m[90m TS7005: [0mVariable 
+'logData' implicitly has an 'any[]' type.
+
+    [7m21[0m   fs.appendFileSync(logFile, logData);
+    [7m  [0m [91m                             ~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m34[0m:[93m12[0m - [91merror[0m[90m TS2362: [0mThe left-hand 
+side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+
+    [7m34[0m       .get(/api/auctions/)
+    [7m  [0m [91m           ~~~~~~~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m34[0m:[93m12[0m - [91merror[0m[90m TS2345: [0mArgument of 
+type 'number' is not assignable to parameter of type 'string'.
+
+    [7m34[0m       .get(/api/auctions/)
+    [7m  [0m [91m           ~~~~~~~~~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m35[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'Bearer'.
+
+    [7m35[0m       .set('Authorization', Bearer );
+    [7m  [0m [91m                            ~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m44[0m:[93m8[0m - [91merror[0m[90m TS2339: [0mProperty 'set' 
+does not exist on type 'RegExp'.
+
+    [7m44[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m       ~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m44[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'Bearer'.
+
+    [7m44[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m                            ~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m54[0m:[93m8[0m - [91merror[0m[90m TS2339: [0mProperty 'set' 
+does not exist on type 'RegExp'.
+
+    [7m54[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m       ~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m54[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find 
+name 'Bearer'.
+
+    [7m54[0m       .set('Authorization', Bearer )
+    [7m  [0m [91m                            ~~~~~~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m19[0m:[93m40[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m19[0m   const logFile = path.resolve(logDir, uctions_test_exec_.log);
+    [7m  [0m [91m                                       ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m22[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                     [0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m32[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                               [0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m20[0m:[93m40[0m - [91merror[0m[90m TS1127: [0mInvalid 
+character.
+
+    [7m20[0m   const logData = [] \nStatus: \nBody: \n;
+    [7m  [0m [91m                                       [0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m34[0m:[93m26[0m - [91merror[0m[90m TS1109: [0mExpression 
+expected.
+
+    [7m34[0m       .get(/api/auctions/)
+    [7m  [0m [91m                         ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m45[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m')' expected.
+
+    [7m45[0m       .send({ amount: -100 });
+    [7m  [0m [91m                             ~[0m
+    [96mtests/auctions/auctions.test.ts[0m:[93m55[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m')' expected.
+
+    [7m55[0m       .send({ amount: 1000 });
+    [7m  [0m [91m                             ~[0m
+
+FAIL tests/analytics/analytics.service.test.ts
+  ΓùÅ Test suite failed to run
+
+    Configuration error:
+
+    Could not locate module @routes/user/userProfileRoutes.mjs mapped as:
+    C:\CFH\backend\routes.
+
+    Please check your configuration for these entries:
+    {
+      "moduleNameMapper": {
+        "/^@routes\/(.*)$/": "C:\CFH\backend\routes"
+      },
+      "resolver": undefined
+    }
+
+    [0m [90m  9 |[39m [36mimport[39m express [36mfrom[39m [32m'express'[39m[33m;[39m
+     [90m 10 |[39m [36mimport[39m logger [36mfrom[39m [32m'@utils/logger'[39m[33m;[39m
+    [31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m userProfileRoutes [36mfrom[39m 
+[32m'@routes/user/userProfileRoutes.mjs'[39m[33m;[39m
+     [90m    |[39m [31m[1m^[22m[39m
+     [90m 12 |[39m [36mimport[39m marketplaceRoutes [36mfrom[39m 
+[32m'@routes/marketplace/marketplaceRoutes.mjs'[39m[33m;[39m
+     [90m 13 |[39m [36mimport[39m auctionRoutes [36mfrom[39m [32m'@routes/auctions/auctions'[39m[33m;[39m
+     [90m 14 |[39m[0m
+
+      at createNoMappedModuleFoundError (node_modules/jest-resolve/build/resolver.js:759:17)
+      at Object.require (app.ts:11:1)
+      at Object.<anonymous> (tests/analytics/analytics.service.test.ts:11:1)
+
+
+Test Suites: 88 failed, 88 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        10.009 s
+Ran all test suites.

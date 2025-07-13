@@ -1,0 +1,72 @@
+// File: UserBehaviorTracker.test.js
+// Path: C:\CFH\backend\tests\analytics\UserBehaviorTracker.test.js
+// Purpose: Unit tests for UserBehaviorTracker service
+// Author: Rivers Auction Dev Team
+// Date: 2025-05-24
+// Cod2 Crown Certified: Yes
+
+const UserBehaviorTracker = require('@services/analytics/UserBehaviorTracker');
+const db = require('@services/db');
+const logger = require('@utils/logger');
+
+jest.mock('@services/db');
+jest.mock('@utils/logger');
+
+describe('UserBehaviorTracker', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  describe('trackAction', () => {
+    it('tracks user action successfully', async () => {
+      db.getUser.mockResolvedValueOnce({ id: '123' });
+      db.logBehavior.mockResolvedValueOnce({});
+
+      const result = await UserBehaviorTracker.trackAction('123', 'view_auction', { auctionId: '789' });
+      expect(result).toEqual({ status: 'tracked' });
+      expect(db.logBehavior).toHaveBeenCalledWith(expect.objectContaining({ userId: '123', action: 'view_auction' }));
+      expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Tracked action'));
+    });
+
+    it('throws error when user is not found', async () => {
+      db.getUser.mockResolvedValueOnce(null);
+      await expect(UserBehaviorTracker.trackAction('123', 'view_auction', { auctionId: '789' })).rejects.toThrow('User not found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('User not found'));
+    });
+
+    it('throws error on logging failure', async () => {
+      db.getUser.mockResolvedValueOnce({ id: '123' });
+      db.logBehavior.mockRejectedValueOnce(new Error('DB error'));
+      await expect(UserBehaviorTracker.trackAction('123', 'view_auction', { auctionId: '789' })).rejects.toThrow('DB error');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Failed to track action'));
+    });
+  });
+
+  describe('getUserBehavior', () => {
+    it('retrieves user behavior successfully', async () => {
+      const mockBehaviors = [
+        { userId: '123', action: 'view_auction', details: { auctionId: '789' }, timestamp: '2025-05-24T12:00:00Z' }
+      ];
+      db.getUser.mockResolvedValueOnce({ id: '123' });
+      db.getBehaviorsByUser.mockResolvedValueOnce(mockBehaviors);
+
+      const result = await UserBehaviorTracker.getUserBehavior('123', '2025-05-24', '2025-05-25');
+      expect(result).toEqual(mockBehaviors);
+      expect(db.getBehaviorsByUser).toHaveBeenCalledWith('123', '2025-05-24', '2025-05-25');
+      expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Retrieved behavior data'));
+    });
+
+    it('throws error when user is not found', async () => {
+      db.getUser.mockResolvedValueOnce(null);
+      await expect(UserBehaviorTracker.getUserBehavior('123', '2025-05-24', '2025-05-25')).rejects.toThrow('User not found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('User not found'));
+    });
+
+    it('throws error when no behavior data is found', async () => {
+      db.getUser.mockResolvedValueOnce({ id: '123' });
+      db.getBehaviorsByUser.mockResolvedValueOnce([]);
+      await expect(UserBehaviorTracker.getUserBehavior('123', '2025-05-24', '2025-05-25')).rejects.toThrow('No behavior data found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('No behavior data found'));
+    });
+  });
+});

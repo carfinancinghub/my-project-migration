@@ -1,0 +1,815 @@
+
+> cfh-backend@1.0.0 build
+> tsc
+
+app.ts(7,26): error TS2307: Cannot find module '@routes/escrow/escrowRoutes' or its corresponding type declarations.
+app.ts(8,28): error TS2307: Cannot find module '@routes/ai/insights' or its corresponding type declarations.
+config/AuctionConfig.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+controllers/AuctionReputationTracker.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+controllers/AuctionReputationTracker.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+controllers/NotificationController.ts(3,37): error TS2307: Cannot find module '@services/notification/NotificationService' or its corresponding type declarations.
+controllers/NotificationController.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+controllers/UserController.ts(3,36): error TS2307: Cannot find module '@services/user/UserProfileService' or its corresponding type declarations.
+controllers/UserController.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+cypress/e2e/CollaborationChat.cy.ts(7,8): error TS2551: Property 'login' does not exist on type 'cy & CyEventEmitter'. Did you mean 'log'?
+cypress/e2e/CollaborationChat05040109.cy.ts(7,8): error TS2551: Property 'login' does not exist on type 'cy & CyEventEmitter'. Did you mean 'log'?
+cypress/support/commands.ts(7,9): error TS2669: Augmentations for the global scope can only be directly nested in external modules or ambient module declarations.
+cypress/support/commands.ts(10,30): error TS2315: Type 'Chainable' is not generic.
+cypress/support/e2e.ts(7,22): error TS2345: Argument of type '"login"' is not assignable to parameter of type 'keyof Chainable<any>'.
+index.ts(3,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+index.ts(4,37): error TS2307: Cannot find module '@services/notification/NotificationService' or its corresponding type declarations.
+index.ts(5,31): error TS2307: Cannot find module '@services/escrow/EscrowService' or its corresponding type declarations.
+middleware/authMiddleware.ts(11,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+middleware/authMiddleware.ts(13,11): error TS2430: Interface 'AuthenticatedRequest' incorrectly extends interface 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  Types of property 'user' are incompatible.
+    Type '{ id: string; role: string; } | undefined' is not assignable to type 'User | undefined'.
+      Type '{ id: string; role: string; }' is missing the following properties from type 'User': userId, name
+middleware/authMiddleware.ts(26,14): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+middleware/RBACMiddleware.ts(2,20): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+middleware/RBACMiddleware.ts(3,22): error TS2307: Cannot find module '@models/User' or its corresponding type declarations.
+middleware/RBACMiddleware.ts(5,11): error TS2430: Interface 'AuthenticatedRequest' incorrectly extends interface 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  Types of property 'user' are incompatible.
+    Type '{ id: string; role: string; } | undefined' is not assignable to type 'User | undefined'.
+      Type '{ id: string; role: string; }' is missing the following properties from type 'User': userId, name
+middleware/validate.ts(10,139): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+migrate.ts(36,49): error TS7006: Parameter 'p' implicitly has an 'any' type.
+migrate.ts(36,71): error TS7006: Parameter 'p' implicitly has an 'any' type.
+migrate.ts(36,83): error TS7006: Parameter 'p' implicitly has an 'any' type.
+repositories/escrow.repository.ts(14,34): error TS2339: Property 'findById' does not exist on type 'typeof EscrowTransaction'.
+repositories/escrow.repository.ts(18,54): error TS2345: Argument of type 'Partial<IEscrowTransaction>' is not assignable to parameter of type 'IEscrowTransaction'.
+  Types of property '_id' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+repositories/escrow.repository.ts(19,31): error TS2339: Property 'save' does not exist on type 'EscrowTransaction'.
+repositories/escrow.repository.ts(23,34): error TS2339: Property 'findByIdAndUpdate' does not exist on type 'typeof EscrowTransaction'.
+routes/analytics/analytics.routes.ts(12,34): error TS2307: Cannot find module '@services/analytics/analytics.service' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(13,26): error TS2307: Cannot find module '@middleware/validate' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(14,56): error TS2307: Cannot find module '@validation/analytics.validation' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(15,24): error TS2307: Cannot find module '@config/logger' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(16,53): error TS2307: Cannot find module '@utils/errors' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(17,22): error TS2307: Cannot find module '@utils/constants' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(18,35): error TS2307: Cannot find module '@services/auditLog' or its corresponding type declarations.
+routes/analytics/analytics.routes.ts(31,9): error TS2739: Type '{ userId: string; }' is missing the following properties from type 'User': id, name
+routes/analytics/analytics.routes.ts(49,41): error TS18046: 'error' is of type 'unknown'.
+routes/analytics/bid.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+routes/auctions/auctions.ts(3,32): error TS2307: Cannot find module '@services/auction/AuctionManager' or its corresponding type declarations.
+routes/auctions/auctions.ts(4,30): error TS2307: Cannot find module '@services/auction/BidValidator' or its corresponding type declarations.
+routes/escrow/escrow.routes.ts(15,10): error TS2614: Module '"../../config/logger"' has no exported member 'logger'. Did you mean to use 'import logger from "../../config/logger"' instead?
+routes/escrow/escrow.routes.ts(16,30): error TS2305: Module '"../../utils/errors"' has no exported member 'ValidationError'.
+routes/escrow/escrow.routes.ts(30,9): error TS2739: Type '{ userId: string; }' is missing the following properties from type 'User': id, name
+routes/escrow/escrow.routes.ts(48,41): error TS18046: 'error' is of type 'unknown'.
+routes/escrow/escrow.routes.ts(67,47): error TS2339: Property 'proposeCondition' does not exist on type 'EscrowService'.
+routes/escrow/escrowRoutes.ts(3,31): error TS2307: Cannot find module '@services/escrow/escrow.service' or its corresponding type declarations.
+routes/marketplace/marketplace.ts(12,20): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+routes/marketplace/marketplace.ts(13,35): error TS2307: Cannot find module '@middleware/authMiddleware' or its corresponding type declarations.
+routes/notifications/notifications.ts(3,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+routes/user/userProfile.ts(12,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+routes/user/userProfile.ts(13,35): error TS2307: Cannot find module '@middleware/authMiddleware' or its corresponding type declarations.
+routes/user/userProfileRoutes.ts(3,29): error TS2307: Cannot find module '@services/user/UserProfile' or its corresponding type declarations.
+services/ai/AIBidPredictor.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/ai/AIBidPredictor.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/ai/AILoanRecommender.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/ai/AILoanRecommender.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/ai/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/ai/TrustScoreEngine.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/ai/TrustScoreEngine.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/ai/ValuationMetricsService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/ai/ValuationMetricsService.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/analytics/analytics.service.ts(10,35): error TS2307: Cannot find module '@services/auditLog' or its corresponding type declarations.
+services/ar/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/auction/AuctionManager.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/auction/AuctionNotifier.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/auction/AuctionNotifier.ts(3,37): error TS2307: Cannot find module '@services/notification/NotificationService' or its corresponding type declarations.
+services/auction/BidHeatmapService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/auction/BidHeatmapService.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/auction/BidService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/auction/BidValidator.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/auditLog.ts(10,78): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/blockchain/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/cache/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/escrow/BlockchainEscrowAudit.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/escrow/BlockchainEscrowAudit.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/escrow/escrow.service.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/escrow/escrow.service.ts(3,24): error TS2307: Cannot find module '@models/Escrow' or its corresponding type declarations.
+services/escrow/escrow.service.ts(4,53): error TS2307: Cannot find module '@utils/errors' or its corresponding type declarations.
+services/escrow/EscrowAuditService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/escrow/EscrowAuditService.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/escrow/EscrowChainSync.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/escrow/EscrowChainSync.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/escrow/EscrowService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/escrow/EscrowService.ts(3,24): error TS2307: Cannot find module '@models/Escrow' or its corresponding type declarations.
+services/escrow/EscrowService.ts(4,53): error TS2307: Cannot find module '@utils/errors' or its corresponding type declarations.
+services/escrow/EscrowService.ts(6,10): error TS2305: Module '"@utils/analytics"' has no exported member 'analytics'.
+services/escrow/EscrowService.ts(173,7): error TS2353: Object literal may only specify known properties, and 'disputeId' does not exist in type '{ transactionId: string; userId: string; timestamp: string; }'.
+services/exchange/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/notification/NotificationService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/notification/NotificationService.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/notification/NotificationService.ts(6,10): error TS2305: Module '"@utils/analytics"' has no exported member 'analytics'.
+services/notification/NotificationService.ts(72,27): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ AUCTION_OUTBID: HandlebarsTemplateDelegate<any>; }'.
+  No index signature with a parameter of type 'string' was found on type '{ AUCTION_OUTBID: HandlebarsTemplateDelegate<any>; }'.
+services/notification/NotificationService.ts(107,27): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ AUCTION_OUTBID: HandlebarsTemplateDelegate<any>; }'.
+  No index signature with a parameter of type 'string' was found on type '{ AUCTION_OUTBID: HandlebarsTemplateDelegate<any>; }'.
+services/notification/NotificationService.ts(142,27): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ AUCTION_OUTBID: HandlebarsTemplateDelegate<any>; }'.
+  No index signature with a parameter of type 'string' was found on type '{ AUCTION_OUTBID: HandlebarsTemplateDelegate<any>; }'.
+services/notifications/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/payment/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/payments/PaymentService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/reports/ReportService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/security/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/social/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/user/UserActivity.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/user/UserActivity.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/user/UserAuth.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/user/UserAuth.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/user/UserProfileService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/user/UserProfileService.ts(3,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+services/userProfileService.ts(11,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/voice/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/vr/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+services/websocket/index.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/analytics/analytics.service.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/analytics/analytics.service.test.ts(5,36): error TS2307: Cannot find module '@services/user/UserProfileService' or its corresponding type declarations.
+tests/analytics/analytics.service.test.ts(6,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/analytics/analytics.service.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/analytics/analytics.service.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/analytics/analytics.service.test.ts(27,21): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/analytics/analytics.service.test.ts(28,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/analytics/analytics.service.test.ts(28,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/auction/BidHeatmapService.test.ts(5,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+tests/auction/BidHeatmapService.test.ts(25,24): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/auction/BidHeatmapService.test.ts(25,39): error TS2339: Property 'arrayContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(25,63): error TS2339: Property 'any' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(26,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auction/BidHeatmapService.test.ts(26,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(32,24): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/auction/BidHeatmapService.test.ts(32,39): error TS2339: Property 'arrayContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(32,63): error TS2339: Property 'arrayContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(33,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auction/BidHeatmapService.test.ts(33,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(38,52): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/auction/BidHeatmapService.test.ts(39,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auction/BidHeatmapService.test.ts(39,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/auctions/auctions.test.ts(5,36): error TS2307: Cannot find module '@services/user/UserProfileService' or its corresponding type declarations.
+tests/auctions/auctions.test.ts(6,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/auctions/auctions.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(28,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(28,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(36,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(36,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(43,21): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/auctions/auctions.test.ts(44,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(44,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(3,84): error TS2307: Cannot find module '@services/escrow/escrow.service' or its corresponding type declarations.
+tests/escrow/escrow.service.test.ts(4,24): error TS2307: Cannot find module '@models/Escrow' or its corresponding type declarations.
+tests/escrow/escrow.service.test.ts(5,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/escrow/escrow.service.test.ts(22,45): error TS2345: Argument of type '{}' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(31,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/escrow.service.test.ts(32,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(32,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(37,57): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(38,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(38,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(44,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/escrow.service.test.ts(45,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(45,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(50,65): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(51,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(51,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(57,30): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(58,34): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(59,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(59,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(64,70): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(65,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(65,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(3,84): error TS2307: Cannot find module '@services/escrow/EscrowService' or its corresponding type declarations.
+tests/escrow/EscrowService.test.ts(4,24): error TS2307: Cannot find module '@models/Escrow' or its corresponding type declarations.
+tests/escrow/EscrowService.test.ts(5,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/escrow/EscrowService.test.ts(22,45): error TS2345: Argument of type '{}' is not assignable to parameter of type 'never'.
+tests/escrow/EscrowService.test.ts(31,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/EscrowService.test.ts(32,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(32,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(37,57): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(38,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(38,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(44,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/EscrowService.test.ts(45,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(45,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(50,65): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(51,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(51,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(57,30): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(58,34): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(59,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(59,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(64,70): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(65,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/EscrowService.test.ts(65,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/helpers.ts(2,32): error TS2307: Cannot find module '@services/escrow/EscrowService' or its corresponding type declarations.
+tests/helpers.ts(16,43): error TS2345: Argument of type '{}' is not assignable to parameter of type 'never'.
+tests/integration/escrow.integration.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/integration/escrow.integration.test.ts(5,31): error TS2307: Cannot find module '@services/escrow/EscrowService' or its corresponding type declarations.
+tests/integration/escrow.integration.test.ts(6,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/integration/escrow.integration.test.ts(29,33): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/integration/escrow.integration.test.ts(30,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/integration/escrow.integration.test.ts(30,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/integration/escrow.integration.test.ts(36,30): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/integration/escrow.integration.test.ts(37,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/integration/escrow.integration.test.ts(37,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/integration/escrow.integration.test.ts(46,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/integration/escrow.integration.test.ts(46,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/integration/escrow.integration.test.ts(55,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/integration/escrow.integration.test.ts(55,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/middleware/RBACMiddleware.test.ts(3,28): error TS2307: Cannot find module '@middleware/RBACMiddleware' or its corresponding type declarations.
+tests/middleware/RBACMiddleware.test.ts(5,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/middleware/RBACMiddleware.test.ts(18,7): error TS2322: Type 'Mock<UnknownFunction>' is not assignable to type '(code: number) => Response<any, Record<string, any>>'.
+  Type 'unknown' is not assignable to type 'Response<any, Record<string, any>>'.
+tests/middleware/RBACMiddleware.test.ts(19,7): error TS2322: Type 'Mock<UnknownFunction>' is not assignable to type 'Send<any, Response<any, Record<string, any>>>'.
+  Type 'unknown' is not assignable to type 'Response<any, Record<string, any>>'.
+tests/middleware/RBACMiddleware.test.ts(27,18): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(28,28): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(29,30): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(35,24): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(36,22): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(37,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(37,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/middleware/RBACMiddleware.test.ts(38,22): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(3,37): error TS2307: Cannot find module '@services/notification/NotificationService' or its corresponding type declarations.
+tests/notification/NotificationService.test.ts(4,41): error TS2307: Cannot find module '@workers/notificationQueueWorker' or its corresponding type declarations.
+tests/notification/NotificationService.test.ts(5,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/notification/NotificationService.test.ts(6,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+tests/notification/NotificationService.test.ts(7,10): error TS2305: Module '"@utils/analytics"' has no exported member 'analytics'.
+tests/notification/NotificationService.test.ts(14,42): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(15,43): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(23,36): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(24,43): error TS2345: Argument of type 'null' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(32,37): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(50,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/notification/NotificationService.test.ts(51,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(51,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(52,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(58,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/notification/NotificationService.test.ts(59,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(59,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(64,61): error TS2345: Argument of type 'Error' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(65,78): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(66,35): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(67,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(67,80): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(72,16): error TS2304: Cannot find name 'templates'.
+tests/notification/NotificationService.test.ts(74,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/notification/NotificationService.test.ts(75,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(75,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(76,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(76,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(82,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/notification/NotificationService.test.ts(83,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(83,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(84,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(90,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/notification/NotificationService.test.ts(91,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(91,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(96,61): error TS2345: Argument of type 'Error' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(97,76): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(98,35): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(99,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(99,80): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(105,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(105,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(106,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(112,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(112,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(119,35): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(120,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(120,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(126,91): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(127,35): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(128,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(128,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(129,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(129,80): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(140,20): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(141,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(141,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(142,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(142,78): error TS2339: Property 'any' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(152,61): error TS2345: Argument of type 'Error' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(154,20): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(155,35): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(156,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(156,78): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(157,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(157,80): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(162,87): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(163,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(163,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(164,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(164,80): error TS2339: Property 'any' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(169,87): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(170,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(170,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(171,29): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(171,80): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(184,27): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(189,73): error TS2345: Argument of type '{ data: { userId: string; eventType: string; message: string; }; attempts: number; moveToCompleted: Mock<UnknownFunction>; moveToFailed: Mock<UnknownFunction>; }' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(192,54): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(193,51): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(196,27): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(196,55): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(197,44): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(201,73): error TS2345: Argument of type '{ data: { userId: string; eventType: string; message: string; }; attempts: number; moveToCompleted: Mock<UnknownFunction>; moveToFailed: Mock<UnknownFunction>; }' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(204,54): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(205,51): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'never'.
+tests/notification/NotificationService.test.ts(208,28): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(208,56): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/notification/NotificationService.test.ts(209,44): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/payments/PaymentService.test.ts(3,32): error TS2307: Cannot find module '@services/payments/PaymentService' or its corresponding type declarations.
+tests/payments/PaymentService.test.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/payments/PaymentService.test.ts(19,27): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/payments/PaymentService.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/payments/PaymentService.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/reports/ReportService.test.ts(3,31): error TS2307: Cannot find module '@services/reports/ReportService' or its corresponding type declarations.
+tests/reports/ReportService.test.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/reports/ReportService.test.ts(19,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/reports/ReportService.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/reports/ReportService.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/routes/escrow/EscrowRoutes.test.ts(5,68): error TS2307: Cannot find module '@services/escrow/EscrowService' or its corresponding type declarations.
+tests/routes/escrow/EscrowRoutes.test.ts(6,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/routes/escrow/EscrowRoutes.test.ts(27,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(28,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(28,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(37,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(37,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(46,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(46,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(56,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(57,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(57,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(66,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(66,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(76,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(77,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(77,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(86,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(86,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(97,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(98,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(98,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(108,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(108,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(118,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(118,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/services/escrow/escrow.service.test.ts(9,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+tests/services/escrow/escrow.service.test.ts(13,57): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/services/escrow/escrow.service.test.ts(19,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+tests/services/escrow/escrow.service.test.ts(24,71): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/services/escrow/escrow.service.test.ts(30,19): error TS2339: Property 'message' does not exist on type '{ _id: string; status: string; user: string; vehicle: { vin: string; price: number; }; }'.
+tests/services/escrow/escrow.service.test.ts(30,28): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/services/escrow/escrow.service.test.ts(35,40): error TS2554: Expected 3 arguments, but got 2.
+tests/services/escrow/escrow.service.test.ts(36,19): error TS2551: Property 'conditions' does not exist on type '{ _id: string; status: string; user: string; vehicle: { vin: string; price: number; }; condition: string; }'. Did you mean 'condition'?
+tests/services/escrow/escrow.service.test.ts(36,41): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(4,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+tests/services/escrow/EscrowAuditService.test.ts(5,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+tests/services/escrow/EscrowAuditService.test.ts(22,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/services/escrow/EscrowAuditService.test.ts(23,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(23,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/services/escrow/EscrowAuditService.test.ts(29,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/services/escrow/EscrowAuditService.test.ts(30,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(30,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/services/escrow/EscrowAuditService.test.ts(35,51): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(36,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(36,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+utils/ai/AIInspectionDamageClassifier.ts(6,25): error TS7006: Parameter 'imageData' implicitly has an 'any' type.
+utils/ai/AIInspectionDamageClassifier.ts(8,9): error TS7034: Variable 'tags' implicitly has type 'any[]' in some locations where its type cannot be determined.
+utils/ai/AIInspectionDamageClassifier.ts(15,5): error TS7005: Variable 'tags' implicitly has an 'any[]' type.
+utils/ai/MechanicAIExplainer.ts(6,28): error TS7006: Parameter 'report' implicitly has an 'any' type.
+utils/AIBidPredictor.ts(1,20): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/AIBidPredictor.ts(2,20): error TS2307: Cannot find module '@services/db' or its corresponding type declarations.
+utils/AIChatModerator.test.ts(10,9): error TS2451: Cannot redeclare block-scoped variable 'moderateMessage'.
+utils/AIChatModerator.test.ts(15,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(20,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(25,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(30,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(35,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(40,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(47,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AIChatModerator.test.ts(48,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+utils/AIChatModerator.test.ts(48,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+utils/AIChatModerator.ts(15,7): error TS2451: Cannot redeclare block-scoped variable 'moderateMessage'.
+utils/AIChatModerator.ts(15,26): error TS7006: Parameter 'messageContent' implicitly has an 'any' type.
+utils/AIChatModerator.ts(34,47): error TS18046: 'err' is of type 'unknown'.
+utils/AIContractRiskAssessor.ts(13,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/AIContractRiskAssessor.ts(21,26): error TS7006: Parameter 'contract' implicitly has an 'any' type.
+utils/AIContractRiskAssessor.ts(24,46): error TS7006: Parameter 'c' implicitly has an 'any' type.
+utils/AIContractRiskAssessor.ts(25,48): error TS7006: Parameter 'c' implicitly has an 'any' type.
+utils/AIContractRiskAssessor.ts(37,28): error TS7006: Parameter 'contract' implicitly has an 'any' type.
+utils/AIContractRiskAssessor.ts(78,29): error TS7006: Parameter 'contract' implicitly has an 'any' type.
+utils/AIContractRiskAssessor.ts(82,10): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIContractRiskAssessor.ts(82,34): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIContractRiskAssessor.ts(83,5): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIDisputePredictor.test.ts(24,27): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(25,31): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+utils/AIDisputePredictor.test.ts(30,30): error TS2339: Property 'toBeGreaterThanOrEqual' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(31,35): error TS2339: Property 'toBeDefined' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(36,67): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+utils/AIDisputePredictor.test.ts(43,22): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(48,32): error TS2339: Property 'toBeDefined' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'Dispute'.
+utils/AIDisputePredictor.ts(9,9): error TS2451: Cannot redeclare block-scoped variable 'triggerAlert'.
+utils/AIDisputePredictor.ts(12,7): error TS2451: Cannot redeclare block-scoped variable 'predictDisputeOutcome'.
+utils/AIDisputePredictor.ts(12,38): error TS7006: Parameter 'disputeId' implicitly has an 'any' type.
+utils/AIEscrowRiskAssessor.ts(11,7): error TS2451: Cannot redeclare block-scoped variable 'EscrowTransaction'.
+utils/AIEscrowRiskAssessor.ts(12,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/AIEscrowRiskAssessor.ts(19,33): error TS7006: Parameter 'escrowId' implicitly has an 'any' type.
+utils/AIEscrowRiskAssessor.ts(24,27): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/AIEscrowRiskAssessor.ts(24,40): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/AIFinancingRecommender.ts(11,25): error TS7006: Parameter 'financingOptions' implicitly has an 'any' type.
+utils/AIFinancingRecommender.ts(14,47): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+utils/AIFinancingRecommender.ts(14,53): error TS7006: Parameter 'current' implicitly has an 'any' type.
+utils/AIFinancingRecommender.ts(21,27): error TS7006: Parameter 'financingOptions' implicitly has an 'any' type.
+utils/AIFinancingRecommender.ts(24,31): error TS7006: Parameter 'option' implicitly has an 'any' type.
+utils/AIFraudDetection.ts(9,9): error TS2451: Cannot redeclare block-scoped variable 'triggerAlert'.
+utils/AIFraudDetection.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'User'.
+utils/AIFraudDetection.ts(13,36): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/AIFraudDetection.ts(13,44): error TS7006: Parameter 'activity' implicitly has an 'any' type.
+utils/AILenderMatchRecommender.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'Lender'.
+utils/AILenderMatchRecommender.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/AILenderMatchRecommender.ts(16,16): error TS2451: Cannot redeclare block-scoped variable 'generateRecommendations'.
+utils/AILenderMatchRecommender.ts(16,40): error TS7006: Parameter 'borrowerData' implicitly has an 'any' type.
+utils/AILenderMatchRecommender.ts(20,15): error TS7006: Parameter 'l' implicitly has an 'any' type.
+utils/AILenderMatchRecommender.ts(21,12): error TS7006: Parameter 'l' implicitly has an 'any' type.
+utils/AILenderTermsAnalyzer.ts(9,30): error TS7006: Parameter 'termsData' implicitly has an 'any' type.
+utils/AILenderTermsAnalyzer.ts(17,30): error TS7006: Parameter 'termsData' implicitly has an 'any' type.
+utils/AILenderTermsAnalyzer.ts(17,41): error TS7006: Parameter 'userProfile' implicitly has an 'any' type.
+utils/AILoanRecommender.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/AILoanRecommender.ts(19,37): error TS7006: Parameter 'loanOptions' implicitly has an 'any' type.
+utils/AILoanRecommender.ts(19,50): error TS7006: Parameter 'userPrefs' implicitly has an 'any' type.
+utils/AILoanRecommender.ts(38,14): error TS2339: Property 'savingsCompared' does not exist on type '{ suggestion: string; optimalTerm: any; optimalRate: any; }'.
+utils/AILoanRecommender.ts(39,14): error TS2339: Property 'impact' does not exist on type '{ suggestion: string; optimalTerm: any; optimalRate: any; }'.
+utils/AIMarketplaceAnalytics.ts(6,7): error TS2451: Cannot redeclare block-scoped variable 'analyticsExportUtils'.
+utils/AIMarketplaceAnalytics.ts(19,11): error TS7034: Variable 'complianceFlags' implicitly has type 'any[]' in some locations where its type cannot be determined.
+utils/AIMarketplaceAnalytics.ts(21,26): error TS7006: Parameter 'listing' implicitly has an 'any' type.
+utils/AIMarketplaceAnalytics.ts(25,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(25,28): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(26,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(27,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(29,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(29,33): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(30,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(31,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/AIMarketplaceAnalytics.ts(40,22): error TS18046: 'data' is of type 'unknown'.
+utils/AIMarketplaceAnalytics.ts(40,35): error TS18046: 'data' is of type 'unknown'.
+utils/AIMarketplaceAnalytics.ts(46,7): error TS7005: Variable 'complianceFlags' implicitly has an 'any[]' type.
+utils/AIMarketplaceAnalytics.ts(59,32): error TS7006: Parameter 'trendData' implicitly has an 'any' type.
+utils/AIMarketplaceAnalytics.ts(89,60): error TS18046: 'm' is of type 'unknown'.
+utils/AIMarketplaceAnalytics.ts(89,86): error TS18046: 'm' is of type 'unknown'.
+utils/AIPricingEngine.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'axios'.
+utils/AIPricingEngine.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'Listing'.
+utils/AIPricingEngine.ts(11,7): error TS2451: Cannot redeclare block-scoped variable 'MARKET_API_URL'.
+utils/AIPricingEngine.ts(18,34): error TS7006: Parameter 'listingId' implicitly has an 'any' type.
+utils/AIPricingEngine.ts(50,44): error TS18046: 'err' is of type 'unknown'.
+utils/AIPricingEngineHybrid.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'axios'.
+utils/AIPricingEngineHybrid.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'Listing'.
+utils/AIPricingEngineHybrid.ts(11,7): error TS2451: Cannot redeclare block-scoped variable 'fs'.
+utils/AIPricingEngineHybrid.ts(14,7): error TS2451: Cannot redeclare block-scoped variable 'MARKET_API_URL'.
+utils/AIPricingEngineHybrid.ts(18,30): error TS7006: Parameter 'listing' implicitly has an 'any' type.
+utils/AIPricingEngineHybrid.ts(33,31): error TS7006: Parameter 'basePrice' implicitly has an 'any' type.
+utils/AIPricingEngineHybrid.ts(33,42): error TS7006: Parameter 'demandScore' implicitly has an 'any' type.
+utils/AIPricingEngineHybrid.ts(40,35): error TS7006: Parameter 'listing' implicitly has an 'any' type.
+utils/AIPricingEngineHybrid.ts(55,79): error TS18046: 'err' is of type 'unknown'.
+utils/AIPricingEngineHybrid.ts(65,29): error TS7006: Parameter 'listing' implicitly has an 'any' type.
+utils/AIResolutionRecommender.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'Dispute'.
+utils/AIResolutionRecommender.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/AIResolutionRecommender.ts(12,7): error TS2451: Cannot redeclare block-scoped variable 'AIResolutionRecommender'.
+utils/AIResolutionRecommender.ts(14,13): error TS7006: Parameter 'dispute' implicitly has an 'any' type.
+utils/AIResolutionRecommender.ts(36,27): error TS7006: Parameter 'd' implicitly has an 'any' type.
+utils/AIRideStrategyCoach.ts(6,24): error TS7006: Parameter 'userPreferences' implicitly has an 'any' type.
+utils/AIRideStrategyCoach.ts(6,41): error TS7006: Parameter 'rideData' implicitly has an 'any' type.
+utils/AISellerNegotiationCoach.test.ts(5,7): error TS2451: Cannot redeclare block-scoped variable 'AISellerNegotiationCoach'.
+utils/AISellerNegotiationCoach.test.ts(22,25): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+utils/AISellerNegotiationCoach.test.ts(23,18): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/AISellerNegotiationCoach.test.ts(23,33): error TS2339: Property 'arrayContaining' does not exist on type 'ExpectStatic'.
+utils/AISellerNegotiationCoach.test.ts(24,14): error TS2339: Property 'objectContaining' does not exist on type 'ExpectStatic'.
+utils/AISellerNegotiationCoach.test.ts(24,45): error TS2339: Property 'any' does not exist on type 'ExpectStatic'.
+utils/AISellerNegotiationCoach.test.ts(24,72): error TS2339: Property 'any' does not exist on type 'ExpectStatic'.
+utils/AISellerNegotiationCoach.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'AISellerNegotiationCoach'.
+utils/AISellerNegotiationCoach.ts(11,31): error TS7006: Parameter 'listing' implicitly has an 'any' type.
+utils/AISellerNegotiationCoach.ts(33,24): error TS7006: Parameter 'listingId' implicitly has an 'any' type.
+utils/AISellerNegotiationCoach.ts(33,35): error TS7006: Parameter 'listingsData' implicitly has an 'any' type.
+utils/AISellerNegotiationCoach.ts(34,39): error TS7006: Parameter 'item' implicitly has an 'any' type.
+utils/analyticsExportUtils.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'PDFDocument'.
+utils/analyticsExportUtils.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'fs'.
+utils/analyticsExportUtils.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/analyticsExportUtils.ts(11,7): error TS2451: Cannot redeclare block-scoped variable 'path'.
+utils/analyticsExportUtils.ts(21,37): error TS7006: Parameter 'borrowerData' implicitly has an 'any' type.
+utils/analyticsExportUtils.ts(21,51): error TS7006: Parameter 'matches' implicitly has an 'any' type.
+utils/analyticsExportUtils.ts(21,60): error TS7006: Parameter 'recommendations' implicitly has an 'any' type.
+utils/analyticsExportUtils.ts(21,77): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/analyticsExportUtils.ts(40,21): error TS7006: Parameter 'match' implicitly has an 'any' type.
+utils/analyticsExportUtils.ts(47,31): error TS7006: Parameter 'rec' implicitly has an 'any' type.
+utils/arbitration/AIDisputePredictor.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/arbitration/AIDisputePredictor.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'Dispute'.
+utils/arbitration/AIDisputePredictor.ts(10,35): error TS2451: Cannot redeclare block-scoped variable 'simulateOutcome'.
+utils/arbitration/AIDisputePredictor.ts(14,16): error TS2451: Cannot redeclare block-scoped variable 'predictDisputeOutcome'.
+utils/arbitration/AIDisputePredictor.ts(14,38): error TS7006: Parameter 'disputeId' implicitly has an 'any' type.
+utils/arbitration/AIDisputePredictor.ts(26,39): error TS18046: 'err' is of type 'unknown'.
+utils/arbitration/AIDisputePredictor.ts(27,21): error TS18046: 'err' is of type 'unknown'.
+utils/arbitration/AIDisputePredictor.ts(32,38): error TS7006: Parameter 'disputeId' implicitly has an 'any' type.
+utils/arbitration/AIDisputePredictor.ts(60,45): error TS18046: 'err' is of type 'unknown'.
+utils/arbitration/AIDisputePredictor.ts(61,21): error TS18046: 'err' is of type 'unknown'.
+utils/arbitration/AIDisputePredictor.ts(84,28): error TS7006: Parameter 'riskScore' implicitly has an 'any' type.
+utils/arbitration/AIDisputePredictor.ts(84,39): error TS7006: Parameter 'toneLevel' implicitly has an 'any' type.
+utils/arbitration/AIDisputePredictor.ts(84,50): error TS7006: Parameter 'biasIndex' implicitly has an 'any' type.
+utils/arbitration/AIDisputePredictorGrokOld3.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/arbitration/AIDisputePredictorGrokOld3.ts(4,25): error TS2307: Cannot find module '@models/dispute/Dispute' or its corresponding type declarations.
+utils/arbitration/AIDisputePredictorGrokOld3.ts(5,25): error TS2307: Cannot find module '@models/Auction' or its corresponding type declarations.
+utils/arbitration/AIDisputePredictorGrokOld3.ts(6,39): error TS2307: Cannot find module '@utils/AIDisputePredictor' or its corresponding type declarations.
+utils/arbitration/arbitrationExportTools.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/arbitration/arbitrationExportTools.ts(4,25): error TS2307: Cannot find module '@models/dispute/Dispute' or its corresponding type declarations.
+utils/arbitration/arbitrationExportTools.ts(5,25): error TS2307: Cannot find module '@models/Auction' or its corresponding type declarations.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'fs'.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'path'.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'PDFDocument'.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(11,9): error TS2451: Cannot redeclare block-scoped variable 'simulateOutcome'.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(12,7): error TS2451: Cannot redeclare block-scoped variable 'Dispute'.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(21,42): error TS7006: Parameter 'disputeId' implicitly has an 'any' type.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(21,53): error TS7006: Parameter 'judgeData' implicitly has an 'any' type.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(21,64): error TS7006: Parameter 'outputPath' implicitly has an 'any' type.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(26,53): error TS7006: Parameter 'j' implicitly has an 'any' type.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(49,24): error TS7006: Parameter 'j' implicitly has an 'any' type.
+utils/arbitration/arbitrationExportToolsGrokOld.ts(49,27): error TS7006: Parameter 'i' implicitly has an 'any' type.
+utils/auction/AIInsightEngine.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/auction/AIInsightEngine.ts(4,25): error TS2307: Cannot find module '@models/Auction' or its corresponding type declarations.
+utils/auction/AuctionAnalyticsScheduler.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/auction/AuctionTimer.ts(8,28): error TS7006: Parameter 'auctionId' implicitly has an 'any' type.
+utils/auction/AuctionTimer.ts(8,39): error TS7006: Parameter 'duration' implicitly has an 'any' type.
+utils/auction/AuctionTimer.ts(8,49): error TS7006: Parameter 'io' implicitly has an 'any' type.
+utils/auction/AuctionTimer.ts(9,7): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/auction/AuctionTimer.ts(9,40): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/auction/AuctionTimer.ts(12,3): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/auction/AuctionTimer.ts(15,21): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
+utils/BlockchainEscrowAudit.ts(5,7): error TS2451: Cannot redeclare block-scoped variable 'EscrowTransaction'.
+utils/BlockchainEscrowAudit.ts(6,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/BlockchainEscrowAudit.ts(9,29): error TS7031: Binding element 'escrowId' implicitly has an 'any' type.
+utils/BlockchainEscrowAudit.ts(9,39): error TS7031: Binding element 'hash' implicitly has an 'any' type.
+utils/BlockchainEscrowAudit.ts(9,45): error TS7031: Binding element 'type' implicitly has an 'any' type.
+utils/BlockchainEscrowAudit.ts(9,51): error TS7031: Binding element 'userId' implicitly has an 'any' type.
+utils/BlockchainEscrowAudit.ts(9,59): error TS7031: Binding element 'amount' implicitly has an 'any' type.
+utils/BlockchainEscrowAudit.ts(24,48): error TS18046: 'err' is of type 'unknown'.
+utils/BlockchainEscrowAudit.ts(28,27): error TS7006: Parameter 'hash' implicitly has an 'any' type.
+utils/BlockchainEscrowAudit.ts(43,55): error TS18046: 'err' is of type 'unknown'.
+utils/BlockchainEscrowAudit.ts(48,29): error TS7006: Parameter 'escrowId' implicitly has an 'any' type.
+utils/buyerExportUtils.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/buyerExportUtils.ts(4,25): error TS2307: Cannot find module '@models/Auction' or its corresponding type declarations.
+utils/buyerExportUtilsGrokOld.ts(15,7): error TS2451: Cannot redeclare block-scoped variable 'PDFDocument'.
+utils/buyerExportUtilsGrokOld.ts(16,7): error TS2451: Cannot redeclare block-scoped variable 'fs'.
+utils/buyerExportUtilsGrokOld.ts(17,7): error TS2451: Cannot redeclare block-scoped variable 'path'.
+utils/buyerExportUtilsGrokOld.ts(18,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/buyerExportUtilsGrokOld.ts(24,26): error TS7006: Parameter 'ts' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(28,37): error TS7006: Parameter 'bidHistory' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(28,49): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(38,25): error TS7006: Parameter 'bid' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(38,30): error TS7006: Parameter 'i' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(52,41): error TS7006: Parameter 'bidHistory' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(52,53): error TS7006: Parameter 'chartImagePath' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(52,69): error TS7006: Parameter 'aiInsights' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(52,81): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(73,25): error TS7006: Parameter 'bid' implicitly has an 'any' type.
+utils/buyerExportUtilsGrokOld.ts(73,30): error TS7006: Parameter 'i' implicitly has an 'any' type.
+utils/cacheManager.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/cod1HaulerReviewAI.ts(5,27): error TS7006: Parameter 'job' implicitly has an 'any' type.
+utils/cod1HaulerReviewAI.ts(24,26): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/cod1HaulerReviewAI.ts(24,36): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/constants.ts(7,12): error TS7005: Variable 'TransactionStatus' implicitly has an 'any' type.
+utils/constants.ts(15,12): error TS7005: Variable 'UserRole' implicitly has an 'any' type.
+utils/constants.ts(21,12): error TS7005: Variable 'Tier' implicitly has an 'any' type.
+utils/CrownAutoWire.ts(6,7): error TS2451: Cannot redeclare block-scoped variable 'fs'.
+utils/CrownAutoWire.ts(7,7): error TS2451: Cannot redeclare block-scoped variable 'path'.
+utils/CrownAutoWire.ts(41,25): error TS7006: Parameter 'filePath' implicitly has an 'any' type.
+utils/CrownAutoWire.ts(41,35): error TS7006: Parameter 'injections' implicitly has an 'any' type.
+utils/CrownAutoWire.ts(44,25): error TS7031: Binding element 'pattern' implicitly has an 'any' type.
+utils/CrownAutoWire.ts(44,34): error TS7031: Binding element 'replacement' implicitly has an 'any' type.
+utils/CrownAutoWire.ts(51,27): error TS7006: Parameter 'role' implicitly has an 'any' type.
+utils/CrownAutoWire.ts(61,58): error TS18046: 'e' is of type 'unknown'.
+utils/crypto.ts(10,69): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/crypto.ts(11,25): error TS7006: Parameter 'data' implicitly has an 'any' type.
+utils/crypto.ts(19,52): error TS18046: 'error' is of type 'unknown'.
+utils/DisputeResolutionHelper.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'Dispute'.
+utils/DisputeResolutionHelper.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/DisputeResolutionHelper.ts(11,7): error TS2451: Cannot redeclare block-scoped variable 'analyticsExportUtils'.
+utils/DisputeResolutionHelper.ts(12,7): error TS2451: Cannot redeclare block-scoped variable 'AIResolutionRecommender'.
+utils/DisputeResolutionHelper.ts(16,24): error TS7006: Parameter 'status' implicitly has an 'any' type.
+utils/DisputeResolutionHelper.ts(33,40): error TS7006: Parameter 'd' implicitly has an 'any' type.
+utils/DisputeResolutionHelper.ts(35,28): error TS7006: Parameter 'acc' implicitly has an 'any' type.
+utils/DisputeResolutionHelper.ts(35,33): error TS7006: Parameter 'd' implicitly has an 'any' type.
+utils/DisputeResolutionHelper.ts(35,46): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/DisputeResolutionHelper.ts(35,69): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/DisputeResolutionHelper.ts(50,30): error TS7006: Parameter 'disputeData' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'cron'.
+utils/EmailDigestScheduler.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'mongoose'.
+utils/EmailDigestScheduler.ts(11,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/EmailDigestScheduler.ts(14,7): error TS2451: Cannot redeclare block-scoped variable 'User'.
+utils/EmailDigestScheduler.ts(15,7): error TS2451: Cannot redeclare block-scoped variable 'Notification'.
+utils/EmailDigestScheduler.ts(27,32): error TS7006: Parameter 'emailOptions' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(35,7): error TS2451: Cannot redeclare block-scoped variable 'CRON_SCHEDULE'.
+utils/EmailDigestScheduler.ts(46,28): error TS7006: Parameter 'user' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(46,34): error TS7006: Parameter 'notifications' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(49,8): error TS7006: Parameter 'notif' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(81,32): error TS7006: Parameter 'user' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(81,38): error TS7006: Parameter 'notifications' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(97,67): error TS18046: 'err' is of type 'unknown'.
+utils/EmailDigestScheduler.ts(107,40): error TS7006: Parameter 'notificationIds' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(109,24): error TS2339: Property 'updateMany' does not exist on type '{ new (title: string, options?: NotificationOptions | undefined): Notification; prototype: Notification; readonly permission: NotificationPermission; requestPermission(deprecatedCallback?: NotificationPermissionCallback | undefined): Promise<...>; }'.
+utils/EmailDigestScheduler.ts(115,59): error TS18046: 'err' is of type 'unknown'.
+utils/EmailDigestScheduler.ts(139,50): error TS2339: Property 'find' does not exist on type '{ new (title: string, options?: NotificationOptions | undefined): Notification; prototype: Notification; readonly permission: NotificationPermission; requestPermission(deprecatedCallback?: NotificationPermissionCallback | undefined): Promise<...>; }'.
+utils/EmailDigestScheduler.ts(155,54): error TS7006: Parameter 'notif' implicitly has an 'any' type.
+utils/EmailDigestScheduler.ts(162,54): error TS18046: 'err' is of type 'unknown'.
+utils/EquityFlowOrchestrator.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'axios'.
+utils/EquityFlowOrchestrator.ts(15,38): error TS7006: Parameter 'transactionId' implicitly has an 'any' type.
+utils/EquityFlowOrchestrator.ts(40,32): error TS7006: Parameter 'transactionId' implicitly has an 'any' type.
+utils/EquityFlowOrchestrator.ts(67,42): error TS7006: Parameter 'transactionId' implicitly has an 'any' type.
+utils/escrow/EscrowAuditLogStore.ts(14,26): error TS7006: Parameter 'transactionId' implicitly has an 'any' type.
+utils/escrow/EscrowAuditLogStore.ts(14,41): error TS7006: Parameter 'action' implicitly has an 'any' type.
+utils/escrow/EscrowAuditLogStore.ts(14,49): error TS7006: Parameter 'user' implicitly has an 'any' type.
+utils/escrow/EscrowAuditLogStore.ts(30,28): error TS7006: Parameter 'transactionId' implicitly has an 'any' type.
+utils/escrow/EscrowAutoReleaseEngine.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/escrow/EscrowBlockchainExporter.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/escrow/EscrowDisputeLinker.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/escrow/EscrowDisputeLinker.ts(3,25): error TS2307: Cannot find module '@models/dispute/Dispute' or its corresponding type declarations.
+utils/escrow/EscrowTransactionPDFExporter.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/escrowLogic.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/escrowLogic.ts(4,24): error TS2307: Cannot find module '@models/Escrow' or its corresponding type declarations.
+utils/EscrowWarningEngine.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'cron'.
+utils/EscrowWarningEngine.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'mongoose'.
+utils/EscrowWarningEngine.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/EscrowWarningEngine.ts(14,7): error TS2451: Cannot redeclare block-scoped variable 'Notification'.
+utils/EscrowWarningEngine.ts(17,7): error TS2451: Cannot redeclare block-scoped variable 'CRON_SCHEDULE'.
+utils/EscrowWarningEngine.ts(25,35): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/EscrowWarningEngine.ts(25,43): error TS7006: Parameter 'message' implicitly has an 'any' type.
+utils/EscrowWarningEngine.ts(27,43): error TS2345: Argument of type '{ userId: any; message: any; type: string; createdAt: Date; read: boolean; digestSent: boolean; }' is not assignable to parameter of type 'string'.
+utils/EscrowWarningEngine.ts(35,24): error TS2339: Property 'save' does not exist on type 'Notification'.
+utils/EscrowWarningEngine.ts(38,71): error TS18046: 'err' is of type 'unknown'.
+utils/EscrowWarningEngine.ts(47,38): error TS7006: Parameter 'escrow' implicitly has an 'any' type.
+utils/EscrowWarningEngine.ts(85,58): error TS18046: 'err' is of type 'unknown'.
+utils/EscrowWarningEngine.ts(112,53): error TS18046: 'err' is of type 'unknown'.
+utils/exportUtils/arbitrationExportTools.ts(12,21): error TS2307: Cannot find module 'i18next-fs-backend' or its corresponding type declarations.
+utils/exportUtils/arbitrationExportTools.ts(13,20): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/exportUtils/arbitrationExportTools.ts(24,49): error TS7006: Parameter 'disputeData' implicitly has an 'any' type.
+utils/exportUtils/arbitrationExportTools.ts(28,11): error TS7034: Variable 'buffers' implicitly has type 'any[]' in some locations where its type cannot be determined.
+utils/exportUtils/arbitrationExportTools.ts(30,20): error TS7005: Variable 'buffers' implicitly has an 'any[]' type.
+utils/exportUtils/arbitrationExportTools.ts(30,38): error TS7005: Variable 'buffers' implicitly has an 'any[]' type.
+utils/exportUtils/arbitrationExportTools.ts(32,37): error TS7005: Variable 'buffers' implicitly has an 'any[]' type.
+utils/exportUtils/pdfExportService.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/HaulerMissionsEngine.test.ts(5,45): error TS2307: Cannot find module '@utils/HaulerMissionsEngine' or its corresponding type declarations.
+utils/HaulerMissionsEngine.test.ts(9,27): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+utils/HaulerMissionsEngine.test.ts(14,14): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+utils/HaulerMissionsEngine.ts(17,25): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(22,32): error TS7006: Parameter 'missions' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(22,42): error TS7006: Parameter 'missionId' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(23,23): error TS7006: Parameter 'm' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(33,22): error TS7006: Parameter 'missions' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(34,26): error TS7006: Parameter 'm' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(34,52): error TS7006: Parameter 'sum' implicitly has an 'any' type.
+utils/HaulerMissionsEngine.ts(34,57): error TS7006: Parameter 'm' implicitly has an 'any' type.
+utils/insurance/InsuranceMarketPredictor.ts(8,29): error TS2307: Cannot find module '@models/insurance/InsurancePolicy' or its corresponding type declarations.
+utils/insurance/InsuranceMarketPredictor.ts(18,43): error TS7006: Parameter 'region' implicitly has an 'any' type.
+utils/insurance/InsuranceMarketPredictor.ts(18,51): error TS7006: Parameter 'timeframe' implicitly has an 'any' type.
+utils/insurance/InsuranceMarketPredictor.ts(32,17): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ CA: { demand: number; claims: number; }; TX: { demand: number; claims: number; }; NY: { demand: number; claims: number; }; }'.
+utils/insurance/InsuranceMarketPredictor.ts(48,44): error TS7006: Parameter 'policyId' implicitly has an 'any' type.
+utils/insurance/InsuranceMarketPredictor.ts(74,42): error TS7006: Parameter 'policyId' implicitly has an 'any' type.
+utils/insurance/InsuranceQuoteAnalyzer.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/judgeModelUtils.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/lenderExportUtils.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/LenderMatchEngine.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'Lender'.
+utils/LenderMatchEngine.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/LenderMatchEngine.ts(10,9): error TS2451: Cannot redeclare block-scoped variable 'generateRecommendations'.
+utils/LenderMatchEngine.ts(17,33): error TS7006: Parameter 'borrowerData' implicitly has an 'any' type.
+utils/LenderMatchEngine.ts(26,24): error TS7006: Parameter 'lender' implicitly has an 'any' type.
+utils/LenderMatchEngine.ts(43,30): error TS7006: Parameter 'matches' implicitly has an 'any' type.
+utils/LenderMatchEngine.ts(45,24): error TS7006: Parameter 'match' implicitly has an 'any' type.
+utils/LenderMatchEngine.ts(61,31): error TS7006: Parameter 'borrowerData' implicitly has an 'any' type.
+utils/LenderMatchEngine.ts(61,45): error TS7006: Parameter 'lenderData' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(9,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/LoanCalculatorWidget.ts(14,34): error TS7006: Parameter 'principal' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(14,45): error TS7006: Parameter 'annualRate' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(14,57): error TS7006: Parameter 'termYears' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(24,25): error TS7006: Parameter 'principal' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(24,36): error TS7006: Parameter 'annualRate' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(24,48): error TS7006: Parameter 'termYears' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(47,27): error TS7006: Parameter 'principal' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(47,38): error TS7006: Parameter 'annualRate' implicitly has an 'any' type.
+utils/LoanCalculatorWidget.ts(47,50): error TS7006: Parameter 'termYears' implicitly has an 'any' type.
+utils/LoanMatchEngine.ts(5,29): error TS7006: Parameter 'loanRequest' implicitly has an 'any' type.
+utils/LoanMatchEngine.ts(5,42): error TS7006: Parameter 'lenders' implicitly has an 'any' type.
+utils/LoanMatchEngine.ts(8,22): error TS7006: Parameter 'lender' implicitly has an 'any' type.
+utils/LoanMatchEngine.ts(13,21): error TS7006: Parameter 't' implicitly has an 'any' type.
+utils/LoanMatchEngine.ts(33,12): error TS7006: Parameter 'a' implicitly has an 'any' type.
+utils/LoanMatchEngine.ts(33,15): error TS7006: Parameter 'b' implicitly has an 'any' type.
+utils/LoyaltyProgramEngine.ts(21,24): error TS7006: Parameter 'points' implicitly has an 'any' type.
+utils/LoyaltyProgramEngine.ts(28,21): error TS7006: Parameter 'tier' implicitly has an 'any' type.
+utils/LoyaltyProgramEngine.ts(33,30): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/LoyaltyProgramEngine.ts(33,38): error TS7006: Parameter 'action' implicitly has an 'any' type.
+utils/LoyaltyProgramEngine.ts(34,23): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ 'Completed Financing Deal': number; 'Completed Auction': number; 'Hired Hauler': number; 'Sold Car': number; }'.
+utils/LoyaltyProgramEngine.ts(54,34): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+utils/mechanic/MechanicAIRepairRecommender.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/mechanic/MechanicBadgeCelebrationLogic.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/mechanic/MechanicInspectionReportBuilder.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/mechanic/MechanicLeaderboard.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/mechanic/MechanicVoiceDictation.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/mechanic/RepairCostPredictor.ts(8,34): error TS7006: Parameter 'taskId' implicitly has an 'any' type.
+utils/mechanic/RepairCostPredictor.ts(8,42): error TS7006: Parameter 'user' implicitly has an 'any' type.
+utils/mechanic/RepairCostPredictor.ts(28,48): error TS18046: 'error' is of type 'unknown'.
+utils/mechanic/ReportSharer.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/notificationDispatcher.ts(4,7): error TS2451: Cannot redeclare block-scoped variable 'Notification'.
+utils/notificationDispatcher.ts(14,37): error TS7031: Binding element 'userId' implicitly has an 'any' type.
+utils/notificationDispatcher.ts(14,45): error TS7031: Binding element 'type' implicitly has an 'any' type.
+utils/notificationDispatcher.ts(14,51): error TS7031: Binding element 'message' implicitly has an 'any' type.
+utils/notificationDispatcher.ts(16,43): error TS2345: Argument of type '{ userId: any; type: any; message: any; relatedId: null; }' is not assignable to parameter of type 'string'.
+utils/notificationDispatcher.ts(17,24): error TS2339: Property 'save' does not exist on type 'Notification'.
+utils/notificationDispatcher.ts(21,52): error TS18046: 'err' is of type 'unknown'.
+utils/notificationEnhancer.ts(10,30): error TS7006: Parameter 'notification' implicitly has an 'any' type.
+utils/notificationEnhancer.ts(28,11): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ system: string; message: string; alert: string; }'.
+utils/notificationEnhancer.ts(29,38): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ system: string; message: string; alert: string; }'.
+utils/notificationTrigger.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/pdfGenerator.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/PremiumChecker.ts(21,34): error TS7006: Parameter 'user' implicitly has an 'any' type.
+utils/PremiumChecker.ts(21,40): error TS7006: Parameter 'featureName' implicitly has an 'any' type.
+utils/PremiumChecker.ts(30,12): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ lenderExportAnalytics: boolean; aiOptimizerAccess: boolean; contractEnhancer: boolean; }'.
+utils/PushNotificationService.ts(10,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/PushNotificationService.ts(19,25): error TS18048: 'process.env.FIREBASE_PRIVATE_KEY' is possibly 'undefined'.
+utils/PushNotificationService.ts(24,12): error TS2339: Property 'messaging' does not exist on type 'PushNotificationService'.
+utils/PushNotificationService.ts(31,30): error TS7006: Parameter 'token' implicitly has an 'any' type.
+utils/PushNotificationService.ts(31,37): error TS7006: Parameter 'title' implicitly has an 'any' type.
+utils/PushNotificationService.ts(31,44): error TS7006: Parameter 'body' implicitly has an 'any' type.
+utils/PushNotificationService.ts(43,36): error TS2339: Property 'messaging' does not exist on type 'PushNotificationService'.
+utils/PushNotificationService.ts(47,22): error TS2339: Property 'userId' does not exist on type '{}'.
+utils/PushNotificationService.ts(56,57): error TS18046: 'error' is of type 'unknown'.
+utils/PushNotificationService.ts(57,52): error TS18046: 'error' is of type 'unknown'.
+utils/PushNotificationService.ts(61,39): error TS7006: Parameter 'tokens' implicitly has an 'any' type.
+utils/PushNotificationService.ts(61,47): error TS7006: Parameter 'title' implicitly has an 'any' type.
+utils/PushNotificationService.ts(61,54): error TS7006: Parameter 'body' implicitly has an 'any' type.
+utils/PushNotificationService.ts(74,40): error TS2339: Property 'messaging' does not exist on type 'PushNotificationService'.
+utils/PushNotificationService.ts(78,22): error TS2339: Property 'userId' does not exist on type '{}'.
+utils/PushNotificationService.ts(88,17): error TS7006: Parameter 'resp' implicitly has an 'any' type.
+utils/PushNotificationService.ts(88,23): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+utils/PushNotificationService.ts(95,54): error TS18046: 'error' is of type 'unknown'.
+utils/PushNotificationService.ts(96,49): error TS18046: 'error' is of type 'unknown'.
+utils/PushNotificationService.ts(100,29): error TS7006: Parameter 'event' implicitly has an 'any' type.
+utils/PushNotificationService.ts(116,21): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ escrow_update: string; dispute: string; }'.
+utils/PushNotificationService.ts(130,47): error TS18046: 'error' is of type 'unknown'.
+utils/PushNotificationService.ts(131,62): error TS18046: 'error' is of type 'unknown'.
+utils/reputationEngine.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/RiskAssessmentEngine.ts(6,89): error TS2307: Cannot find module '@utils/RiskAssessmentEngine' or its corresponding type declarations.
+utils/RiskAssessmentEngine.ts(7,37): error TS2307: Cannot find module '@utils/vehicleUtils' or its corresponding type declarations.
+utils/RiskAssessmentEngine.ts(8,37): error TS2307: Cannot find module '@utils/disputeUtils' or its corresponding type declarations.
+utils/RiskAssessmentEngine.ts(9,38): error TS2307: Cannot find module '@lib/websocket' or its corresponding type declarations.
+utils/RiskAssessmentEngine.ts(45,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/RiskAssessmentEngine.ts(56,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/RiskAssessmentEngine.ts(66,33): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+utils/RiskAssessmentEngine.ts(67,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/RiskAssessmentEngine.ts(78,34): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+utils/RiskAssessmentEngine.ts(78,85): error TS2339: Property 'any' does not exist on type 'ExpectStatic'.
+utils/RiskAssessmentEngine.ts(79,25): error TS2551: Property 'toBeInstanceOf' does not exist on type 'Assertion'. Did you mean 'instanceOf'?
+utils/RiskAssessmentEngine.ts(84,62): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+utils/scalabilityManager.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/scoreUtils.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+utils/SellerBadgeEngine.ts(7,7): error TS2451: Cannot redeclare block-scoped variable 'logger'.
+utils/SellerBadgeEngine.ts(8,7): error TS2451: Cannot redeclare block-scoped variable 'Reputation'.
+utils/SellerBadgeEngine.ts(12,24): error TS7006: Parameter 'reputation' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(24,28): error TS7006: Parameter 'reputation' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(37,25): error TS7006: Parameter 'reputation' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(48,32): error TS7006: Parameter 'yourStats' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(48,43): error TS7006: Parameter 'topStats' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(57,31): error TS7006: Parameter 'badges' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(58,22): error TS7006: Parameter 'badge' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(66,35): error TS7006: Parameter 'reputation' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(73,38): error TS7006: Parameter 'reputation' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(107,38): error TS7006: Parameter 'reputation' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(116,27): error TS7006: Parameter 'sellerId' implicitly has an 'any' type.
+utils/SellerBadgeEngine.ts(119,38): error TS7006: Parameter 'r' implicitly has an 'any' type.
+utils/SellerBadgeEngineGrokOld.ts(13,7): error TS2451: Cannot redeclare block-scoped variable 'Reputation'.
+utils/SellerBadgeEngineGrokOld.ts(20,31): error TS7006: Parameter 'sellerReputation' implicitly has an 'any' type.
+utils/SmartDelayPredictor.test.ts(5,30): error TS2307: Cannot find module '@utils/SmartDelayPredictor' or its corresponding type declarations.
+utils/SmartDelayPredictor.test.ts(9,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+utils/timeUtils.ts(9,29): error TS7006: Parameter 'futureDate' implicitly has an 'any' type.
+utils/timeUtils.ts(11,18): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/timeUtils.ts(11,41): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+utils/timeUtils.ts(26,23): error TS7006: Parameter 'date' implicitly has an 'any' type.
+utils/timeUtils.ts(34,20): error TS7006: Parameter 'date' implicitly has an 'any' type.
+utils/timeUtils.ts(34,26): error TS7006: Parameter 'days' implicitly has an 'any' type.
+utils/validateInput.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+workers/notificationQueueWorker.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+workers/notificationQueueWorker.ts(3,10): error TS2305: Module '"@utils/notificationQueue"' has no exported member 'notificationQueue'.
+workers/notificationQueueWorker.ts(4,37): error TS2307: Cannot find module '@services/notification/NotificationService' or its corresponding type declarations.
+workers/notificationQueueWorker.ts(42,13): error TS2304: Cannot find name 'job'.
+workers/NotificationWorker.ts(2,24): error TS2307: Cannot find module '@utils/logger' or its corresponding type declarations.
+workers/NotificationWorker.ts(3,10): error TS2305: Module '"@utils/notificationQueue"' has no exported member 'notificationQueue'.
+workers/NotificationWorker.ts(4,37): error TS2307: Cannot find module '@services/notification/NotificationService' or its corresponding type declarations.
+workers/NotificationWorker.ts(19,63): error TS7006: Parameter 'job' implicitly has an 'any' type.

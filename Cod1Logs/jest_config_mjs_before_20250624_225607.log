@@ -1,0 +1,47 @@
+﻿// (c) 2025 CFH, All Rights Reserved
+// Purpose: ESM-compatible Jest configuration for the CFH Automotive Ecosystem backend
+// Author: CFH Dev Team
+// Date: 2025-06-24T11:00:00.000Z
+// Version: 1.0.1
+// Crown Certified: Yes
+// Batch ID: Config-062325
+// Save Location: C:\CFH\backend\jest.config.mjs
+import 'tsconfig-paths/register.js';
+
+/** @type {import('jest').Config} */
+export default {
+  preset: 'ts-jest/presets/default-esm',
+  transform: {
+    '^.+\\.(ts|tsx)$': ['ts-jest', { useESM: true, tsconfig: './tsconfig.json' }],
+    '^.+\\.(js|mjs)$': 'babel-jest'
+  },
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
+  moduleNameMapper: {
+    '^@root/(.*)$': '<rootDir>/',
+    '^@routes/(.*)$': '<rootDir>/routes/',
+    '^@utils/(.*)$': '<rootDir>/utils/',
+    '^@services/(.*)$': '<rootDir>/services/',
+    '^@models/(.*)$': '<rootDir>/models/',
+    '^@config/(.*)$': '<rootDir>/config/',
+    '^@middleware/(.*)$': '<rootDir>/middleware/',
+    '^@socket/(.*)$': '<rootDir>/socket/',
+    '^@tests/(.*)$': '<rootDir>/tests/',
+    '^@tools/(.*)$': '<rootDir>/tools/',
+    '^@ai/(.*)$': '<rootDir>/services/ai/',
+    '^@tasks/(.*)$': '<rootDir>/tasks/',
+    '^@frontend/(.*)$': '<rootDir>/../frontend/src/',
+    '^@controllers/(.*)$': '<rootDir>/controllers/',
+    '^@mock/(.*)$': '<rootDir>/tests/mocks/',
+    '^@/(.*)$': '<rootDir>/'
+  },
+  transformIgnorePatterns: [
+    '/node_modules/(?!(@utils|@services|@routes|@mock)/)'
+  ],
+  testEnvironment: 'node',
+  verbose: true,
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'mjs', 'json', 'node']
+};
+

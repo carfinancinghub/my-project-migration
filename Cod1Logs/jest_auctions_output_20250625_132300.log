@@ -1,0 +1,13 @@
+﻿node.exe : ΓùÅ Validation Error:
+At C:\Users\Agasi5\AppData\Roaming\npm\npx.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/npm/bin/npx-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ΓùÅ Validation Error::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+  Preset ts-jest/presets/default-esm not found.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+

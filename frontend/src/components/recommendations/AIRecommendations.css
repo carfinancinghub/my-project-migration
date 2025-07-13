@@ -1,0 +1,64 @@
+.ai-recommendations-container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.recommendation-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.recommendation-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border-width: 1px;
+  border-color: #e5e7eb;
+}
+
+.recommendation-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.recommendation-card p {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.financeability-score {
+  color: #16a34a;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-blue-500 {
+  color: #3b82f6;
+}
+
+.underline {
+  text-decoration: underline;
+}

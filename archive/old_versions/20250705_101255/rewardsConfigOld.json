@@ -1,0 +1,27 @@
+// File: rewardsConfig.json
+// Path: backend/config/rewardsConfig.json
+// Purpose: Dynamic badge and rank configuration for AuctionGamificationEngine
+// Author: Rivers Auction Team
+// Date: May 14, 2025
+// 👑 Cod2 Crown Certified
+{
+  "weights": {
+    "bid": 2,
+    "list": 5,
+    "win": 10,
+    "mechanicStars": 3,
+    "buyerRatings": 4
+  },
+  "rankThresholds": [
+    { "rank": "Bronze", "points": 0 },
+    { "rank": "Silver", "points": 250 },
+    { "rank": "Gold", "points": 600 },
+    { "rank": "Platinum", "points": 1000 }
+  ],
+  "badges": [
+    { "name": "Bid Warrior", "unlockPoints": 100 },
+    { "name": "Top Lister", "unlockPoints": 250 },
+    { "name": "Champion Seller", "unlockPoints": 500 },
+    { "name": "Elite Partner", "unlockPoints": 800 }
+  ]
+}

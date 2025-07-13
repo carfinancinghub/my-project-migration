@@ -1,0 +1,34 @@
+{
+  "buyer": {
+    "userId": 503,
+    "recentBids": [
+      {
+        "id": 603,
+        "amount": 38000
+      },
+      {
+        "id": 604,
+        "amount": 9500
+      }
+    ]
+  },
+  "seller": {
+    "userId": 504,
+    "listings": [
+      {
+        "id": 704,
+        "title": "2018 Audi A4 Sedan"
+      },
+      {
+        "id": 705,
+        "title": "2023 Hyundai Tucson Hybrid"
+      }
+    ]
+  },
+  "admin": {
+    "stats": {
+      "users": 3200,
+      "disputes": 155
+    }
+  }
+}

@@ -1,0 +1,283 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250621160833
+Username: Agasi\Agasi5
+RunAs User: Agasi\Agasi5
+Configuration Name: 
+Machine: AGASI (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 28016
+PSVersion: 5.1.26100.4202
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4202
+BuildVersion: 10.0.26100.4202
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CFH\WPromptOutput\console_20250621_160833.log
+[2025-06-21T23:08:33.6560631Z] Starting test and lint verification for CFH Automotive Ecosystem
+[2025-06-21T23:08:33.6560631Z] Excluding directories: node_modules dist build .git
+Testing and linting...
+[2025-06-21T23:08:33.6560631Z] Verifying C:\CFH\backend\package.json
+Verifying package.json...
+[2025-06-21T23:08:33.6560631Z] Success: C:\CFH\backend\package.json is valid JSON
+[2025-06-21T23:08:33.6560631Z] Success: C:\CFH\backend\package.json is valid JSON
+[2025-06-21T23:08:33.6560631Z] Fixing socket.js in C:\CFH\backend\socket.js
+Fixing socket.js...
+[2025-06-21T23:08:33.6560631Z] Success: Replaced const with var in C:\CFH\backend\socket.js
+[2025-06-21T23:08:33.6560631Z] Success: Replaced const with var in C:\CFH\backend\socket.js
+[2025-06-21T23:08:33.6560631Z] Fixing index.js in C:\CFH\backend\index.js
+Fixing index.js...
+[2025-06-21T23:08:33.6560631Z] Success: Fixed ternary operator in C:\CFH\backend\index.js
+[2025-06-21T23:08:33.6560631Z] Success: Fixed ternary operator in C:\CFH\backend\index.js
+[2025-06-21T23:08:33.6560631Z] Installing ws and supertest in C:\CFH\backend
+Installing ws and supertest...
+[2025-06-21T23:08:33.6560631Z] ws and supertest install output:
+ up to date, audited 827 packages in 1s  111 packages are looking for funding   run `npm fund` for details  1 low severity vulnerability  To address all issues, run:   npm audit fix  Run `npm audit` for details.
+[2025-06-21T23:08:33.6560631Z] ws and supertest install output:
+ up to date, audited 827 packages in 1s  111 packages are looking for funding   run `npm fund` for details  1 low severity vulnerability  To address all issues, run:   npm audit fix  Run `npm audit` for details.
+[2025-06-21T23:08:33.6560631Z] Checking C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js
+Checking test file...
+[2025-06-21T23:08:33.6560631Z] Debug: jest.mock('@/index') already present in C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js
+[2025-06-21T23:08:33.6560631Z] Debug: jest.mock('@/index') already present in C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js
+[2025-06-21T23:08:33.6560631Z] Test file content (first 10 lines):
+// userProfileRoutes.test.js`nconst request = require('supertest');`njest.mock('@/index');\nconst app = require('@/index'); // Adjust path as needed`ndescribe('User Profile Routes', () => {`n  test('GET /user/profile should return 200', async () => {`n    const response = await request(app).get('/user/profile');`n    expect(response.status).toBe(200);`n  });`n});`n
+[2025-06-21T23:08:33.6560631Z] Test file content (first 10 lines):
+// userProfileRoutes.test.js`nconst request = require('supertest');`njest.mock('@/index');\nconst app = require('@/index'); // Adjust path as needed`ndescribe('User Profile Routes', () => {`n  test('GET /user/profile should return 200', async () => {`n    const response = await request(app).get('/user/profile');`n    expect(response.status).toBe(200);`n  });`n});`n
+[2025-06-21T23:08:33.6560631Z] Creating mock for index.js in C:\CFH\backend/__mocks__
+Creating mock for index.js...
+[2025-06-21T23:08:33.6560631Z] Success: Created C:\CFH\backend\__mocks__\index.js
+[2025-06-21T23:08:33.6560631Z] Success: Created C:\CFH\backend\__mocks__\index.js
+[2025-06-21T23:08:33.6560631Z] Verifying ts-jest and typescript in C:\CFH\backend
+Verifying ts-jest and typescript...
+[2025-06-21T23:08:33.6560631Z] ts-jest and typescript check output:
+CFH-backend@1.0.0 C:\CFH\backend +-- ts-jest@29.4.0 | `-- typescript@5.8.3 deduped +-- typescript@5.8.3 `-- web3@4.16.0   `-- web3-eth-abi@4.4.1     `-- abitype@0.7.1       `-- typescript@5.8.3 deduped
+[2025-06-21T23:08:33.6560631Z] ts-jest and typescript check output:
+CFH-backend@1.0.0 C:\CFH\backend +-- ts-jest@29.4.0 | `-- typescript@5.8.3 deduped +-- typescript@5.8.3 `-- web3@4.16.0   `-- web3-eth-abi@4.4.1     `-- abitype@0.7.1       `-- typescript@5.8.3 deduped
+[2025-06-21T23:08:33.6560631Z] ts-jest and typescript install output:
+ up to date, audited 827 packages in 2s  111 packages are looking for funding   run `npm fund` for details  1 low severity vulnerability  To address all issues, run:   npm audit fix  Run `npm audit` for details.
+[2025-06-21T23:08:33.6560631Z] ts-jest and typescript install output:
+ up to date, audited 827 packages in 2s  111 packages are looking for funding   run `npm fund` for details  1 low severity vulnerability  To address all issues, run:   npm audit fix  Run `npm audit` for details.
+[2025-06-21T23:08:33.6560631Z] Updating Jest configuration in C:\CFH\backend\jest.config.js
+Updating Jest configuration...
+[2025-06-21T23:08:33.6560631Z] Success: Updated C:\CFH\backend\jest.config.js
+[2025-06-21T23:08:33.6560631Z] Success: Updated C:\CFH\backend\jest.config.js
+[2025-06-21T23:08:33.6560631Z] Checking C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js for correct import
+Checking lenderTermsHistoryRoute import...
+[2025-06-21T23:08:33.6560631Z] Debug: No incorrect import in C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+[2025-06-21T23:08:33.6560631Z] Debug: No incorrect import in C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+[2025-06-21T23:08:33.6560631Z] Verifying server file: C:\CFH\backend\index.js
+Verifying server file...
+[2025-06-21T23:08:33.6560631Z] Success: Server file found at C:\CFH\backend\index.js
+[2025-06-21T23:08:33.6560631Z] Success: Server file found at C:\CFH\backend\index.js
+[2025-06-21T23:08:33.6560631Z] Running server: node C:\CFH\backend\index.js
+Running server...
+[2025-06-21T23:08:33.6560631Z] Server started (PID: 22868). Test endpoints manually.
+[2025-06-21T23:08:33.6560631Z] Server started (PID: 22868). Test endpoints manually.
+[2025-06-21T23:08:33.6560631Z] Server output:
+
+Server errors:
+C:\CFH\backend\index.js:77
+  .then(() => 'Local') database`))
+                       ^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v18.20.8
+[2025-06-21T23:08:33.6560631Z] Server output:
+
+Server errors:
+C:\CFH\backend\index.js:77
+  .then(() => 'Local') database`))
+                       ^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v18.20.8
+[2025-06-21T23:08:33.6560631Z] Server stopped.
+[2025-06-21T23:08:33.6560631Z] Server stopped.
+[2025-06-21T23:08:33.6560631Z] Running tests from C:\CFH\backend: npm test -- C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js --runInBand --detectOpenHandles
+Running tests...
+node.exe : npm verb cli C:\nvm4w\nodejs\node.exe C:\Users\Agasi5\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+At C:\Users\Agasi5\AppData\Roaming\npm\npm.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/npm/bin/npm-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm verb cli C:...\bin\npm-cli.js:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+npm info using npm@9.9.4
+npm info using node@v18.20.8
+npm verb title npm test C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js
+npm verb argv "test" "C:\\CFH\\backend\\tests\\routes\\user\\userProfileRoutes.test.js" "--loglevel" "verbose" 
+"--runInBand" "--detectOpenHandles"
+npm verb logfile logs-max:10 dir:C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-21T23_08_53_945Z-
+npm verb logfile C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-21T23_08_53_945Z-debug-0.log
+npm verb exit 1
+npm verb code 1
+[2025-06-21T23:08:33.6560631Z] Test output:
+npm verb cli C:\nvm4w\nodejs\node.exe C:\Users\Agasi5\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js npm info using npm@9.9.4 npm info using node@v18.20.8 npm verb title npm test C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js npm verb argv "test" "C:\\CFH\\backend\\tests\\routes\\user\\userProfileRoutes.test.js" "--loglevel" "verbose" "--runInBand" "--detectOpenHandles" npm verb logfile logs-max:10 dir:C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-21T23_08_53_945Z- npm verb logfile C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-21T23_08_53_945Z-debug-0.log  > CFH-backend@1.0.0 test > jest --verbose C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js  No tests found, exiting with code 1 Run with `--passWithNoTests` to exit with code 0 In C:\CFH\backend   513 files checked.   testMatch: **/tests/**/*.test.js - 87 matches   testPathIgnorePatterns: \\node_modules\\ - 513 matches   testRegex:  - 0 matches Pattern: C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js - 0 matches npm verb exit 1 npm verb code 1
+[2025-06-21T23:08:33.6560631Z] Test output:
+npm verb cli C:\nvm4w\nodejs\node.exe C:\Users\Agasi5\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js npm info using npm@9.9.4 npm info using node@v18.20.8 npm verb title npm test C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js npm verb argv "test" "C:\\CFH\\backend\\tests\\routes\\user\\userProfileRoutes.test.js" "--loglevel" "verbose" "--runInBand" "--detectOpenHandles" npm verb logfile logs-max:10 dir:C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-21T23_08_53_945Z- npm verb logfile C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-21T23_08_53_945Z-debug-0.log  > CFH-backend@1.0.0 test > jest --verbose C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js  No tests found, exiting with code 1 Run with `--passWithNoTests` to exit with code 0 In C:\CFH\backend   513 files checked.   testMatch: **/tests/**/*.test.js - 87 matches   testPathIgnorePatterns: \\node_modules\\ - 513 matches   testRegex:  - 0 matches Pattern: C:\CFH\backend\tests\routes\user\userProfileRoutes.test.js - 0 matches npm verb exit 1 npm verb code 1
+[2025-06-21T23:08:33.6560631Z] Installing ESLint in C:\CFH\backend
+Installing ESLint...
+[2025-06-21T23:08:33.6560631Z] ESLint install output:
+ up to date, audited 827 packages in 1s  111 packages are looking for funding   run `npm fund` for details  1 low severity vulnerability  To address all issues, run:   npm audit fix  Run `npm audit` for details.
+[2025-06-21T23:08:33.6560631Z] ESLint install output:
+ up to date, audited 827 packages in 1s  111 packages are looking for funding   run `npm fund` for details  1 low severity vulnerability  To address all issues, run:   npm audit fix  Run `npm audit` for details.
+[2025-06-21T23:08:33.6560631Z] Created C:\CFH\backend\eslint.config.js
+[2025-06-21T23:08:33.6560631Z] Created C:\CFH\backend\eslint.config.js
+[2025-06-21T23:08:33.6560631Z] Running ESLint
+Running ESLint...
+node.exe : 2025-06-21T23:08:57.116Z eslint:cli CLI args: [ '--ext', '.js', '--format', 'stylish', '--max-warnings', 
+'10', '--debug', '--fix', 'index.js', 'routes/user/userProfileRoutes.js', 'routes/arbitrator/arbitrators.js', 
+'routes/onboarding/onboarding.js', 'routes/lender/lenderTermsHistoryRoute.js' ]
+At C:\Users\Agasi5\AppData\Roaming\npm\npx.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/npm/bin/npx-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2025-06-21T23:0...toryRoute.js' ]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+2025-06-21T23:08:57.116Z eslint:cli Using flat config? true
+2025-06-21T23:08:57.122Z eslint:cli Running on files
+2025-06-21T23:08:57.123Z eslint:eslint Using config loader LegacyConfigLoader
+2025-06-21T23:08:57.124Z eslint:eslint Using file patterns: index.js,routes/user/userProfileRoutes.js,routes/arbitrator/
+arbitrators.js,routes/onboarding/onboarding.js,routes/lender/lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.124Z eslint:eslint Deleting cache file at C:\CFH\backend\.eslintcache
+2025-06-21T23:08:57.126Z eslint:eslint 5 files found in: 2ms
+2025-06-21T23:08:57.126Z eslint:config-loader Calculating config for file C:\CFH\backend\index.js
+2025-06-21T23:08:57.126Z eslint:config-loader Searching for eslint.config.js
+2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file 
+C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file 
+C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file 
+C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.127Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\index.js
+2025-06-21T23:08:57.127Z eslint:config-loader [Legacy]: Calculating config for 
+C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for 
+C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for 
+C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for 
+C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path 
+C:\CFH\backend
+2025-06-21T23:08:57.128Z eslint:config-loader Calculating config array from config file C:\CFH\backend\eslint.config.js 
+and base path C:\CFH\backend
+2025-06-21T23:08:57.128Z eslint:config-loader Loading config file C:\CFH\backend\eslint.config.js
+2025-06-21T23:08:57.128Z eslint:config-loader Loading config from C:\CFH\backend\eslint.config.js
+2025-06-21T23:08:57.128Z eslint:config-loader Config file URL is file:///C:/CFH/backend/eslint.config.js
+2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path 
+C:\CFH\backend
+2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path 
+C:\CFH\backend
+2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path 
+C:\CFH\backend
+2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path 
+C:\CFH\backend
+2025-06-21T23:08:57.135Z eslint:config-loader Config file C:\CFH\backend\eslint.config.js is not empty
+2025-06-21T23:08:57.141Z eslint:rules Loading rule 'no-restricted-imports' (remaining=290)
+2025-06-21T23:08:57.147Z eslint:rules Loading rule 'no-unused-vars' (remaining=289)
+2025-06-21T23:08:57.148Z eslint:rules Loading rule 'no-undef' (remaining=288)
+2025-06-21T23:08:57.148Z eslint:rules Loading rule 'semi' (remaining=287)
+2025-06-21T23:08:57.149Z eslint:rules Loading rule 'quotes' (remaining=286)
+2025-06-21T23:08:57.150Z eslint:rules Loading rule 'eqeqeq' (remaining=285)
+2025-06-21T23:08:57.151Z eslint:rules Loading rule 'no-console' (remaining=284)
+2025-06-21T23:08:57.171Z eslint:eslint Lint C:\CFH\backend\index.js
+2025-06-21T23:08:57.171Z eslint:linter Linting code for C:\CFH\backend\index.js (pass 1)
+2025-06-21T23:08:57.171Z eslint:linter Verify
+2025-06-21T23:08:57.171Z eslint:linter With flat config: C:\CFH\backend\index.js
+2025-06-21T23:08:57.172Z eslint:languages:js Parsing: C:\CFH\backend\index.js
+2025-06-21T23:08:57.180Z eslint:languages:js Unexpected token database
+SyntaxError: Unexpected token database
+    at Espree.raise (C:\CFH\backend\node_modules\espree\dist\espree.cjs:676:25)
+    at Espree.unexpected (C:\CFH\backend\node_modules\espree\dist\espree.cjs:721:18)
+    at pp$9.semicolon (C:\CFH\backend\node_modules\acorn\dist\acorn.js:753:68)
+    at pp$8.parseExpressionStatement (C:\CFH\backend\node_modules\acorn\dist\acorn.js:1323:10)
+    at pp$8.parseStatement (C:\CFH\backend\node_modules\acorn\dist\acorn.js:1029:26)
+    at pp$8.parseTopLevel (C:\CFH\backend\node_modules\acorn\dist\acorn.js:833:23)
+    at Espree.parseTopLevel (C:\CFH\backend\node_modules\espree\dist\espree.cjs:664:26)
+    at Espree.parse (C:\CFH\backend\node_modules\acorn\dist\acorn.js:602:17)
+    at Espree.parse (C:\CFH\backend\node_modules\espree\dist\espree.cjs:586:35)
+    at Object.parse (C:\CFH\backend\node_modules\espree\dist\espree.cjs:891:38)
+2025-06-21T23:08:57.180Z eslint:linter Generating fixed text for C:\CFH\backend\index.js (pass 1)
+2025-06-21T23:08:57.180Z eslint:source-code-fixer Applying fixes
+2025-06-21T23:08:57.180Z eslint:source-code-fixer No fixes to apply
+2025-06-21T23:08:57.180Z eslint:eslint Lint C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.180Z eslint:linter Linting code for C:\CFH\backend\routes\user\userProfileRoutes.js (pass 1)
+2025-06-21T23:08:57.180Z eslint:linter Verify
+2025-06-21T23:08:57.180Z eslint:linter With flat config: C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.180Z eslint:languages:js Parsing: C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.184Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.184Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.187Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\user\userProfileRoutes.js
+2025-06-21T23:08:57.196Z eslint:linter Generating fixed text for C:\CFH\backend\routes\user\userProfileRoutes.js (pass 
+1)
+2025-06-21T23:08:57.196Z eslint:source-code-fixer Applying fixes
+2025-06-21T23:08:57.196Z eslint:source-code-fixer No fixes to apply
+2025-06-21T23:08:57.197Z eslint:eslint Lint C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.197Z eslint:linter Linting code for C:\CFH\backend\routes\onboarding\onboarding.js (pass 1)
+2025-06-21T23:08:57.197Z eslint:linter Verify
+2025-06-21T23:08:57.197Z eslint:linter With flat config: C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.197Z eslint:languages:js Parsing: C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.197Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.197Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.197Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\onboarding\onboarding.js
+2025-06-21T23:08:57.198Z eslint:linter Generating fixed text for C:\CFH\backend\routes\onboarding\onboarding.js (pass 1)
+2025-06-21T23:08:57.198Z eslint:source-code-fixer Applying fixes
+2025-06-21T23:08:57.198Z eslint:source-code-fixer No fixes to apply
+2025-06-21T23:08:57.198Z eslint:eslint Lint C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.198Z eslint:linter Linting code for C:\CFH\backend\routes\arbitrator\arbitrators.js (pass 1)
+2025-06-21T23:08:57.198Z eslint:linter Verify
+2025-06-21T23:08:57.198Z eslint:linter With flat config: C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.198Z eslint:languages:js Parsing: C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.199Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.199Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.199Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\arbitrator\arbitrators.js
+2025-06-21T23:08:57.199Z eslint:linter Generating fixed text for C:\CFH\backend\routes\arbitrator\arbitrators.js (pass 
+1)
+2025-06-21T23:08:57.199Z eslint:source-code-fixer Applying fixes
+2025-06-21T23:08:57.199Z eslint:source-code-fixer No fixes to apply
+2025-06-21T23:08:57.199Z eslint:eslint Lint C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.199Z eslint:linter Linting code for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js (pass 1)
+2025-06-21T23:08:57.199Z eslint:linter Verify
+2025-06-21T23:08:57.200Z eslint:linter With flat config: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.200Z eslint:languages:js Parsing: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.201Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.201Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.201Z eslint:languages:js Scope analysis successful: 
+C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js
+2025-06-21T23:08:57.202Z eslint:linter Generating fixed text for 
+C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js (pass 1)
+2025-06-21T23:08:57.202Z eslint:source-code-fixer Applying fixes
+2025-06-21T23:08:57.202Z eslint:source-code-fixer No fixes to apply
+2025-06-21T23:08:57.202Z eslint:cli Fix mode enabled - applying fixes
+[2025-06-21T23:08:33.6560631Z] ESLint output:
+2025-06-21T23:08:57.116Z eslint:cli CLI args: [ '--ext', '.js', '--format', 'stylish', '--max-warnings', '10', '--debug', '--fix', 'index.js', 'routes/user/userProfileRoutes.js', 'routes/arbitrator/arbitrators.js', 'routes/onboarding/onboarding.js', 'routes/lender/lenderTermsHistoryRoute.js' ] 2025-06-21T23:08:57.116Z eslint:cli Using flat config? true 2025-06-21T23:08:57.122Z eslint:cli Running on files 2025-06-21T23:08:57.123Z eslint:eslint Using config loader LegacyConfigLoader 2025-06-21T23:08:57.124Z eslint:eslint Using file patterns: index.js,routes/user/userProfileRoutes.js,routes/arbitrator/arbitrators.js,routes/onboarding/onboarding.js,routes/lender/lenderTermsHistoryRoute.js 2025-06-21T23:08:57.124Z eslint:eslint Deleting cache file at C:\CFH\backend\.eslintcache 2025-06-21T23:08:57.126Z eslint:eslint 5 files found in: 2ms 2025-06-21T23:08:57.126Z eslint:config-loader Calculating config for file C:\CFH\backend\index.js 2025-06-21T23:08:57.126Z eslint:config-loader Searching for eslint.config.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.127Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\index.js 2025-06-21T23:08:57.127Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.128Z eslint:config-loader Calculating config array from config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.128Z eslint:config-loader Loading config file C:\CFH\backend\eslint.config.js 2025-06-21T23:08:57.128Z eslint:config-loader Loading config from C:\CFH\backend\eslint.config.js 2025-06-21T23:08:57.128Z eslint:config-loader Config file URL is file:///C:/CFH/backend/eslint.config.js 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.135Z eslint:config-loader Config file C:\CFH\backend\eslint.config.js is not empty 2025-06-21T23:08:57.141Z eslint:rules Loading rule 'no-restricted-imports' (remaining=290) 2025-06-21T23:08:57.147Z eslint:rules Loading rule 'no-unused-vars' (remaining=289) 2025-06-21T23:08:57.148Z eslint:rules Loading rule 'no-undef' (remaining=288) 2025-06-21T23:08:57.148Z eslint:rules Loading rule 'semi' (remaining=287) 2025-06-21T23:08:57.149Z eslint:rules Loading rule 'quotes' (remaining=286) 2025-06-21T23:08:57.150Z eslint:rules Loading rule 'eqeqeq' (remaining=285) 2025-06-21T23:08:57.151Z eslint:rules Loading rule 'no-console' (remaining=284) 2025-06-21T23:08:57.171Z eslint:eslint Lint C:\CFH\backend\index.js 2025-06-21T23:08:57.171Z eslint:linter Linting code for C:\CFH\backend\index.js (pass 1) 2025-06-21T23:08:57.171Z eslint:linter Verify 2025-06-21T23:08:57.171Z eslint:linter With flat config: C:\CFH\backend\index.js 2025-06-21T23:08:57.172Z eslint:languages:js Parsing: C:\CFH\backend\index.js 2025-06-21T23:08:57.180Z eslint:languages:js Unexpected token database SyntaxError: Unexpected token database     at Espree.raise (C:\CFH\backend\node_modules\espree\dist\espree.cjs:676:25)     at Espree.unexpected (C:\CFH\backend\node_modules\espree\dist\espree.cjs:721:18)     at pp$9.semicolon (C:\CFH\backend\node_modules\acorn\dist\acorn.js:753:68)     at pp$8.parseExpressionStatement (C:\CFH\backend\node_modules\acorn\dist\acorn.js:1323:10)     at pp$8.parseStatement (C:\CFH\backend\node_modules\acorn\dist\acorn.js:1029:26)     at pp$8.parseTopLevel (C:\CFH\backend\node_modules\acorn\dist\acorn.js:833:23)     at Espree.parseTopLevel (C:\CFH\backend\node_modules\espree\dist\espree.cjs:664:26)     at Espree.parse (C:\CFH\backend\node_modules\acorn\dist\acorn.js:602:17)     at Espree.parse (C:\CFH\backend\node_modules\espree\dist\espree.cjs:586:35)     at Object.parse (C:\CFH\backend\node_modules\espree\dist\espree.cjs:891:38) 2025-06-21T23:08:57.180Z eslint:linter Generating fixed text for C:\CFH\backend\index.js (pass 1) 2025-06-21T23:08:57.180Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.180Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.180Z eslint:eslint Lint C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.180Z eslint:linter Linting code for C:\CFH\backend\routes\user\userProfileRoutes.js (pass 1) 2025-06-21T23:08:57.180Z eslint:linter Verify 2025-06-21T23:08:57.180Z eslint:linter With flat config: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.180Z eslint:languages:js Parsing: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.184Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.184Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.187Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.196Z eslint:linter Generating fixed text for C:\CFH\backend\routes\user\userProfileRoutes.js (pass 1) 2025-06-21T23:08:57.196Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.196Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.197Z eslint:eslint Lint C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:linter Linting code for C:\CFH\backend\routes\onboarding\onboarding.js (pass 1) 2025-06-21T23:08:57.197Z eslint:linter Verify 2025-06-21T23:08:57.197Z eslint:linter With flat config: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Parsing: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.198Z eslint:linter Generating fixed text for C:\CFH\backend\routes\onboarding\onboarding.js (pass 1) 2025-06-21T23:08:57.198Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.198Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.198Z eslint:eslint Lint C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.198Z eslint:linter Linting code for C:\CFH\backend\routes\arbitrator\arbitrators.js (pass 1) 2025-06-21T23:08:57.198Z eslint:linter Verify 2025-06-21T23:08:57.198Z eslint:linter With flat config: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.198Z eslint:languages:js Parsing: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:linter Generating fixed text for C:\CFH\backend\routes\arbitrator\arbitrators.js (pass 1) 2025-06-21T23:08:57.199Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.199Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.199Z eslint:eslint Lint C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.199Z eslint:linter Linting code for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js (pass 1) 2025-06-21T23:08:57.199Z eslint:linter Verify 2025-06-21T23:08:57.200Z eslint:linter With flat config: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.200Z eslint:languages:js Parsing: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.201Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.201Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.201Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.202Z eslint:linter Generating fixed text for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js (pass 1) 2025-06-21T23:08:57.202Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.202Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.202Z eslint:cli Fix mode enabled - applying fixes  C:\CFH\backend\index.js   77:24  error  Parsing error: Unexpected token database  Γ£û 1 problem (1 error, 0 warnings)
+[2025-06-21T23:08:33.6560631Z] ESLint output:
+2025-06-21T23:08:57.116Z eslint:cli CLI args: [ '--ext', '.js', '--format', 'stylish', '--max-warnings', '10', '--debug', '--fix', 'index.js', 'routes/user/userProfileRoutes.js', 'routes/arbitrator/arbitrators.js', 'routes/onboarding/onboarding.js', 'routes/lender/lenderTermsHistoryRoute.js' ] 2025-06-21T23:08:57.116Z eslint:cli Using flat config? true 2025-06-21T23:08:57.122Z eslint:cli Running on files 2025-06-21T23:08:57.123Z eslint:eslint Using config loader LegacyConfigLoader 2025-06-21T23:08:57.124Z eslint:eslint Using file patterns: index.js,routes/user/userProfileRoutes.js,routes/arbitrator/arbitrators.js,routes/onboarding/onboarding.js,routes/lender/lenderTermsHistoryRoute.js 2025-06-21T23:08:57.124Z eslint:eslint Deleting cache file at C:\CFH\backend\.eslintcache 2025-06-21T23:08:57.126Z eslint:eslint 5 files found in: 2ms 2025-06-21T23:08:57.126Z eslint:config-loader Calculating config for file C:\CFH\backend\index.js 2025-06-21T23:08:57.126Z eslint:config-loader Searching for eslint.config.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.127Z eslint:config-loader Calculating config for file C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.127Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\index.js 2025-06-21T23:08:57.127Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Calculating config for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.128Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.128Z eslint:config-loader Calculating config array from config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.128Z eslint:config-loader Loading config file C:\CFH\backend\eslint.config.js 2025-06-21T23:08:57.128Z eslint:config-loader Loading config from C:\CFH\backend\eslint.config.js 2025-06-21T23:08:57.128Z eslint:config-loader Config file URL is file:///C:/CFH/backend/eslint.config.js 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.129Z eslint:config-loader [Legacy]: Using config file C:\CFH\backend\eslint.config.js and base path C:\CFH\backend 2025-06-21T23:08:57.135Z eslint:config-loader Config file C:\CFH\backend\eslint.config.js is not empty 2025-06-21T23:08:57.141Z eslint:rules Loading rule 'no-restricted-imports' (remaining=290) 2025-06-21T23:08:57.147Z eslint:rules Loading rule 'no-unused-vars' (remaining=289) 2025-06-21T23:08:57.148Z eslint:rules Loading rule 'no-undef' (remaining=288) 2025-06-21T23:08:57.148Z eslint:rules Loading rule 'semi' (remaining=287) 2025-06-21T23:08:57.149Z eslint:rules Loading rule 'quotes' (remaining=286) 2025-06-21T23:08:57.150Z eslint:rules Loading rule 'eqeqeq' (remaining=285) 2025-06-21T23:08:57.151Z eslint:rules Loading rule 'no-console' (remaining=284) 2025-06-21T23:08:57.171Z eslint:eslint Lint C:\CFH\backend\index.js 2025-06-21T23:08:57.171Z eslint:linter Linting code for C:\CFH\backend\index.js (pass 1) 2025-06-21T23:08:57.171Z eslint:linter Verify 2025-06-21T23:08:57.171Z eslint:linter With flat config: C:\CFH\backend\index.js 2025-06-21T23:08:57.172Z eslint:languages:js Parsing: C:\CFH\backend\index.js 2025-06-21T23:08:57.180Z eslint:languages:js Unexpected token database SyntaxError: Unexpected token database     at Espree.raise (C:\CFH\backend\node_modules\espree\dist\espree.cjs:676:25)     at Espree.unexpected (C:\CFH\backend\node_modules\espree\dist\espree.cjs:721:18)     at pp$9.semicolon (C:\CFH\backend\node_modules\acorn\dist\acorn.js:753:68)     at pp$8.parseExpressionStatement (C:\CFH\backend\node_modules\acorn\dist\acorn.js:1323:10)     at pp$8.parseStatement (C:\CFH\backend\node_modules\acorn\dist\acorn.js:1029:26)     at pp$8.parseTopLevel (C:\CFH\backend\node_modules\acorn\dist\acorn.js:833:23)     at Espree.parseTopLevel (C:\CFH\backend\node_modules\espree\dist\espree.cjs:664:26)     at Espree.parse (C:\CFH\backend\node_modules\acorn\dist\acorn.js:602:17)     at Espree.parse (C:\CFH\backend\node_modules\espree\dist\espree.cjs:586:35)     at Object.parse (C:\CFH\backend\node_modules\espree\dist\espree.cjs:891:38) 2025-06-21T23:08:57.180Z eslint:linter Generating fixed text for C:\CFH\backend\index.js (pass 1) 2025-06-21T23:08:57.180Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.180Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.180Z eslint:eslint Lint C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.180Z eslint:linter Linting code for C:\CFH\backend\routes\user\userProfileRoutes.js (pass 1) 2025-06-21T23:08:57.180Z eslint:linter Verify 2025-06-21T23:08:57.180Z eslint:linter With flat config: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.180Z eslint:languages:js Parsing: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.184Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.184Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.187Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\user\userProfileRoutes.js 2025-06-21T23:08:57.196Z eslint:linter Generating fixed text for C:\CFH\backend\routes\user\userProfileRoutes.js (pass 1) 2025-06-21T23:08:57.196Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.196Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.197Z eslint:eslint Lint C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:linter Linting code for C:\CFH\backend\routes\onboarding\onboarding.js (pass 1) 2025-06-21T23:08:57.197Z eslint:linter Verify 2025-06-21T23:08:57.197Z eslint:linter With flat config: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Parsing: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.197Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\onboarding\onboarding.js 2025-06-21T23:08:57.198Z eslint:linter Generating fixed text for C:\CFH\backend\routes\onboarding\onboarding.js (pass 1) 2025-06-21T23:08:57.198Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.198Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.198Z eslint:eslint Lint C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.198Z eslint:linter Linting code for C:\CFH\backend\routes\arbitrator\arbitrators.js (pass 1) 2025-06-21T23:08:57.198Z eslint:linter Verify 2025-06-21T23:08:57.198Z eslint:linter With flat config: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.198Z eslint:languages:js Parsing: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\arbitrator\arbitrators.js 2025-06-21T23:08:57.199Z eslint:linter Generating fixed text for C:\CFH\backend\routes\arbitrator\arbitrators.js (pass 1) 2025-06-21T23:08:57.199Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.199Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.199Z eslint:eslint Lint C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.199Z eslint:linter Linting code for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js (pass 1) 2025-06-21T23:08:57.199Z eslint:linter Verify 2025-06-21T23:08:57.200Z eslint:linter With flat config: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.200Z eslint:languages:js Parsing: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.201Z eslint:languages:js Parsing successful: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.201Z eslint:languages:js Scope analysis: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.201Z eslint:languages:js Scope analysis successful: C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js 2025-06-21T23:08:57.202Z eslint:linter Generating fixed text for C:\CFH\backend\routes\lender\lenderTermsHistoryRoute.js (pass 1) 2025-06-21T23:08:57.202Z eslint:source-code-fixer Applying fixes 2025-06-21T23:08:57.202Z eslint:source-code-fixer No fixes to apply 2025-06-21T23:08:57.202Z eslint:cli Fix mode enabled - applying fixes  C:\CFH\backend\index.js   77:24  error  Parsing error: Unexpected token database  Γ£û 1 problem (1 error, 0 warnings)
+[2025-06-21T23:08:33.6560631Z] Testing and linting completed. Update Agasi.
+[2025-06-21T23:08:33.6560631Z] Testing and linting completed. Update Agasi.
+Check C:\CFH\logs\finalizeTestAndLint_20250621_160833.log for details.
+**********************
+Windows PowerShell transcript end
+End time: 20250621160859
+**********************

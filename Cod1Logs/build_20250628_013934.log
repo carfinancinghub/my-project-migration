@@ -1,0 +1,195 @@
+
+> cfh-backend@1.0.0 build
+> tsc && tsc-alias
+
+cypress/e2e/CollaborationChat.cy.ts(7,8): error TS2554: Expected 2 arguments, but got 1.
+cypress/e2e/CollaborationChat05040109.cy.ts(7,8): error TS2554: Expected 2 arguments, but got 1.
+middleware/authMiddleware.ts(14,5): error TS2322: Type 'User | null | undefined' is not assignable to type 'User | undefined'.
+  Type 'null' is not assignable to type 'User | undefined'.
+migrate.ts(13,43): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ recursive: boolean; }' is not assignable to parameter of type 'ObjectEncodingOptions & { withFileTypes: true; }'.
+      Object literal may only specify known properties, and 'recursive' does not exist in type 'ObjectEncodingOptions & { withFileTypes: true; }'.
+migrate.ts(36,49): error TS7006: Parameter 'p' implicitly has an 'any' type.
+migrate.ts(36,71): error TS7006: Parameter 'p' implicitly has an 'any' type.
+migrate.ts(36,83): error TS7006: Parameter 'p' implicitly has an 'any' type.
+migrate.ts(62,29): error TS2304: Cannot find name 'logger'.
+repositories/escrow.repository.ts(14,34): error TS2339: Property 'findById' does not exist on type 'typeof EscrowTransaction'.
+repositories/escrow.repository.ts(18,54): error TS2345: Argument of type 'Partial<IEscrowTransaction>' is not assignable to parameter of type 'IEscrowTransaction'.
+  Types of property '_id' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+repositories/escrow.repository.ts(19,31): error TS2339: Property 'save' does not exist on type 'EscrowTransaction'.
+repositories/escrow.repository.ts(23,34): error TS2339: Property 'findByIdAndUpdate' does not exist on type 'typeof EscrowTransaction'.
+routes/escrow/escrow.routes.ts(12,31): error TS2307: Cannot find module '../../services/escrow/escrow.service' or its corresponding type declarations.
+routes/escrow/escrow.routes.ts(14,10): error TS2305: Module '"../../validation/escrow.validation"' has no exported member 'createTransactionSchema'.
+routes/escrow/escrow.routes.ts(14,35): error TS2305: Module '"../../validation/escrow.validation"' has no exported member 'proposeConditionSchema'.
+routes/escrow/escrow.routes.ts(15,10): error TS2614: Module '"../../config/logger"' has no exported member 'logger'. Did you mean to use 'import logger from "../../config/logger"' instead?
+routes/escrow/escrow.routes.ts(16,10): error TS2305: Module '"../../utils/errors"' has no exported member 'AuthorizationError'.
+routes/escrow/escrow.routes.ts(30,9): error TS2740: Type '{ userId: string; }' is missing the following properties from type 'User': id, name, email, roles, and 53 more.
+routes/escrow/escrow.routes.ts(48,41): error TS18046: 'error' is of type 'unknown'.
+routes/marketplace/marketplace.ts(13,10): error TS2305: Module '"@middleware/authMiddleware"' has no exported member 'authenticateToken'.
+routes/user/userProfile.ts(13,10): error TS2305: Module '"@middleware/authMiddleware"' has no exported member 'authenticateToken'.
+routes/user/userProfileRoutes.ts(3,29): error TS7016: Could not find a declaration file for module '@services/user/UserProfile'. 'C:/CFH/backend/services/user/UserProfile.js' implicitly has an 'any' type.
+services/auction/AuctionNotifier.ts(24,38): error TS2339: Property 'sendNotification' does not exist on type 'NotificationService'.
+services/escrow/EscrowService.ts(3,10): error TS2305: Module '"@utils/analytics"' has no exported member 'trackEvent'.
+services/notification/NotificationService.ts(4,10): error TS2305: Module '"@utils/analytics"' has no exported member 'trackEvent'.
+services/notification/NotificationService.ts(5,10): error TS2459: Module '"@workers/notificationQueueWorker"' declares 'notificationQueue' locally, but it is not exported.
+tests/analytics/analytics.service.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/analytics/analytics.service.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/analytics/analytics.service.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/analytics/analytics.service.test.ts(25,46): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/analytics/analytics.service.test.ts(25,82): error TS2345: Argument of type '{ id: string; userId: string; name: string; roles: string[]; }' is not assignable to parameter of type 'never'.
+tests/analytics/analytics.service.test.ts(26,52): error TS2576: Property 'getProfile' does not exist on type 'UserProfileService'. Did you mean to access the static member 'UserProfileService.getProfile' instead?
+tests/analytics/analytics.service.test.ts(27,21): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/analytics/analytics.service.test.ts(28,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/analytics/analytics.service.test.ts(28,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auction/BidHeatmapService.test.ts(13,44): error TS2339: Property 'getHeatmapData' does not exist on type 'typeof BidHeatmapService'.
+tests/auction/BidHeatmapService.test.ts(14,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/auction/BidHeatmapService.test.ts(21,44): error TS2339: Property 'getHeatmapData' does not exist on type 'typeof BidHeatmapService'.
+tests/auction/BidHeatmapService.test.ts(22,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/auction/BidHeatmapService.test.ts(29,36): error TS2339: Property 'getHeatmapData' does not exist on type 'typeof BidHeatmapService'.
+tests/auction/BidHeatmapService.test.ts(29,64): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/auctions/auctions.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(28,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(28,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(36,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(36,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/auctions/auctions.test.ts(41,46): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/auctions/auctions.test.ts(41,82): error TS2345: Argument of type '{ id: string; userId: string; name: string; roles: string[]; }' is not assignable to parameter of type 'never'.
+tests/auctions/auctions.test.ts(42,52): error TS2576: Property 'getProfile' does not exist on type 'UserProfileService'. Did you mean to access the static member 'UserProfileService.getProfile' instead?
+tests/auctions/auctions.test.ts(43,21): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/auctions/auctions.test.ts(44,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/auctions/auctions.test.ts(44,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(3,84): error TS2307: Cannot find module '@services/escrow/escrow.service' or its corresponding type declarations.
+tests/escrow/escrow.service.test.ts(22,45): error TS2345: Argument of type '{}' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(29,56): error TS2345: Argument of type 'EscrowDocument' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(31,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/escrow.service.test.ts(32,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(32,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(37,57): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(38,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(38,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(42,58): error TS2345: Argument of type 'EscrowDocument' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(44,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/escrow.service.test.ts(45,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(45,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(49,58): error TS2345: Argument of type 'EscrowDocument' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(50,65): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(51,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(51,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(55,58): error TS2345: Argument of type 'EscrowDocument' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(57,30): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(58,34): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(59,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(59,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/escrow.service.test.ts(63,58): error TS2345: Argument of type 'EscrowDocument' is not assignable to parameter of type 'never'.
+tests/escrow/escrow.service.test.ts(64,70): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(65,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/escrow/escrow.service.test.ts(65,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/escrow/EscrowService.test.ts(12,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/escrow/EscrowService.test.ts(16,92): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/helpers.ts(16,5): error TS2322: Type 'Mock<unknown, unknown[]>' is not assignable to type '{ (options: SaveOptions, callback: Callback<EscrowDocument>): void; (callback: Callback<EscrowDocument>): void; (options?: SaveOptions | undefined): Promise<...>; }'.
+  Type 'unknown' is not assignable to type 'Promise<EscrowDocument>'.
+tests/helpers.ts(16,43): error TS2345: Argument of type '{}' is not assignable to parameter of type 'never'.
+tests/integration/escrow.integration.test.ts(13,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/middleware/RBACMiddleware.test.ts(9,43): error TS2352: Conversion of type '{ role: string; }' to type 'User' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ role: string; }' is missing the following properties from type 'User': id, userId, name, email, and 54 more.
+tests/middleware/RBACMiddleware.test.ts(13,18): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+tests/middleware/RBACMiddleware.test.ts(17,43): error TS2352: Conversion of type '{ role: string; }' to type 'User' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ role: string; }' is missing the following properties from type 'User': id, userId, name, email, and 54 more.
+tests/middleware/RBACMiddleware.test.ts(21,24): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(4,10): error TS2305: Module '"@utils/analytics"' has no exported member 'trackEvent'.
+tests/notification/NotificationService.test.ts(5,10): error TS2459: Module '"@workers/notificationQueueWorker"' declares 'notificationQueue' locally, but it is not exported.
+tests/notification/NotificationService.test.ts(21,24): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(26,104): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(32,103): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(38,35): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/notification/NotificationService.test.ts(39,24): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/payments/PaymentService.test.ts(19,27): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/payments/PaymentService.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/payments/PaymentService.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/reports/ReportService.test.ts(19,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/reports/ReportService.test.ts(20,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/reports/ReportService.test.ts(20,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(4,17): error TS2307: Cannot find module '@root/app' or its corresponding type declarations.
+tests/routes/escrow/EscrowRoutes.test.ts(22,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(22,84): error TS2345: Argument of type 'Partial<EscrowDocument>' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(27,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(28,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(28,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(32,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(37,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(37,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(41,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(46,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(46,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(51,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(51,85): error TS2345: Argument of type 'Partial<EscrowDocument>' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(56,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(57,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(57,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(61,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(66,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(66,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(71,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(71,81): error TS2345: Argument of type '{ status: string; _id?: string | undefined; user?: string | undefined; vehicle?: { vin: string; price: number; } | undefined; condition?: string | undefined; disputeId?: string | undefined; ... 56 more ...; validateSync?: { ...; } | undefined; }' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(76,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(77,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(77,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(81,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(86,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(86,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(91,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(91,82): error TS2345: Argument of type '{ condition: string; _id?: string | undefined; user?: string | undefined; status?: string | undefined; vehicle?: { vin: string; price: number; } | undefined; disputeId?: string | undefined; ... 56 more ...; validateSync?: { ...; } | undefined; }' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(97,27): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/routes/escrow/EscrowRoutes.test.ts(98,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(98,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(102,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(108,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(108,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/routes/escrow/EscrowRoutes.test.ts(112,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+tests/routes/escrow/EscrowRoutes.test.ts(118,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/routes/escrow/EscrowRoutes.test.ts(118,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/services/escrow/escrow.service.test.ts(2,31): error TS2307: Cannot find module '../../../services/escrow/escrow.service' or its corresponding type declarations.
+tests/services/escrow/escrow.service.test.ts(3,10): error TS2305: Module '"../../../utils/errors"' has no exported member 'BadRequestError'.
+tests/services/escrow/escrow.service.test.ts(3,27): error TS2305: Module '"../../../utils/errors"' has no exported member 'AuthorizationError'.
+tests/services/escrow/escrow.service.test.ts(9,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+tests/services/escrow/escrow.service.test.ts(13,57): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/services/escrow/escrow.service.test.ts(19,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+tests/services/escrow/escrow.service.test.ts(24,71): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/services/escrow/escrow.service.test.ts(30,28): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/services/escrow/escrow.service.test.ts(36,41): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(20,20): error TS2345: Argument of type '"getTransactionById"' is not assignable to parameter of type 'FunctionPropertyNames<typeof import("mongoose")>'.
+tests/services/escrow/EscrowAuditService.test.ts(22,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/services/escrow/EscrowAuditService.test.ts(23,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(23,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/services/escrow/EscrowAuditService.test.ts(27,20): error TS2345: Argument of type '"getTransactionById"' is not assignable to parameter of type 'FunctionPropertyNames<typeof import("mongoose")>'.
+tests/services/escrow/EscrowAuditService.test.ts(29,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+tests/services/escrow/EscrowAuditService.test.ts(30,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(30,53): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+tests/services/escrow/EscrowAuditService.test.ts(34,20): error TS2345: Argument of type '"getTransactionById"' is not assignable to parameter of type 'FunctionPropertyNames<typeof import("mongoose")>'.
+tests/services/escrow/EscrowAuditService.test.ts(35,51): error TS2339: Property 'rejects' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(36,26): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+tests/services/escrow/EscrowAuditService.test.ts(36,54): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+utils/AIChatModerator.test.ts(9,20): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(24,27): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(25,31): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+utils/AIDisputePredictor.test.ts(30,30): error TS2339: Property 'toBeGreaterThanOrEqual' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(31,35): error TS2339: Property 'toBeDefined' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(36,67): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+utils/AIDisputePredictor.test.ts(43,22): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+utils/AIDisputePredictor.test.ts(48,32): error TS2339: Property 'toBeDefined' does not exist on type 'Assertion'.
+utils/AIMarketplaceAnalytics.ts(1,10): error TS2724: '"@utils/analyticsExportUtils"' has no exported member named 'analyticsExportUtils'. Did you mean 'AnalyticsExportUtils'?
+utils/AISellerNegotiationCoach.test.ts(10,20): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+utils/DisputeResolutionHelper.ts(3,10): error TS2724: '"@utils/analyticsExportUtils"' has no exported member named 'analyticsExportUtils'. Did you mean 'AnalyticsExportUtils'?
+utils/HaulerMissionsEngine.test.ts(6,20): error TS2551: Property 'toEqual' does not exist on type 'Assertion'. Did you mean 'equal'?
+utils/notificationQueue.ts(3,38): error TS2693: 'Queue' only refers to a type, but is being used as a value here.
+utils/SmartDelayPredictor.test.ts(8,39): error TS2554: Expected 1 arguments, but got 2.
+utils/SmartDelayPredictor.test.ts(9,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+workers/notificationQueueWorker.ts(1,10): error TS2305: Module '"@utils/notificationQueue"' has no exported member 'notificationQueue'.
+workers/NotificationWorker.ts(3,10): error TS2305: Module '"@utils/notificationQueue"' has no exported member 'notificationQueue'.
+workers/NotificationWorker.ts(19,63): error TS7006: Parameter 'job' implicitly has an 'any' type.
+workers/NotificationWorker.ts(25,25): error TS2339: Property 'sendNotification' does not exist on type 'NotificationService'.

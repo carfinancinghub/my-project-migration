@@ -1,0 +1,104 @@
+﻿[2025-06-25T20:13:07.8966469Z] Starting comprehensive fix script.
+[2025-06-25T20:13:07.8986473Z] Stopping node/Code processes and cleaning build directories.
+[2025-06-25T20:13:08.1126541Z] Build directories cleaned and tsc --clean executed.
+[2025-06-25T20:13:08.1146473Z] Fixing coverage folder permissions.
+processed file: C:\CFH\backend\coverage
+processed file: C:\CFH\backend\coverage\clover.xml
+processed file: C:\CFH\backend\coverage\coverage-final.json
+processed file: C:\CFH\backend\coverage\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report
+processed file: C:\CFH\backend\coverage\lcov.info
+processed file: C:\CFH\backend\coverage\lcov-report\base.css
+processed file: C:\CFH\backend\coverage\lcov-report\block-navigation.js
+processed file: C:\CFH\backend\coverage\lcov-report\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\favicon.png
+processed file: C:\CFH\backend\coverage\lcov-report\index.html
+processed file: C:\CFH\backend\coverage\lcov-report\logger.ts.html
+processed file: C:\CFH\backend\coverage\lcov-report\models
+processed file: C:\CFH\backend\coverage\lcov-report\prettify.css
+processed file: C:\CFH\backend\coverage\lcov-report\prettify.js
+processed file: C:\CFH\backend\coverage\lcov-report\routes
+processed file: C:\CFH\backend\coverage\lcov-report\sort-arrow-sprite.png
+processed file: C:\CFH\backend\coverage\lcov-report\sorter.js
+processed file: C:\CFH\backend\coverage\lcov-report\utils
+processed file: C:\CFH\backend\coverage\lcov-report\models\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\models\dispute
+processed file: C:\CFH\backend\coverage\lcov-report\models\notification
+processed file: C:\CFH\backend\coverage\lcov-report\models\dispute\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\models\dispute\Dispute.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\models\dispute\index.html
+processed file: C:\CFH\backend\coverage\lcov-report\models\notification\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\models\notification\index.html
+processed file: C:\CFH\backend\coverage\lcov-report\models\notification\Notification.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\routes\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\routes\hauler
+processed file: C:\CFH\backend\coverage\lcov-report\routes\hauler\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\routes\hauler\haulerHealthCheck.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\routes\hauler\index.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\AIChatModerator.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\AIDisputePredictor.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\AISellerNegotiationCoach.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\desktop.ini
+processed file: C:\CFH\backend\coverage\lcov-report\utils\index.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\logger.ts.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\notificationDispatcher.js.html
+processed file: C:\CFH\backend\coverage\lcov-report\utils\notificationTrigger.js.html
+Successfully processed 41 files; Failed processing 0 files
+[2025-06-25T20:13:08.1436474Z] Coverage folder permissions updated.
+[2025-06-25T20:13:08.1456546Z] Installing/updating npm packages.
+[2025-06-25T20:13:10.4653869Z] npm packages installed/updated and audit fix applied.
+[2025-06-25T20:13:10.4703899Z] Created missing file: C:\CFH\backend\utils\crypto.js
+[2025-06-25T20:13:10.4753874Z] Created missing file: C:\CFH\backend\utils\logger.js
+[2025-06-25T20:13:10.4783906Z] Listing and converting .md files in C:\CFH\docs\features.
+[2025-06-25T20:13:10.5163969Z] Converted C:\CFH\docs\features\AnalyticsDashboardFeatureList.md to C:\CFH\Cod1Logs\AnalyticsDashboardFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5203913Z] Converted C:\CFH\docs\features\AnalyticsQualityCheckReport.md to C:\CFH\Cod1Logs\AnalyticsQualityCheckReport.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5233892Z] Converted C:\CFH\docs\features\AuctionManagementFeatureList.md to C:\CFH\Cod1Logs\AuctionManagementFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5273906Z] Converted C:\CFH\docs\features\AuctionsFeatureList.md to C:\CFH\Cod1Logs\AuctionsFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5313908Z] Converted C:\CFH\docs\features\BodyShopFeatureList.md to C:\CFH\Cod1Logs\BodyShopFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5353904Z] Converted C:\CFH\docs\features\CarDetailingFeatureList.md to C:\CFH\Cod1Logs\CarDetailingFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5383905Z] Converted C:\CFH\docs\features\CodeGenerationPlan.md to C:\CFH\Cod1Logs\CodeGenerationPlan.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5413909Z] Converted C:\CFH\docs\features\CommunityEventsFeatureList.md to C:\CFH\Cod1Logs\CommunityEventsFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5443908Z] Converted C:\CFH\docs\features\DisputeResolutionFeatureList.md to C:\CFH\Cod1Logs\DisputeResolutionFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5483974Z] Converted C:\CFH\docs\features\DisputesArbitrationFeatureList.md to C:\CFH\Cod1Logs\DisputesArbitrationFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5513901Z] Converted C:\CFH\docs\features\ErrorBoundary.md to C:\CFH\Cod1Logs\ErrorBoundary.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5543899Z] Converted C:\CFH\docs\features\EscrowServiceFeatureList.md to C:\CFH\Cod1Logs\EscrowServiceFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5583958Z] Converted C:\CFH\docs\features\EvaluationPlan.md to C:\CFH\Cod1Logs\EvaluationPlan.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5623928Z] Converted C:\CFH\docs\features\EvaluationReport.md to C:\CFH\Cod1Logs\EvaluationReport.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5653888Z] Converted C:\CFH\docs\features\FeatureListIndex.md to C:\CFH\Cod1Logs\FeatureListIndex.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5694960Z] Converted C:\CFH\docs\features\FinancingApplicationFeatureList.md to C:\CFH\Cod1Logs\FinancingApplicationFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5735000Z] Converted C:\CFH\docs\features\FinancingLenderFeatureList.md to C:\CFH\Cod1Logs\FinancingLenderFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5765000Z] Converted C:\CFH\docs\features\ForumEngagementFeatureList.md to C:\CFH\Cod1Logs\ForumEngagementFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5805003Z] Converted C:\CFH\docs\features\InsuranceQuoteFeatureList.md to C:\CFH\Cod1Logs\InsuranceQuoteFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5844987Z] Converted C:\CFH\docs\features\KnowledgeBaseFeatureList.md to C:\CFH\Cod1Logs\KnowledgeBaseFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5875006Z] Converted C:\CFH\docs\features\LoyaltyProgramFeatureList.md to C:\CFH\Cod1Logs\LoyaltyProgramFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5935016Z] Converted C:\CFH\docs\features\MaintenanceSchedulingFeatureList.md to C:\CFH\Cod1Logs\MaintenanceSchedulingFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.5965057Z] Converted C:\CFH\docs\features\MarketplaceFeatureList.md to C:\CFH\Cod1Logs\MarketplaceFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6014967Z] Converted C:\CFH\docs\features\MarketplaceListingsFeatureList.md to C:\CFH\Cod1Logs\MarketplaceListingsFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6064970Z] Converted C:\CFH\docs\features\MechanicServicesFeatureList.md to C:\CFH\Cod1Logs\MechanicServicesFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6114974Z] Converted C:\CFH\docs\features\MobileAppEnhancementsFeatureList.md to C:\CFH\Cod1Logs\MobileAppEnhancementsFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6165157Z] Converted C:\CFH\docs\features\NotificationsSystemFeatureList.md to C:\CFH\Cod1Logs\NotificationsSystemFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6265041Z] Converted C:\CFH\docs\features\PartnerMarketplaceFeatureList.md to C:\CFH\Cod1Logs\PartnerMarketplaceFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6334971Z] Converted C:\CFH\docs\features\PhotoUploadFeatureList.md to C:\CFH\Cod1Logs\PhotoUploadFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6385334Z] Converted C:\CFH\docs\features\PredictionUpdatesWS.md to C:\CFH\Cod1Logs\PredictionUpdatesWS.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6455335Z] Converted C:\CFH\docs\features\ReferralProgramFeatureList.md to C:\CFH\Cod1Logs\ReferralProgramFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6495330Z] Converted C:\CFH\docs\features\RoadsideAssistanceFeatureList.md to C:\CFH\Cod1Logs\RoadsideAssistanceFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6555405Z] Converted C:\CFH\docs\features\ServiceBookingFeatureList.md to C:\CFH\Cod1Logs\ServiceBookingFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6615384Z] Converted C:\CFH\docs\features\ShippingTransportFeatureList.md to C:\CFH\Cod1Logs\ShippingTransportFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6666041Z] Converted C:\CFH\docs\features\SupportTicketsFeatureList.md to C:\CFH\Cod1Logs\SupportTicketsFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6705362Z] Converted C:\CFH\docs\features\TelematicsIntegrationFeatureList.md to C:\CFH\Cod1Logs\TelematicsIntegrationFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6735362Z] Converted C:\CFH\docs\features\UserProfileCustomizationFeatureList.md to C:\CFH\Cod1Logs\UserProfileCustomizationFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6775346Z] Converted C:\CFH\docs\features\UserProfileFeatureList.md to C:\CFH\Cod1Logs\UserProfileFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6795339Z] Converted C:\CFH\docs\features\UserReviewsFeatureList.md to C:\CFH\Cod1Logs\UserReviewsFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6836240Z] Converted C:\CFH\docs\features\VehicleValuationFeatureList.md to C:\CFH\Cod1Logs\VehicleValuationFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6866360Z] Converted C:\CFH\docs\features\WindowTintingFeatureList.md to C:\CFH\Cod1Logs\WindowTintingFeatureList.md_converted_20250625_131307.log
+[2025-06-25T20:13:10.6896358Z] Updated package.json with type: module.
+[2025-06-25T20:13:10.6916360Z] Created or updated babel.config.mjs.
+[2025-06-25T20:13:10.6956358Z] Logged current jest.config.mjs content before update.
+[2025-06-25T20:13:10.6976356Z] Updated jest.config.mjs with corrected aliases and transformIgnorePatterns.
+[2025-06-25T20:13:10.7016725Z] Running targeted auctions tests.
+[2025-06-25T20:13:11.6490240Z] Auctions tests failed. Check C:\CFH\Cod1Logs\jest_auctions_output_20250625_131307.log for details. Errors: "node.exe : ΓùÅ Validation Error:\r\nAt C:\\Users\\Agasi5\\AppData\\Roaming\\npm\\npx.ps1:24 char:5\r\n+     \u0026 \"node$exe\"  \"$basedir/node_modules/npm/bin/npx-cli.js\" $args\r\n+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (ΓùÅ Validation Error::String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n\r\n  Preset ts-jest/presets/default-esm not found.\r\n\r\n  Configuration Documentation:\r\n  https://jestjs.io/docs/configuration\r\n\r\n"
+[2025-06-25T20:13:11.6530258Z] Running full Jest tests.
+[2025-06-25T20:13:12.6125803Z] Jest tests failed. Check C:\CFH\Cod1Logs\jest_test_output_20250625_131307.log for details. Errors: "node.exe : ΓùÅ Validation Error:\r\nAt C:\\Users\\Agasi5\\AppData\\Roaming\\npm\\npx.ps1:24 char:5\r\n+     \u0026 \"node$exe\"  \"$basedir/node_modules/npm/bin/npx-cli.js\" $args\r\n+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (ΓùÅ Validation Error::String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n\r\n  Preset ts-jest/presets/default-esm not found.\r\n\r\n  Configuration Documentation:\r\n  https://jestjs.io/docs/configuration\r\n\r\n"
+[2025-06-25T20:13:12.6145776Z] Running tsc --build.
+[2025-06-25T20:13:15.2096818Z] TSC build failed. Check C:\CFH\Cod1Logs\tsc_output_20250625_131307.log for details. Errors: "tests/auctions/auctions.test.ts(45,30): error TS1005: \u0027)\u0027 expected.\r\ntests/auctions/auctions.test.ts(55,30): error TS1005: \u0027)\u0027 expected.\r\ntests/auctions/auctions.test.ts(56,7): error TS1128: Declaration or statement expected.\r\n"
+[2025-06-25T20:13:15.2096818Z] Comprehensive fix script finished.

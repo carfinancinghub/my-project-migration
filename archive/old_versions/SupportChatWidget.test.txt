@@ -1,0 +1,85 @@
+// 👑 Crown Certified Test — SupportChatWidget.test.jsx
+// Path: C:\CFH\frontend\src\tests\support\SupportChatWidget.test.jsx
+// Purpose: Validate rendering and interaction of SupportChatWidget including premium AI features.
+// Author: Rivers Auction Team
+// Date: May 18, 2025
+// Cod2 Crown Certified
+
+import React from 'react';
+import { render, fireEvent, screen, waitFor } from '@testing-library/react';
+import SupportChatWidget from '@components/support/SupportChatWidget';
+import * as SupportService from '@services/support/SupportService';
+import * as LiveUpdates from '@services/websocket/LiveUpdates';
+import logger from '@utils/logger';
+
+vi.mock('@services/support/SupportService');
+vi.mock('@services/websocket/LiveUpdates');
+vi.mock('@components/common/ChatMessage', () => ({ message }) => (
+  <div data-testid="chat-message">{message.text}</div>
+));
+
+const baseProps = { userId: 'user1', isPremium: false, ticketId: 'ticket123' };
+
+describe('SupportChatWidget', () => {
+  beforeEach(() => {
+    SupportService.getChatHistory.mockResolvedValue([]);
+    SupportService.sendMessage.mockResolvedValue();
+    SupportService.getSuggestions.mockResolvedValue(['Check connection.', 'Try clearing cache.']);
+    SupportService.escalateTicket.mockResolvedValue();
+    LiveUpdates.connect.mockReturnValue({
+      onmessage: null,
+      send: vi.fn(),
+      close: vi.fn(),
+    });
+  });
+
+  it('renders basic chat UI with no messages', async () => {
+    render(<SupportChatWidget {...baseProps} />);
+    expect(await screen.findByText('📞 Support Chat')).toBeInTheDocument();
+    expect(screen.getByPlaceholderText('Type your message...')).toBeInTheDocument();
+  });
+
+  it('sends message and updates chat', async () => {
+    render(<SupportChatWidget {...baseProps} />);
+    const input = screen.getByPlaceholderText('Type your message...');
+    fireEvent.change(input, { target: { value: 'Hello!' } });
+    fireEvent.click(screen.getByText('Send'));
+    await waitFor(() => {
+      expect(screen.getByText('Hello!')).toBeInTheDocument();
+    });
+  });
+
+  it('displays error on send failure', async () => {
+    SupportService.sendMessage.mockRejectedValueOnce(new Error('Send fail'));
+    render(<SupportChatWidget {...baseProps} />);
+    fireEvent.change(screen.getByPlaceholderText('Type your message...'), { target: { value: 'Fail test' } });
+    fireEvent.click(screen.getByText('Send'));
+    await screen.findByText('Message failed to send.');
+  });
+
+  it('renders premium suggestions and buttons when isPremium=true', async () => {
+    render(<SupportChatWidget {...baseProps} isPremium={true} />);
+    expect(await screen.findByText('💡 Suggestions:')).toBeInTheDocument();
+    expect(screen.getByText('🌐 Español')).toBeInTheDocument();
+    expect(screen.getByText('🚨 Escalate')).toBeInTheDocument();
+  });
+
+  it('escalates ticket on click', async () => {
+    render(<SupportChatWidget {...baseProps} isPremium={true} />);
+    fireEvent.click(await screen.findByText('🚨 Escalate'));
+    await waitFor(() => expect(SupportService.escalateTicket).toHaveBeenCalled());
+  });
+
+  it('switches language toggle on click', async () => {
+    render(<SupportChatWidget {...baseProps} isPremium={true} />);
+    const toggle = await screen.findByText('🌐 Español');
+    fireEvent.click(toggle);
+    expect(await screen.findByText('🌐 English')).toBeInTheDocument();
+  });
+
+  it('logs error on chat history load failure', async () => {
+    SupportService.getChatHistory.mockRejectedValueOnce(new Error('fail'));
+    render(<SupportChatWidget {...baseProps} />);
+    await screen.findByText('Unable to load chat history.');
+  });
+});

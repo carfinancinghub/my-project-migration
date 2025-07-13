@@ -1,0 +1,30 @@
+[
+  {
+    "name": "storageRoutes.js",
+    "path": "backend/routes/storage/storageRoutes.js"
+  },
+  {
+    "name": "MobileUXEnhancer.jsx",
+    "path": "frontend/src/components/common/MobileUXEnhancer.jsx"
+  },
+  {
+    "name": "PushNotificationService.js",
+    "path": "backend/utils/PushNotificationService.js"
+  },
+  {
+    "name": "judgeRoutes.js",
+    "path": "backend/routes/judge/judgeRoutes.js"
+  },
+  {
+    "name": "HaulerLoyaltyDashboard.jsx",
+    "path": "frontend/src/components/hauler/HaulerLoyaltyDashboard.jsx"
+  },
+  {
+    "name": "LenderLoyaltyDashboard.jsx",
+    "path": "frontend/src/components/lender/LenderLoyaltyDashboard.jsx"
+  },
+  {
+    "name": "DocumentUploader.jsx",
+    "path": "frontend/src/components/common/DocumentUploader.jsx"
+  }
+]

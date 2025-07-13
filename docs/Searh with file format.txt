@@ -1,0 +1,9 @@
+$files = Get-ChildItem -Path "C:\CFH\docs\" -Recurse -File | Where-Object {
+    $_.FullName -notmatch '\\node_modules\\' -and $_.FullName -notmatch '\\archive\\'
+}
+
+# Output file details in a table
+$files | Select-Object FullName, @{Name="Size (Bytes)"; Expression={$_.Length}}, LastWriteTime | Format-Table -AutoSize
+
+# Output the total count of files
+Write-Host "`nTotal Files: " ($files.Count)

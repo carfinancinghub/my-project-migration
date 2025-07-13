@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install backend dependencies
+        run: npm install
+        working-directory: ./backend
+      - name: Run backend tests
+        run: npm test
+        working-directory: ./backend
+
+  test-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install frontend dependencies
+        run: npm install
+        working-directory: ./frontend
+      - name: Run frontend tests
+        run: npm test -- --passWithNoTests
+        working-directory: ./frontend
+
+  verify-aliases:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install backend dependencies
+        run: npm install
+        working-directory: ./backend
+      - name: Verify backend aliases
+        run: node -e "require('module-alias/register'); require('@services/lender/LenderTermsExporter'); console.log('Backend aliases verified');"
+        working-directory: ./backend
+      - name: Install frontend dependencies
+        run: npm install
+        working-directory: ./frontend
+      - name: Verify frontend aliases
+        run: node -e "require('module-alias/register'); require('@/components/judge/SmartVerdictHint'); console.log('Frontend aliases verified');"
+        working-directory: ./frontend

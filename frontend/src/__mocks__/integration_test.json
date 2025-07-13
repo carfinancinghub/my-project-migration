@@ -1,0 +1,34 @@
+{
+  "storage": {
+    "hostId": 999,
+    "listings": [
+      {
+        "id": 301,
+        "title": "Secure Indoor Storage for Classic Cars",
+        "status": "available"
+      },
+      {
+        "id": 302,
+        "title": "Covered Parking Space for Sedans",
+        "status": "booked"
+      }
+    ],
+    "bookings": [
+      {
+        "id": 401,
+        "date": "2025-05-15"
+      },
+      {
+        "id": 402,
+        "date": "2025-06-10"
+      }
+    ]
+  },
+  "judge": {
+    "judgeId": 301,
+    "name": "Charles Wilson",
+    "expertise": ["vehicle arbitration", "consumer rights"],
+    "casesHandled": 88,
+    "rating": 4.9
+  }
+}

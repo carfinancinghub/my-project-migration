@@ -1,0 +1,24 @@
+﻿module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  verbose: true,
+  testMatch: ['**/tests/**/*.test.[jt]s'],
+  testPathIgnorePatterns: ['/node_modules/'],
+moduleNameMapper: {
+  '^@root/(.*)$': '<rootDir>/$1',
+  '^@routes/(.*)$': '<rootDir>/routes/$1',
+  '^@utils/(.*)$': '<rootDir>/utils/$1',
+  '^@services/(.*)$': '<rootDir>/services/$1',
+  '^@models/(.*)$': '<rootDir>/models/$1',
+  '^@config/(.*)$': '<rootDir>/config/$1',
+  '^@middleware/(.*)$': '<rootDir>/middleware/$1',
+  '^@socket/(.*)$': '<rootDir>/socket/$1',
+  '^@tests/(.*)$': '<rootDir>/tests/$1',
+  '^@tools/(.*)$': '<rootDir>/tools/$1',
+  '^@ai/(.*)$': '<rootDir>/services/ai/$1',
+  '^@tasks/(.*)$': '<rootDir>/tasks/$1',
+  '^@frontend/(.*)$': '<rootDir>/../frontend/src/$1',
+  '^@/(.*)$': '<rootDir>/$1'
+}
+};
+

@@ -1,0 +1,32 @@
+Get-ChildItem -Path "C:\CFH" -Recurse -File -Include `
+    "AuctionGamificationEngine.js",
+    "rewardsConfig.json",
+    "AIBidStarter.js",
+    "AuctionTemplateEngine.js",
+    "BidHeatmapEngine.js",
+    "HeatmapChart.jsx",
+    "BlockchainSnapshotViewer.jsx",
+    "SellerBadgePanel.jsx",
+    "AuctionListingForm.jsx",
+    "AuctionListingForm.test.jsx",
+    "AuctionHistoryTracker.jsx",
+	"AuctionHistoryTracker.test.jsx" |
+Sort-Object FullName |
+Select-Object FullName, Length |
+Format-Table -AutoSize
+
+
+Get-ChildItem -Path "C:\CFH" -Recurse -File -Include `
+    "AuctionHistoryTracker.test.jsx",
+    "AuctionHistoryTracker.jsx",
+    "AuctionListingForm.test.jsx",
+    "AuctionListingForm.jsx" |
+Sort-Object FullName |
+Select-Object FullName, Length |
+Format-Table -AutoSize
+
+
+backend/routes/buyer/auctions.js
+backend/routes/auction/insights.js
+backend/routes/tests/history.js
+backend/routes/auction/history.js

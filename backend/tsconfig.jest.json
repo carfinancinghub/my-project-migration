@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "node"]
+  },
+  "include": ["tests/**/*", "utils/**/*.test.ts"], // Adjusted to include all test files
+  "exclude": ["node_modules", "dist", "cypress"]
+}

@@ -1,0 +1,7 @@
+● Validation Error:
+
+  Preset ts-jest not found relative to rootDir C:\CFH\backend.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+

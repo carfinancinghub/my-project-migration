@@ -1,0 +1,106 @@
+# CFH Automotive Ecosystem: Chat System Feature List
+
+This document outlines the finalized features for the Chat System module, covering `ChatInterface.jsx` (frontend component for managing chat interactions) and `chatRoutes.js` (backend API routes). These support a $60K revenue goal through subscriptions ($5-$15/month), enhancing communication across the platform.
+
+## ChatInterface.jsx
+**Path**: C:\CFH\frontend\src\components\chat\ChatInterface.jsx  
+**Purpose**: Enable real-time messaging between users, businesses, and support.
+
+### Free Tier
+- 1-on-1 text messaging with users/support.
+- Basic group chat (e.g., dispute mediation).
+- View recent chats (30 days, 50 messages).
+- Send small images/documents (2MB).
+- In-app/browser notifications.
+- User presence (online/offline).
+- Basic analytics: Message count.
+- Accessibility: Screen reader support, keyboard navigation.
+- Error messages for delivery failures.
+
+### Standard Tier
+- Real-time messaging with emojis.
+- Conversation list with snippets/timestamps.
+- Read receipts, typing indicators.
+- Search within chats (keywords).
+- Mute/block users.
+- Basic file sharing (images, PDFs).
+- Auctions integration: Auction-related chats.
+- End-to-end encryption for messages.
+
+### Premium Tier
+- Canned responses for businesses.
+- Chat assignment/routing for teams.
+- Business hours, auto-replies.
+- Chat analytics: Response time, satisfaction.
+- “Verified Business” badge.
+- Proactive chat initiation (opt-in).
+- Extended history, export chats.
+- Advanced filters: Date, user, keywords.
+- Customizable themes.
+- Priority support queue.
+- Message scheduling.
+- Multimedia support (videos).
+- Earn 50 points/chat ($0.10/point).
+
+### Wow++ Tier
+- AI moderates chats (flags spam/harassment).
+- AI smart replies/suggestions.
+- Real-time translation.
+- “Chat Champion” badge for engagement.
+- Redeem points for premium features.
+- Contextual actions (e.g., “View Listing”).
+- CFH Assistant chatbot.
+- Video/voice calls, screen sharing.
+- Anonymous feedback post-chat.
+- AI chat summaries.
+- Leaderboards for chat activity.
+- Monetization: $5-$15/month, $2/API call.
+- **CQS**: <1s load time, audit logging.
+- **Error Handling**: Retry delivery failures (1s).
+
+## chatRoutes.js
+**Path**: C:\cfh\backend\routes\chat\chatRoutes.js  
+**Purpose**: Backend APIs for chat management.
+
+### Free Tier
+- Send/receive messages: `wss://api.cfh.com/chat`, `POST /chat/conversations/:conversationId/messages`.
+- List conversations: `GET /chat/conversations`.
+- Basic history: `GET /getBasicChatHistory`.
+- Secure with JWT login.
+- **CQS**: Rate limiting (100/hour).
+
+### Standard Tier
+- Mute/block: `PUT /chat/conversations/:conversationId/mute`, `POST /chat/users/:userId/block`.
+- File upload: `POST /chat/conversations/:conversationId/files`.
+- Presence updates: WebSocket.
+- Encryption: `POST /encryptMessage`, `GET /decryptMessage`.
+- Fast, secure API responses (<500ms).
+- **CQS**: HTTPS, encryption.
+- **Error Handling**: 400 invalid inputs, 404 not found.
+
+### Premium Tier
+- Quick replies: `GET/POST /chat/business/:businessId/quick-replies`.
+- Business settings: `PUT /chat/business/:businessId/settings`.
+- Analytics: `GET /chat/business/:businessId/analytics`.
+- Proactive chats: `POST /chat/conversations`.
+- Advanced history: `GET /chat/conversations/:conversationId/messages`.
+- Higher file limits.
+- Chatbot: `POST /configureChatbotResponse`.
+- Filters: `POST /filterMessages`.
+- Scheduling: `POST /scheduleMessage`.
+- Earn 100 points/engagement ($0.10/point).
+- **CQS**: Redis caching, 99.9% uptime.
+
+### Wow++ Tier
+- AI moderation: `POST /chat/messages/moderate-ai`.
+- AI suggestions: `GET /chat/conversations/:conversationId/ai-suggestions`.
+- Translation: Internal service.
+- Gamification: `POST /trackChatPoints`.
+- Contextual cards: Internal API.
+- Chatbot escalation: `POST /chat/chatbot/message`.
+- Video/voice signaling: WebRTC.
+- Summaries: `POST /generateChatSummary`.
+- Leaderboards: `GET /chat/leaderboards`.
+- Monetization: $2/API call supports $60K goal.
+- **CQS**: <1s response, audit logging.
+- **Error Handling**: 429 rate limits, retry timeouts.

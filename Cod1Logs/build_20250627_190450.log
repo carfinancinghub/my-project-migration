@@ -1,0 +1,7 @@
+
+> cfh-backend@1.0.0 build
+> tsc
+
+services/escrow/EscrowService.ts(149,80): error TS1005: ',' expected.
+services/escrow/EscrowService.ts(149,91): error TS1005: ',' expected.
+tests/routes/escrow/EscrowRoutes.test.ts(121,1): error TS1005: ')' expected.

@@ -1,0 +1,30 @@
+{
+  "hostId": 111,
+  "listings": [
+    {
+      "id": 222,
+      "title": "Secure Indoor Car Storage Unit",
+      "status": "available"
+    },
+    {
+      "id": 333,
+      "title": "Outdoor Vehicle Parking Space",
+      "status": "booked"
+    },
+    {
+      "id": 444,
+      "title": "Large Warehouse Space for Multiple Vehicles",
+      "status": "available"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 555,
+      "date": "2025-05-20"
+    },
+    {
+      "id": 666,
+      "date": "2025-06-05"
+    }
+  ]
+}

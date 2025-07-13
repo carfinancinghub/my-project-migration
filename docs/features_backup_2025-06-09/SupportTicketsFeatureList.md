@@ -1,0 +1,106 @@
+# CFH Automotive Ecosystem: Support Tickets Feature List
+
+This document outlines the finalized features for the Support Tickets module, covering `SupportTicketForm.jsx` (frontend component for submitting/managing support tickets) and `supportTicketRoutes.js` (backend API routes). These support a $45K revenue goal through subscriptions ($5-$15/month), enhancing user support.
+
+## SupportTicketForm.jsx
+**Path**: C:\CFH\frontend\src\components\support\SupportTicketForm.jsx  
+**Purpose**: Create, view, and manage support tickets for platform assistance.
+
+### Free Tier
+- Submit tickets: Account, billing, technical issues.
+- Select category: Technical, Billing, General.
+- View ticket status: Open, Resolved, Closed.
+- Reply to open tickets.
+- Attach files (limited size, 2MB).
+- Email notifications for updates.
+- Basic analytics: Response time, status.
+- Accessibility: Screen reader support, keyboard navigation.
+- Error messages for submission failures.
+
+### Standard Tier
+- Add subject, priority (Low/Medium/High).
+- Link to auction/listing/service ID.
+- Ticket list: ID, subject, date, status.
+- Full ticket history: Replies, attachments.
+- Search tickets: Keyword, ID.
+- Filter by status/date.
+- Auctions integration: Auction support tickets.
+
+### Premium Tier
+- Priority queue: Faster response (SLA).
+- Enhanced attachments: Larger files, more types.
+- Call back request for complex issues.
+- Personal analytics: Resolution times, issues.
+- Dedicated business portal/channel.
+- SLAs: Guaranteed response times.
+- Named support contact (business tier).
+- Bulk ticket actions.
+- Business analytics: Ticket volume, CSAT.
+- CRM/helpdesk integration.
+- Advanced prioritization: Custom urgency.
+- Custom assignment rules.
+- Real-time updates.
+- Earn 50 points/ticket ($0.10/point).
+
+### Wow++ Tier
+- AI categorizes/prioritizes tickets.
+- AI suggests knowledge base solutions.
+- In-context ticket creation (e.g., from listing).
+- “Support Star” badge for detailed tickets.
+- Redeem points for support credits.
+- Mark agent replies as helpful.
+- Secure screen sharing (technical support).
+- Proactive outreach for detected issues.
+- AI ticket classification/routing.
+- Leaderboards for ticket engagement.
+- Monetization: $5-$15/month, $2/API call.
+- **CQS**: <1s load time, audit logging.
+- **Error Handling**: Retry submission failures (1s).
+
+## supportTicketRoutes.js
+**Path**: C:\cfh\backend\routes\support\supportTicketRoutes.js  
+**Purpose**: Backend APIs for support ticket management.
+
+### Free Tier
+- Submit ticket: `POST /support/tickets`.
+- View tickets: `GET /support/tickets/user/me`.
+- View ticket: `GET /support/tickets/:ticketId`.
+- Reply: `POST /support/tickets/:ticketId/replies`.
+- Status: `GET /checkTicketStatus`.
+- Secure with JWT login.
+- **CQS**: Rate limiting (100/hour).
+
+### Standard Tier
+- Update status: `PUT /support/tickets/:ticketId/status`.
+- Assign agent: `PUT /support/tickets/:ticketId/assign`.
+- Attach files: `POST /support/tickets/:ticketId/attachments`.
+- Search/filter: `GET /support/tickets/user/me`.
+- Fast, secure API responses (<500ms).
+- **CQS**: HTTPS, encryption.
+- **Error Handling**: 400 invalid inputs, 404 not found.
+
+### Premium Tier
+- Priority queue: `POST /support/tickets`.
+- Call back: `POST /support/tickets/:ticketId/request-callback`.
+- Analytics: `GET /support/tickets/analytics`.
+- SLA timers: Internal logic.
+- Webhooks: `POST /support/tickets/webhooks/business/:businessId`.
+- Custom priority: `POST /setAdvancedTicketPriority`.
+- Custom assignment: `POST /assignTicket`.
+- Real-time updates: WebSocket.
+- Earn 100 points/engagement ($0.10/point).
+- **CQS**: Redis caching, 99.9% uptime.
+
+### Wow++ Tier
+- AI classification: `POST /support/tickets/:ticketId/ai-classify`.
+- AI solutions: `GET /support/tickets/suggested-solutions`.
+- Gamification: `POST /trackTicketPoints`.
+- Auto-updates: Internal service.
+- Screen sharing: Third-party integration.
+- Proactive outreach: Internal API.
+- AI routing: `POST /aiRouteTicket`.
+- Duplicate detection: Internal API.
+- Leaderboards: `GET /support/leaderboards`.
+- Monetization: $2/API call supports $45K goal.
+- **CQS**: <1s response, audit logging.
+- **Error Handling**: 429 rate limits, retry timeouts.

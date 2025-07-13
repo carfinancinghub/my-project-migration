@@ -1,0 +1,117 @@
+﻿// ðŸ‘‘ Crown Certified Test â€” TrustScoreEngine.test.js
+// Path: backend/tests/services/ai/TrustScoreEngine.test.js
+// Purpose: Unit tests for TrustScoreEngine service, covering trust score calculation and trend prediction.
+// Author: Rivers Auction Team â€” May 17, 2025
+
+const TrustScoreEngine = require('@services/ai/TrustScoreEngine');
+const Escrow = require('@models/Escrow');
+const Auction = require('@models/Auction');
+const Bid = require('@models/Bid');
+const PredictionEngine = require('@services/ai/PredictionEngine');
+const logger = require('@utils/logger');
+
+jest.mock('@models/Escrow');
+jest.mock('@models/Auction');
+jest.mock('@models/Bid');
+jest.mock('@services/ai/PredictionEngine');
+jest.mock('@utils/logger', () => ({
+  error: jest.fn(),
+  info: jest.fn(),
+}));
+
+describe('TrustScoreEngine', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  describe('calculateTrustScore', () => {
+    it('should calculate trust score for non-premium user', async () => {
+      Escrow.find.mockResolvedValue([{ status: 'completed' }, { status: 'pending' }]);
+      Auction.find.mockResolvedValue([{ bids: [{ userId: 'u1' }] }]);
+      Bid.find.mockResolvedValue([{ status: 'accepted' }, { status: 'rejected' }]);
+      PredictionEngine.getBasicPrediction.mockResolvedValue({
+        data: { prediction: { successProbability: 0.8 } },
+      });
+
+      const result = await TrustScoreEngine.calculateTrustScore('u1', false);
+
+      expect(result).toEqual({
+        data: {
+          score: expect.any(Number),
+          breakdown: null,
+        },
+      });
+      expect(Escrow.find).toHaveBeenCalledWith({ userId: 'u1' });
+      expect(Auction.find).toHaveBeenCalledWith({ 'bids.userId': 'u1' });
+      expect(Bid.find).toHaveBeenCalledWith({ userId: 'u1' });
+      expect(logger.info).toHaveBeenCalledWith('Trust score calculated for user u1: ' + result.data.score);
+    });
+
+    it('should calculate trust score with breakdown for premium user', async () => {
+      Escrow.find.mockResolvedValue([{ status: 'completed' }]);
+      Auction.find.mockResolvedValue([{}, {}]);
+      Bid.find.mockResolvedValue([{ status: 'accepted' }]);
+      PredictionEngine.getBasicPrediction.mockResolvedValue({
+        data: { prediction: { successProbability: 0.8 } },
+      });
+
+      const result = await TrustScoreEngine.calculateTrustScore('u1', true);
+
+      expect(result).toEqual({
+        data: {
+          score: expect.any(Number),
+          breakdown: {
+            escrowCompliance: expect.any(String),
+            bidConsistency: expect.any(String),
+            auctionActivity: expect.any(String),
+            trustTrend: expect.any(String),
+          },
+        },
+      });
+      expect(logger.info).toHaveBeenCalledWith('Trust score calculated for user u1: ' + result.data.score);
+    });
+
+    it('should throw error for missing userId', async () => {
+      await expect(TrustScoreEngine.calculateTrustScore('')).rejects.toThrow('User ID required');
+      expect(logger.error).toHaveBeenCalledWith('Failed to calculate trust score for ', expect.any(Error));
+    });
+  });
+
+  describe('predictTrustTrend', () => {
+    it('should predict trust trend', async () => {
+      Bid.find.mockResolvedValue([{ createdAt: new Date() }]);
+      Escrow.find.mockResolvedValue([{ createdAt: new Date() }]);
+      PredictionEngine.getAdvancedPrediction.mockResolvedValue({
+        data: { prediction: { escrowSyncTiming: 'fast' } },
+      });
+
+      const result = await TrustScoreEngine.predictTrustTrend('u1');
+
+      expect(result).toEqual({
+        data: {
+          trend: 'Improving',
+          confidence: expect.any(Number),
+        },
+      });
+      expect(Bid.find).toHaveBeenCalledWith(expect.any(Object));
+      expect(Escrow.find).toHaveBeenCalledWith(expect.any(Object));
+      expect(logger.info).toHaveBeenCalledWith('Trust trend predicted for user u1: Improving');
+    });
+
+    it('should throw error for missing userId', async () => {
+      await expect(TrustScoreEngine.predictTrustTrend('')).rejects.toThrow('User ID required');
+      expect(logger.error).toHaveBeenCalledWith('Failed to predict trust trend for ', expect.any(Error));
+    });
+  });
+});
+
+/*
+Functions Summary:
+- describe('TrustScoreEngine')
+  - Purpose: Test suite for TrustScoreEngine service
+  - Tests:
+    - calculateTrustScore: Non-premium score, premium breakdown, missing userId
+    - predictTrustTrend: Trend prediction, missing userId
+  - Dependencies: @models/Escrow, @models/Auction, @models/Bid, @services/ai/PredictionEngine, @utils/logger
+*/
+```

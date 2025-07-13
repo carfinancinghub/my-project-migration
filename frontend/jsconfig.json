@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["frontend/src/components/*"],
+      "@__mocks_/*": ["frontend/src/__mocks_/*"]
+    }
+  }
+}

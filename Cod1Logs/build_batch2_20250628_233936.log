@@ -1,0 +1,5 @@
+
+> cfh-backend@1.0.0 build
+> tsc && tsc-alias
+
+workers/notificationQueueWorker.ts(8,129): error TS1005: '=>' expected.

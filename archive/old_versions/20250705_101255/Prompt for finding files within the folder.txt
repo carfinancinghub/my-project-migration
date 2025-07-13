@@ -1,0 +1,34 @@
+# Step 1: Define expected filenames including 1 intentionally missing test file
+$expected = @(
+"AIBidStarter.js"
+"AuctionTemplateEngine.js,"
+"BidHeatmapEngine.js,"
+"HeatmapChart.jsx,"
+"BlockchainSnapshotViewer.jsx,"
+"SellerBadgePanel.jsx,"
+ "FinanceRiskAssessment.test.helper.js"  # ✅ This one should be missing
+) | Sort-Object -Unique
+
+# Step 2: Get all actual file matches with paths
+$actualFiles = Get-ChildItem -Path "C:\CFH" -Recurse -File
+
+# Step 3: Map base file names and label auctions.js based on path
+$actualNames = $actualFiles | ForEach-Object {
+    if ($_.Name -eq "auctions.js") {
+        if ($_.FullName -like "*\admin\*") {
+            "auctions.js (admin)"
+        }
+        elseif ($_.FullName -like "*\judge\*") {
+            "auctions.js (judge)"
+        }
+        else {
+            "auctions.js"
+        }
+    } else {
+        $_.Name
+    }
+}
+
+# Step 4: Output missing files
+$missing = $expected | Where-Object { $_ -notin $actualNames }
+$missing | Format-Table -AutoSize

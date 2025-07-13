@@ -1,0 +1,3451 @@
+FAIL tests/routes/escrow/escrowRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/user/userProfileRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/escrow/EscrowRoutes.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/escrow/sync.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/services/escrow/escrow.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/mechanic/mechanicRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/ai/ValuationMetricsService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/auction/insights.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/escrow/escrowPaymentRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/buyer/auctions.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/services/escrow/EscrowAuditService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/routes/escrow/EscrowRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/lender/LenderTermsExporter.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/reports/ReportService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/disputes/analytics/arbitrator-performance.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/ai/insights.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/notification/NotificationService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/payments/PaymentService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/ai/PredictionEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/escrow.service.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/escrow/escrow.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/escrow/EscrowService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/ai/TrustScoreEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/auction/BidHeatmapService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowAuditService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowNotificationService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/integration/escrow.integration.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/middleware/RBACMiddleware.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserSettings.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowChainSync.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/analytics/analytics.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/auctions/auctions.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserActivity.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserNotifications.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserPreferences.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowAuditService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/utils/logger.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/security/SessionValidator.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/security/DDoSProtector.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserProfile.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/VoiceBidAssistant.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserAuth.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/security/RateLimiter.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/SocialShareHelper.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/socket/socket.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/VRVehicleTour.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/SocialGamification.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/VirtualAuctionRoom.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/reports/ReportService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/PremiumSupportChat.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/PostAuctionInsights.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/ARVehicleView.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/SecurityLogger.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/LoyaltyRewards.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/DynamicPricing.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/CrossBorderCommerce.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/RealTimePredictor.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/PerformanceOptimizer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/AIAuctionSimulator.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/BlockchainAudit.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/AIInsightSeller.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/AIInsightBuyer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/regression/WowRegression.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/payments/PaymentService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/FeedbackSystem.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/LaunchChecklist.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/ErrorHandler.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/ComplianceEnhancer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/PaymentProcessor.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/onboarding/WelcomeNotification.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/UserManagement.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/ListingApproval.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/onboarding/PreferencesSetup.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/onboarding/UserOnboarding.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/AuditLogViewer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/DisputeManager.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/notification/NotificationService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/PlatformMonitor.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/middleware/RBACMiddleware.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/ComplianceChecker.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/mobile/MobileNotifications.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/mobile/MobileBidHandler.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/final/FinalTesting.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/final/SecurityAudit.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/escrow/escrow.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/escrow/EscrowService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/integration/escrow.integration.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/escrow/escrow.service.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/config/AuctionConfig.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/final/UserAnalyticsReport.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auctions/auctions.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/BidHeatmapService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auctions/auctions.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/BidValidator.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionScheduler.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionReputationTracker.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionNotifier.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/analytics/analytics.service.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/analytics/analytics.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionMetrics.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionHistory.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/TrendAnimation.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/Heatmap.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionManager.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/RecommendationEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/PredictionEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/coachPlanRoute.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------
+
+        Failed to write coverage reports:
+        ERROR: Error: EPERM: operation not permitted, open 'C:\CFH\backend\coverage\lcov-report\desktop.ini'
+        STACK: Error: EPERM: operation not permitted, open 'C:\CFH\backend\coverage\lcov-report\desktop.ini'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at FileWriter.copyFile (C:\CFH\backend\node_modules\istanbul-lib-report\lib\file-writer.js:167:12)
+    at C:\CFH\backend\node_modules\istanbul-reports\lib\html\index.js:347:28
+    at Array.forEach (<anonymous>)
+    at C:\CFH\backend\node_modules\istanbul-reports\lib\html\index.js:336:36
+    at Array.forEach (<anonymous>)
+    at HtmlReport.onStart (C:\CFH\backend\node_modules\istanbul-reports\lib\html\index.js:333:25)
+    at LcovReport.<computed> [as onStart] (C:\CFH\backend\node_modules\istanbul-reports\lib\lcov\index.js:28:23)
+    at Visitor.value (C:\CFH\backend\node_modules\istanbul-lib-report\lib\tree.js:38:38)
+      
+Summary of all failing tests
+FAIL tests/routes/escrow/escrowRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/user/userProfileRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/escrow/EscrowRoutes.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/escrow/sync.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/services/escrow/escrow.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/mechanic/mechanicRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/ai/ValuationMetricsService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/auction/insights.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/escrow/escrowPaymentRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/buyer/auctions.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/services/escrow/EscrowAuditService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/routes/escrow/EscrowRoutes.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/lender/LenderTermsExporter.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/reports/ReportService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/disputes/analytics/arbitrator-performance.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/routes/ai/insights.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/notification/NotificationService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/payments/PaymentService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/ai/PredictionEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/escrow.service.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/escrow/escrow.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/escrow/EscrowService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/ai/TrustScoreEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/auction/BidHeatmapService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowAuditService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowNotificationService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/integration/escrow.integration.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/middleware/RBACMiddleware.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserSettings.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowChainSync.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/analytics/analytics.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL dist/tests/auctions/auctions.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserActivity.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserNotifications.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserPreferences.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/escrow/EscrowAuditService.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/utils/logger.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/security/SessionValidator.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/security/DDoSProtector.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserProfile.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/VoiceBidAssistant.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/user/UserAuth.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/security/RateLimiter.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/SocialShareHelper.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/socket/socket.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/VRVehicleTour.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/SocialGamification.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/VirtualAuctionRoom.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/reports/ReportService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/PremiumSupportChat.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/PostAuctionInsights.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/ARVehicleView.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/services/SecurityLogger.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/LoyaltyRewards.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/DynamicPricing.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/CrossBorderCommerce.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/RealTimePredictor.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/PerformanceOptimizer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/AIAuctionSimulator.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/BlockchainAudit.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/AIInsightSeller.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/premium/AIInsightBuyer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/regression/WowRegression.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/payments/PaymentService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/FeedbackSystem.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/LaunchChecklist.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/ErrorHandler.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/ComplianceEnhancer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/operational/PaymentProcessor.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/onboarding/WelcomeNotification.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/UserManagement.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/ListingApproval.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/onboarding/PreferencesSetup.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/onboarding/UserOnboarding.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/AuditLogViewer.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/DisputeManager.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/notification/NotificationService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/PlatformMonitor.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/middleware/RBACMiddleware.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/officer/ComplianceChecker.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/mobile/MobileNotifications.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/mobile/MobileBidHandler.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/final/FinalTesting.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/final/SecurityAudit.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/escrow/escrow.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/escrow/EscrowService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/integration/escrow.integration.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/escrow/escrow.service.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/config/AuctionConfig.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/final/UserAnalyticsReport.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auctions/auctions.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/BidHeatmapService.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auctions/auctions.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/BidValidator.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionScheduler.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionReputationTracker.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionNotifier.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/analytics/analytics.service.test.ts
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/analytics/analytics.service.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionMetrics.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionHistory.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/TrendAnimation.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/Heatmap.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/auction/AuctionManager.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/RecommendationEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/ai/PredictionEngine.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+FAIL tests/coachPlanRoute.test.js
+  ● Test suite failed to run
+
+    Cannot find module 'jsonwebtoken' from 'tests/setup.ts'
+
+    [0m [90m 63 |[39m }))[33m;[39m
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m jest[33m.[39mmock([32m'jsonwebtoken'[39m[33m,[39m () [33m=>[39m ({
+     [90m    |[39m      [31m[1m^[22m[39m
+     [90m 66 |[39m   sign[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 67 |[39m   verify[33m:[39m jest[33m.[39mfn()[33m,[39m
+     [90m 68 |[39m }))[33m;[39m[0m
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.<anonymous> (tests/setup.ts:65:6)
+
+
+Test Suites: 107 failed, 107 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        12.644 s
+Ran all test suites.

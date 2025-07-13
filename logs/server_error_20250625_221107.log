@@ -1,0 +1,16 @@
+node:internal/modules/package_json_reader:92
+        throw error;
+        ^
+
+SyntaxError: Error parsing C:\CFH\backend\package.json: Unexpected end of JSON input
+    at parse (<anonymous>)
+    at read (node:internal/modules/package_json_reader:79:16)
+    at readPackage (node:internal/modules/package_json_reader:140:10)
+    at readPackageScope (node:internal/modules/package_json_reader:157:19)
+    at shouldUseESMLoader (node:internal/modules/run_main:77:15)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:122:24)
+    at node:internal/main/run_main_module:28:49 {
+  path: 'C:\\CFH\\backend\\package.json'
+}
+
+Node.js v18.20.8

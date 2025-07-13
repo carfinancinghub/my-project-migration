@@ -1,0 +1,22 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! 
+npm ERR! While resolving: cfh-backend@1.0.0
+npm ERR! Found: cypress@13.17.0
+npm ERR! node_modules/cypress
+npm ERR!   dev cypress@"^13.9.0" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer cypress@"^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0" from @badeball/cypress-cucumber-preprocessor@12.2.0
+npm ERR! node_modules/@badeball/cypress-cucumber-preprocessor
+npm ERR!   dev @badeball/cypress-cucumber-preprocessor@"^12.0.0" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-28T07_52_15_542Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in: C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-28T07_52_15_542Z-debug-0.log

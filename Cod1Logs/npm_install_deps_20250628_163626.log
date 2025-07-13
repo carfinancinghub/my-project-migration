@@ -1,0 +1,4 @@
+npm ERR! code EINVALIDPACKAGENAME
+npm ERR! Invalid package name "@cypress" of package "@cypress@^10.0.0": name can only contain URL-friendly characters.
+
+npm ERR! A complete log of this run can be found in: C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-28T23_36_26_606Z-debug-0.log

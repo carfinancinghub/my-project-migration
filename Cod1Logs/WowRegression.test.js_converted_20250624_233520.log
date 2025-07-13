@@ -1,0 +1,131 @@
+﻿// ðŸ‘‘ Crown Certified Test â€” WowRegression.test.js
+// Path: backend/tests/regression/WowRegression.test.js
+// Purpose: Regression tests for Wow++ features (premium blockchain sync, AI recommendations, trust scores).
+// Author: Rivers Auction Team â€” May 17, 2025
+
+const request = require('supertest');
+const express = require('express');
+const escrowRouter = require('@routes/escrow/sync');
+const trustScoreEngine = require('@services/ai/TrustScoreEngine');
+const predictionEngine = require('@services/ai/PredictionEngine');
+const Escrow = require('@models/Escrow');
+const logger = require('@utils/logger');
+
+jest.mock('@services/ai/TrustScoreEngine');
+jest.mock('@services/ai/PredictionEngine');
+jest.mock('@models/Escrow');
+jest.mock('@utils/logger', () => ({
+  error: jest.fn(),
+  info: jest.fn(),
+}));
+
+const app = express();
+app.use(express.json());
+app.use('/api/escrow', escrowRouter);
+
+describe('Wow++ Regression Tests', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should maintain premium blockchain sync functionality', async () => {
+    const actionData = { transactionId: 'tx1', actionType: 'create', userId: 'u1', metadata: {} };
+    Escrow.findOneAndUpdate.mockResolvedValue({
+      transactionId: 'tx1',
+      status: 'completed',
+    });
+    const blockchainHash = '0x123';
+    jest.spyOn(require('@services/blockchain/BlockchainAdapter'), 'writeTransaction').mockResolvedValue(blockchainHash);
+
+    const response = await request(app)
+      .post('/api/escrow/sync')
+      .query({ isPremium: 'true' })
+      .send(actionData);
+
+    expect(response.status).toBe(201);
+    expect(response.body).toEqual({
+      success: true,
+      data: {
+        record: expect.any(Object),
+        blockchain: { hash: blockchainHash },
+      },
+      version: 'v1',
+    });
+    expect(require('@services/blockchain/BlockchainAdapter').writeTransaction).toHaveBeenCalled();
+  });
+
+  it('should maintain premium AI recommendation accuracy', async () => {
+    predictionEngine.getRecommendation.mockResolvedValue({
+      data: { recommendation: { message: 'Increase bid by 5%' } },
+    });
+
+    const response = await request(app)
+      .get('/api/predictions/recommendation')
+      .query({ auctionId: 'a1', bidAmount: 1000 });
+
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual({
+      success: true,
+      data: { recommendation: { message: 'Increase bid by 5%' } },
+      version: 'v1',
+    });
+    expect(predictionEngine.getRecommendation).toHaveBeenCalledWith({ auctionId: 'a1', bidAmount: 1000 });
+  });
+
+  it('should maintain premium trust score breakdown', async () => {
+    trustScoreEngine.calculateTrustScore.mockResolvedValue({
+      data: {
+        score: 85,
+        breakdown: {
+          escrowCompliance: '90%',
+          bidConsistency: '80%',
+          auctionActivity: '5 auctions',
+          trustTrend: 'Positive',
+        },
+      },
+    });
+
+    const response = await request(app)
+      .get('/api/trust/score')
+      .query({ userId: 'u1', isPremium: 'true' });
+
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual({
+      data: {
+        score: 85,
+        breakdown: {
+          escrowCompliance: '90%',
+          bidConsistency: '80%',
+          auctionActivity: '5 auctions',
+          trustTrend: 'Positive',
+        },
+      },
+    });
+    expect(trustScoreEngine.calculateTrustScore).toHaveBeenCalledWith('u1', true);
+  });
+
+  it('should handle invalid inputs gracefully', async () => {
+    predictionEngine.getRecommendation.mockRejectedValue(new Error('Invalid input'));
+
+    const response = await request(app)
+      .get('/api/predictions/recommendation')
+      .query({ auctionId: '', bidAmount: 0 });
+
+    expect(response.status).toBe(500);
+    expect(response.body).toEqual({ success: false, message: 'Recommendation failed' });
+    expect(logger.error).toHaveBeenCalledWith('Recommendation failed: Invalid input', expect.any(Error));
+  });
+});
+
+/*
+Functions Summary:
+- describe('Wow++ Regression Tests')
+  - Purpose: Test suite for regression testing of Wow++ features
+  - Tests:
+    - Maintains premium blockchain sync functionality
+    - Maintains premium AI recommendation accuracy
+    - Maintains premium trust score breakdown
+    - Handles invalid inputs
+  - Dependencies: supertest, express, @routes/escrow/sync, @services/ai/TrustScoreEngine, @services/ai/PredictionEngine, @models/Escrow, @utils/logger
+*/
+```

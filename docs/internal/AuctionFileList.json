@@ -1,0 +1,70 @@
+{
+  "@file": "AuctionFileList.json",
+  "@path": "docs/internal/AuctionFileList.json",
+  "@description": "List of required files for Auction role for Rivers Auction Test Prep",
+  "@timestamp": "Cod2 - May 08, 2025, 18:16 PDT",
+  "files": [
+    {
+      "file": "AuctionIntelligenceDashboard.jsx",
+      "path": "frontend/src/components/auction/AuctionIntelligenceDashboard.jsx",
+      "purpose": "Displays auction analytics and premium bidding insights",
+      "features": [
+        "Charts",
+        "Timeframe filters",
+        "AI predictions"
+      ],
+      "premium": [
+        "AI-driven bidding predictions"
+      ],
+      "integration": [
+        "GET /auctions/analytics"
+      ]
+    },
+    {
+      "file": "AuctionIntelligenceDashboard.test.jsx",
+      "path": "frontend/src/tests/auction/AuctionIntelligenceDashboard.test.jsx",
+      "purpose": "Tests dashboard rendering, filtering, premium gating",
+      "features": [
+        "Jest tests",
+        "Mocked API",
+        "Chart.js rendering"
+      ],
+      "premium": [
+        "Mock PremiumFeature gating logic"
+      ],
+      "integration": [
+        "AuctionIntelligenceDashboard.jsx"
+      ]
+    },
+    {
+      "file": "AuctionAnalyticsController.js",
+      "path": "backend/controllers/auction/AuctionAnalyticsController.js",
+      "purpose": "Handles auction analytics requests",
+      "features": [
+        "Analytics fetch",
+        "AI mock prediction"
+      ],
+      "premium": [
+        "Predicted winning bids"
+      ],
+      "integration": [
+        "auctionRoutes.js",
+        "AIInsightEngine"
+      ]
+    },
+    {
+      "file": "auctionRoutes.js",
+      "path": "backend/routes/auctionRoutes.js",
+      "purpose": "Defines route for auction analytics",
+      "features": [
+        "Joi validation",
+        "GET route",
+        "Inline middleware"
+      ],
+      "premium": [],
+      "integration": [
+        "AuctionAnalyticsController.js"
+      ]
+    }
+  ]
+}

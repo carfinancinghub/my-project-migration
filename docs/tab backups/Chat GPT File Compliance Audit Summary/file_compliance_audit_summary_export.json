@@ -1,0 +1,79 @@
+{
+  "tab_name": "File Compliance Audit Summary",
+  "exported_at": "2025-05-22T00:41:42.747897Z",
+  "memory_summary": {
+    "batch_tracking": [
+      "AIValuation-051725",
+      "EscrowChainSync-051625",
+      "SupportTools-051825",
+      "BuyerTools-051925"
+    ],
+    "recent_files": [
+      {
+        "file": "DisputeRadarWidget.jsx",
+        "path": "frontend/src/components/officer/",
+        "size": 6421
+      },
+      {
+        "file": "DisputeRadarWidget.test.jsx",
+        "path": "frontend/src/tests/officer/",
+        "size": 8354
+      },
+      {
+        "file": "ValuationLiveFeed.jsx",
+        "path": "frontend/src/components/ai/",
+        "size": 3301
+      },
+      {
+        "file": "PredictiveComparison.jsx",
+        "path": "frontend/src/components/ai/",
+        "size": 5322
+      },
+      {
+        "file": "syncRoutes.js",
+        "path": "backend/routes/escrow/",
+        "size": 1414
+      },
+      {
+        "file": "syncRoutes.test.js",
+        "path": "backend/tests/routes/escrow/",
+        "size": 2511
+      },
+      {
+        "file": "WebSocketService.js",
+        "path": "backend/services/notification/",
+        "size": 1911
+      },
+      {
+        "file": "ValuationDisplay.jsx",
+        "path": "frontend/src/components/common/",
+        "size": 1310
+      },
+      {
+        "file": "PredictiveGraph.jsx",
+        "path": "frontend/src/components/common/",
+        "size": 1496
+      },
+      {
+        "file": "BlockchainAdapter.js",
+        "path": "backend/services/blockchain/",
+        "size": 1722
+      }
+    ],
+    "suggestion_bucket": {
+      "DisputeRadarWidget": [
+        "Add export to CSV/PDF",
+        "Allow custom alert thresholds",
+        "Enable heatmap toggling for all roles"
+      ],
+      "ValuationLiveFeed": [
+        "Enable multi-auction overlay heatmaps",
+        "Add refresh interval configuration"
+      ],
+      "syncRoutes.js": [
+        "Add middleware for payload validation using validateInput.js"
+      ]
+    },
+    "compliance_state": "Crown Certified and SG Man compliant files tracked and documented"
+  }
+}

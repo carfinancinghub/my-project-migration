@@ -1,0 +1,65 @@
+// File: AnalyticsDashboard.test.js
+// Path: C:\CFH\backend\tests\analytics\AnalyticsDashboard.test.js
+// Purpose: Unit tests for AnalyticsDashboard component
+// Author: Rivers Auction Dev Team
+// Date: 2025-05-24
+// Cod2 Crown Certified: Yes
+
+import React from 'react';
+import { render, screen, waitFor } from '@testing-library/react';
+import AnalyticsDashboard from '@components/analytics/AnalyticsDashboard';
+import { getUserInsights, getAuctionInsights } from '@services/api/analytics';
+import logger from '@utils/logger';
+
+jest.mock('@services/api/analytics');
+jest.mock('@utils/logger');
+
+describe('AnalyticsDashboard', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('renders loading state initially', () => {
+    render(<AnalyticsDashboard userId="123" />);
+    expect(screen.getByText(/loading analytics/i)).toBeInTheDocument();
+  });
+
+  it('renders user insights when data is available', async () => {
+    getUserInsights.mockResolvedValueOnce({ insights: ['Increase bidding frequency.'] });
+    render(<AnalyticsDashboard userId="123" />);
+    await waitFor(() => {
+      expect(screen.getByText(/User Insights/i)).toBeInTheDocument();
+      expect(screen.getByText(/Increase bidding frequency/i)).toBeInTheDocument();
+    });
+    expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Fetched analytics data'));
+  });
+
+  it('renders user and auction insights when both are available', async () => {
+    getUserInsights.mockResolvedValueOnce({ insights: ['Increase bidding frequency.'] });
+    getAuctionInsights.mockResolvedValueOnce({ insights: ['Increase reserve price.'] });
+    render(<AnalyticsDashboard userId="123" auctionId="789" />);
+    await waitFor(() => {
+      expect(screen.getByText(/User Insights/i)).toBeInTheDocument();
+      expect(screen.getByText(/Increase bidding frequency/i)).toBeInTheDocument();
+      expect(screen.getByText(/Auction Insights/i)).toBeInTheDocument();
+      expect(screen.getByText(/Increase reserve price/i)).toBeInTheDocument();
+    });
+  });
+
+  it('renders error message on fetch failure', async () => {
+    getUserInsights.mockRejectedValueOnce(new Error('API error'));
+    render(<AnalyticsDashboard userId="123" />);
+    await waitFor(() => {
+      expect(screen.getByText(/Failed to load analytics data/i)).toBeInTheDocument();
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Failed to fetch analytics data'));
+    });
+  });
+
+  it('renders no insights message when data is unavailable', async () => {
+    getUserInsights.mockResolvedValueOnce({ insights: [] });
+    render(<AnalyticsDashboard userId="123" />);
+    await waitFor(() => {
+      expect(screen.getByText(/No user insights available/i)).toBeInTheDocument();
+    });
+  });
+});

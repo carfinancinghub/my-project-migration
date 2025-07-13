@@ -1,0 +1,32 @@
+/**
+ * @file i18n.ts
+ * @path C:\CFH\frontend\src\i18n\i18n.ts
+ * @author Mini Team
+ * @created 2025-06-10 [0823]
+ * @purpose Configures internationalization for the frontend using react-i18next.
+ * @user_impact Enables multi-language support for a global user base.
+ * @version 1.0.0
+ */
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import en from './locales/en.json';
+import es from './locales/es.json';
+import fr from './locales/fr.json';
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: { translation: en },
+      es: { translation: es },
+      fr: { translation: fr },
+    },
+    lng: 'es',
+    fallbacklng: 'es',
+    interpolation: {
+      escapeValue: false,
+    },
+  });
+
+export default i18n;
+

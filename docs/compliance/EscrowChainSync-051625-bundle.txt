@@ -1,0 +1,19 @@
+Escrow Chain Sync Module Compliance Bundle
+Batch: EscrowChainSync-051625
+
+🗂️ File Summary:
+File	Path	Size	Purpose	Compliance
+EscrowChainSync.js	C:\CFH\backend\services\escrow\EscrowChainSync.js	3521 bytes	Syncs escrow actions to DB (free) and blockchain (premium)	✅ Crown Certified
+EscrowChainSync.test.js	C:\CFH\backend\tests\services\escrow\EscrowChainSync.test.js	3681 bytes	Tests sync logic & blockchain behavior	✅ SG Man Compliant
+EscrowChainSync-functions.md	C:\CFH\docs\functions\escrow\EscrowChainSync-functions.md	886 bytes	Docs on sync logic, inputs/outputs	✅
+sync.js	C:\CFH\backend\routes\escrow\sync.js	✅ previously confirmed	Escrow endpoint routes for syncing, status, audit	✅ Crown Certified
+sync.test.js	C:\CFH\backend\tests\routes\escrow\sync.test.js	4075 bytes	Endpoint validation incl. premium gate tests	✅ SG Man Compliant
+sync-functions.md	C:\CFH\docs\functions\escrow\sync-functions.md	438 bytes	Docs on /sync route logic	✅
+
+📤 Delivering to Tabs:
+✅ SG Man Compliance Review — For regulatory and QA final audit.
+
+✅ Rivers Auction Central Hub — Batch log: EscrowChainSync-051625.
+
+✅ Documentation Tab — For permanent archiving under docs/functions/escrow.
+

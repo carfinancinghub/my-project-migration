@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250621192316
+Username: Agasi\Agasi5
+RunAs User: Agasi\Agasi5
+Configuration Name: 
+Machine: AGASI (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 33884
+PSVersion: 5.1.26100.4202
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4202
+BuildVersion: 10.0.26100.4202
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CFH\Cod1PromptOutput\cod1_console_20250622_022316.log
+PS C:\CFH\backend> "[{0}] Starting alias configuration scan..." -f (Get-Date).ToUniversalTime().ToString("o") | Out-File -FilePath $logPath -Append
+PS C:\CFH\backend> # [2] Define files to check
+PS C:\CFH\backend> $configFiles = @(
+  "C:\CFH\backend\jest.config.js",
+  "C:\CFH\jsconfig.json",
+  "C:\CFH\tsconfig.json"
+)
+PS C:\CFH\backend> # [3] Check each file's existence and output content
+PS C:\CFH\backend> foreach ($file in $configFiles) {
+  if (Test-Path $file) {
+    "[{0}] Reading: $file" -f (Get-Date).ToUniversalTime().ToString("o") | Out-File -FilePath $logPath -Append
+    Write-Host "`n--- $file ---"
+    Get-Content $file | ForEach-Object { Write-Host $_; $_ } | Out-File -FilePath $logPath -Append
+  } else {
+    "[{0}] MISSING: $file" -f (Get-Date).ToUniversalTime().ToString("o") | Out-File -FilePath $logPath -Append
+    Write-Host "`n✘ File not found: $file"
+  }
+}
+
+--- C:\CFH\backend\jest.config.js ---
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  verbose: true,
+  testMatch: ['**/tests/**/*.test.js'],
+  testPathIgnorePatterns: ['/node_modules/'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/',
+    '^@controllers/(.*)$': '<rootDir>/controllers/',
+    '^@routes/(.*)$': '<rootDir>/routes/',
+    '^@utils/(.*)$': '<rootDir>/utils/',
+    '^@services/(.*)$': '<rootDir>/services/',
+    '^@models/(.*)$': '<rootDir>/models/',
+    '^@config/(.*)$': '<rootDir>/config/',
+    '^@middleware/(.*)$': '<rootDir>/middleware/',
+    '^@socket/(.*)$': '<rootDir>/socket/',
+    '^@tests/(.*)$': '<rootDir>/tests/',
+    '^@tools/(.*)$': '<rootDir>/tools/',
+    '^@ai/(.*)$': '<rootDir>/services/ai/',
+    '^@tasks/(.*)$': '<rootDir>/tasks/'
+  }
+};
+
+✘ File not found: C:\CFH\jsconfig.json
+
+✘ File not found: C:\CFH\tsconfig.json
+PS C:\CFH\backend> # [4] End and mirror output
+PS C:\CFH\backend> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250621192316
+**********************

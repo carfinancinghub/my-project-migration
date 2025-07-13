@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "message": "New bid of $55,000 on your 2022 Ford Mustang Mach-E!",
+    "timestamp": "2025-04-28T20:30:00Z",
+    "read": false
+  },
+  {
+    "id": 2,
+    "message": "A buyer is interested in your 2019 Honda Civic and has sent you a message.",
+    "timestamp": "2025-04-28T19:15:30Z",
+    "read": false
+  },
+  {
+    "id": 3,
+    "message": "Your listing for the 2024 Chevrolet Silverado has received an offer of $42,000.",
+    "timestamp": "2025-04-28T17:00:00Z",
+    "read": true
+  },
+  {
+    "id": 4,
+    "message": "The auction for your 2021 Toyota RAV4 will end in 12 hours.",
+    "timestamp": "2025-04-28T08:45:00Z",
+    "read": true
+  },
+  {
+    "id": 5,
+    "message": "Payment confirmed for your 2023 Tesla Model S. Please arrange vehicle delivery.",
+    "timestamp": "2025-04-28T21:50:15Z",
+    "read": false
+  }
+]

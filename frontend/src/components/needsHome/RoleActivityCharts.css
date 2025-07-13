@@ -1,0 +1,26 @@
+.role-activity-charts {
+  padding: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.loader {
+  text-align: center;
+  padding: 1rem;
+}
+
+.error {
+  text-align: center;
+  padding: 1rem;
+  color: #dc2626;
+}

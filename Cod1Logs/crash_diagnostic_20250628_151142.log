@@ -1,0 +1,3 @@
+-rw-r--r-- 1 Agasi5 197121 365 Jun 28 15:11 /c/CFH/backend/services/auction/BidHeatmapService.ts
+-rw-r--r-- 1 Agasi5 197121 1364 Jun 28 15:11 /c/CFH/backend/tests/routes/escrow/EscrowRoutes.test.ts
+-rw-r--r-- 1 Agasi5 197121 804 Jun 28 15:11 /c/CFH/backend/app.ts

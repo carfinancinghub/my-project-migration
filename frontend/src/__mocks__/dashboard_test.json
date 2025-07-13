@@ -1,0 +1,38 @@
+{
+  "buyer": {
+    "userId": 501,
+    "recentBids": [
+      {
+        "id": 601,
+        "amount": 25000
+      },
+      {
+        "id": 602,
+        "amount": 12000
+      }
+    ]
+  },
+  "seller": {
+    "userId": 502,
+    "listings": [
+      {
+        "id": 701,
+        "title": "1967 Ford Mustang Fastback"
+      },
+      {
+        "id": 702,
+        "title": "2021 Porsche 911 Turbo S"
+      },
+      {
+        "id": 703,
+        "title": "Vintage Vespa Scooter"
+      }
+    ]
+  },
+  "admin": {
+    "stats": {
+      "users": 2500,
+      "disputes": 120
+    }
+  }
+}

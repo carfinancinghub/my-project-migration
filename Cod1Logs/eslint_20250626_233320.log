@@ -1,0 +1,615 @@
+
+C:\CFH\backend\config\AuctionConfig.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+  7:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\fix_all_errors.ts
+   30:8   error  Missing JSDoc comment                     require-jsdoc
+   31:14  error  Missing JSDoc comment                     require-jsdoc
+   37:8   error  Missing JSDoc comment                     require-jsdoc
+   38:14  error  Missing JSDoc comment                     require-jsdoc
+   67:8   error  Missing JSDoc comment                     require-jsdoc
+   68:18  error  Missing JSDoc comment                     require-jsdoc
+   79:17  error  Missing JSDoc comment                     require-jsdoc
+   90:25  error  Missing JSDoc comment                     require-jsdoc
+  156:8   error  Missing JSDoc comment                     require-jsdoc
+  157:26  error  Missing JSDoc comment                     require-jsdoc
+  172:27  error  Missing JSDoc comment                     require-jsdoc
+  186:23  error  Missing JSDoc comment                     require-jsdoc
+  202:24  error  Missing JSDoc comment                     require-jsdoc
+  235:75  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  249:77  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  257:77  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  264:77  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  273:77  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  283:8   error  Missing JSDoc comment                     require-jsdoc
+  284:19  error  Missing JSDoc comment                     require-jsdoc
+  300:22  error  Missing JSDoc comment                     require-jsdoc
+  424:8   error  Missing JSDoc comment                     require-jsdoc
+  425:24  error  Missing JSDoc comment                     require-jsdoc
+  459:8   error  Missing JSDoc comment                     require-jsdoc
+  460:23  error  Missing JSDoc comment                     require-jsdoc
+
+C:\CFH\backend\index.ts
+  13:10  error  'logger' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\middleware\RBACMiddleware.ts
+  10:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\middleware\authMiddleware.ts
+  17:34  error  Missing JSDoc comment                     require-jsdoc
+  26:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\middleware\validate.ts
+  11:8   error  Missing JSDoc comment                     require-jsdoc
+  11:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\migrate.ts
+  49:51  error  Unnecessary escape character: \-  no-useless-escape
+  54:9   error  Unexpected console statement      no-console
+  56:7   error  Unexpected console statement      no-console
+  61:29  error  Unexpected console statement      no-console
+
+C:\CFH\backend\models\escrow.model.ts
+   8:8   error  Missing JSDoc comment  require-jsdoc
+  13:14  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\repositories\escrow.repository.ts
+  12:8   error  Missing JSDoc comment  require-jsdoc
+  13:26  error  Missing JSDoc comment  require-jsdoc
+  17:24  error  Missing JSDoc comment  require-jsdoc
+  22:24  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\routes\analytics\analytics.routes.ts
+  23:19  error  Missing JSDoc comment                     require-jsdoc
+  39:19  error  Missing JSDoc comment                     require-jsdoc
+  62:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  81:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\routes\escrow\escrow.routes.ts
+  22:19  error  Missing JSDoc comment                     require-jsdoc
+  38:19  error  Missing JSDoc comment                     require-jsdoc
+  56:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  69:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  79:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\ai\InsightsService.ts
+  2:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:20  error  Missing JSDoc comment                                                   require-jsdoc
+  3:21  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:27  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+  3:41  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\ai\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\analytics\analytics.service.ts
+  12:8   error  Missing JSDoc comment                     require-jsdoc
+  13:29  error  Missing JSDoc comment                     require-jsdoc
+  13:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  20:21  error  Missing JSDoc comment                     require-jsdoc
+
+C:\CFH\backend\services\ar\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\auction\AuctionHistory.ts
+  2:8   error  Missing JSDoc comment                     require-jsdoc
+  3:19  error  Missing JSDoc comment                     require-jsdoc
+  3:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\auction\AuctionManager.ts
+   3:8   error  Missing JSDoc comment  require-jsdoc
+   4:20  error  Missing JSDoc comment  require-jsdoc
+   8:17  error  Missing JSDoc comment  require-jsdoc
+  12:21  error  Missing JSDoc comment  require-jsdoc
+  16:19  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\auction\AuctionMetrics.ts
+  2:8   error  Missing JSDoc comment                     require-jsdoc
+  3:19  error  Missing JSDoc comment                     require-jsdoc
+  3:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\auction\AuctionNotifier.ts
+  12:14  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\auction\AuctionScheduler.ts
+  2:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:24  error  Missing JSDoc comment                                                   require-jsdoc
+  3:25  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:31  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+  4:5   error  Unexpected console statement                                            no-console
+
+C:\CFH\backend\services\auction\BidService.ts
+  3:8   error  Missing JSDoc comment                                                     require-jsdoc
+  4:17  error  Missing JSDoc comment                                                     require-jsdoc
+  4:53  error  'amount' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\services\auction\BidValidator.ts
+  3:8   error  Missing JSDoc comment  require-jsdoc
+  4:20  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\auditLog.ts
+  11:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\blockchain\BlockchainAdapter.ts
+  2:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:13  error  Missing JSDoc comment                                                   require-jsdoc
+  3:14  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:20  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+  3:34  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\blockchain\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\cache\CacheService.ts
+  2:8   error  Missing JSDoc comment         require-jsdoc
+  3:11  error  Missing JSDoc comment         require-jsdoc
+  4:5   error  Unexpected console statement  no-console
+
+C:\CFH\backend\services\cache\index.ts
+  3:8   error  Missing JSDoc comment                                                    require-jsdoc
+  3:39  error  'value' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:46  error  Unexpected any. Specify a different type                                 @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\db\DBService.ts
+  2:8   error  Missing JSDoc comment                                                    require-jsdoc
+  3:14  error  Missing JSDoc comment                                                    require-jsdoc
+  3:15  error  'query' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:39  error  Unexpected any. Specify a different type                                 @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\db\index.ts
+  2:10  error  'logger' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\services\exchange\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\notificationService.ts
+  23:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  33:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  42:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  97:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\services\notifications\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\payment\index.ts
+  3:8   error  Missing JSDoc comment                                                     require-jsdoc
+  3:67  error  'amount' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\services\security\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\social\index.ts
+  3:8   error  Missing JSDoc comment                                                      require-jsdoc
+  3:46  error  'content' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\services\userProfileService.ts
+  25:8  error  Missing JSDoc comment  require-jsdoc
+  40:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\user\UserActivity.ts
+  2:8   error  Missing JSDoc comment         require-jsdoc
+  3:14  error  Missing JSDoc comment         require-jsdoc
+  4:5   error  Unexpected console statement  no-console
+
+C:\CFH\backend\services\user\UserNotifications.ts
+  2:8   error  Missing JSDoc comment         require-jsdoc
+  3:19  error  Missing JSDoc comment         require-jsdoc
+  4:5   error  Unexpected console statement  no-console
+
+C:\CFH\backend\services\user\UserPreferences.ts
+  2:8   error  Missing JSDoc comment         require-jsdoc
+  3:17  error  Missing JSDoc comment         require-jsdoc
+  4:5   error  Unexpected console statement  no-console
+
+C:\CFH\backend\services\user\UserSettings.ts
+  2:8   error  Missing JSDoc comment         require-jsdoc
+  3:17  error  Missing JSDoc comment         require-jsdoc
+  4:5   error  Unexpected console statement  no-console
+
+C:\CFH\backend\services\voice\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\vr\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\services\websocket\index.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\tests\notification\NotificationService.test.ts
+  29:46  error  Parsing error: Unterminated string literal
+
+C:\CFH\backend\types\utils.d.ts
+   52:10  error  Missing JSDoc comment  require-jsdoc
+   62:10  error  Missing JSDoc comment  require-jsdoc
+   72:10  error  Missing JSDoc comment  require-jsdoc
+   82:10  error  Missing JSDoc comment  require-jsdoc
+   92:10  error  Missing JSDoc comment  require-jsdoc
+  102:10  error  Missing JSDoc comment  require-jsdoc
+  120:10  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\AIBidPredictor.ts
+   8:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  75:46  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\AIChatModerator.test.ts
+  10:29  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIContractRiskAssessor.ts
+  13:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIDisputePredictor.test.ts
+  8:19  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIDisputePredictor.ts
+   8:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:26  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  12:31  error  Missing JSDoc comment                           require-jsdoc
+  17:32  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\AIEscrowRiskAssessor.ts
+  11:27  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  12:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIFinancingRecommender.ts
+  11:24  error  Missing JSDoc comment  require-jsdoc
+  21:26  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\AIFraudDetection.ts
+   8:20  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:26  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:7   error  'User' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  10:14  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  13:29  error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\AILenderMatchRecommender.ts
+   8:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  22:67  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\AILenderTermsAnalyzer.ts
+   9:29  error  Missing JSDoc comment                                                          require-jsdoc
+   9:30  error  'termsData' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+  17:29  error  Missing JSDoc comment                                                          require-jsdoc
+  17:41  error  'userProfile' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\utils\AILoanRecommender.ts
+  10:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIMarketplaceAnalytics.ts
+   5:27  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   6:30  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   7:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  15:67  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\AIPricingEngine.ts
+  8:15  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  9:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIPricingEngineHybrid.ts
+   9:15  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:7   error  'Listing' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  10:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  11:7   error  'fs' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  11:12  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  14:65  error  Expected comment to be above code               line-comment-position
+  18:1   error  Missing JSDoc comment                           require-jsdoc
+  19:17  error  'make' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  19:23  error  'model' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  22:51  error  Expected comment to be above code               line-comment-position
+  28:1   error  Missing JSDoc comment                           require-jsdoc
+  33:1   error  Missing JSDoc comment                           require-jsdoc
+  40:1   error  Missing JSDoc comment                           require-jsdoc
+  65:1   error  Missing JSDoc comment                           require-jsdoc
+  69:52  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\AIResolutionRecommender.ts
+   9:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\AIRideStrategyCoach.ts
+  6:1  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\AISellerNegotiationCoach.test.ts
+  5:34  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\BlockchainEscrowAudit.ts
+  4:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  5:27  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  6:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\CrownAutoWire.ts
+   6:12   error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   7:14   error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  16:144  error  Unnecessary escape character: \"                no-useless-escape
+  16:170  error  Unnecessary escape character: \"                no-useless-escape
+  24:44   error  Unnecessary escape character: \"                no-useless-escape
+  24:51   error  Unnecessary escape character: \"                no-useless-escape
+  41:1    error  Missing JSDoc comment                           require-jsdoc
+  51:1    error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\DisputeResolutionHelper.ts
+   9:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  11:30  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  12:33  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\EmailDigestScheduler.ts
+   8:14  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:18  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:20  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  11:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  11:45  error  Expected comment to be above code               line-comment-position
+  27:25  error  Missing JSDoc comment                           require-jsdoc
+  37:19  error  Expected comment to be above code               line-comment-position
+  38:20  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\EquityFlowOrchestrator.ts
+  10:15  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\EscrowWarningEngine.ts
+   8:14  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:18  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:45  error  Expected comment to be above code               line-comment-position
+  17:36  error  Expected comment to be above code               line-comment-position
+  33:26  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\HaulerMissionsEngine.ts
+  17:24  error  Missing JSDoc comment              require-jsdoc
+  22:31  error  Missing JSDoc comment              require-jsdoc
+  26:47  error  Expected comment to be above code  line-comment-position
+  33:21  error  Missing JSDoc comment              require-jsdoc
+
+C:\CFH\backend\utils\LenderMatchEngine.ts
+   8:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:37  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\LoanCalculatorWidget.ts
+   9:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  75:20  error  Expected comment to be above code               line-comment-position
+
+C:\CFH\backend\utils\LoanMatchEngine.ts
+  5:28  error  Missing JSDoc comment                             require-jsdoc
+  6:30  error  'creditScore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\utils\LoyaltyProgramEngine.ts
+  12:12  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  12:34  error  Expected comment to be above code               line-comment-position
+  21:1   error  Missing JSDoc comment                           require-jsdoc
+  28:1   error  Missing JSDoc comment                           require-jsdoc
+  33:1   error  Missing JSDoc comment                           require-jsdoc
+  54:1   error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\PushNotificationService.ts
+    8:15  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+    8:42  error  Expected comment to be above code               line-comment-position
+    9:32  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+    9:80  error  Expected comment to be above code               line-comment-position
+   10:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   10:42  error  Expected comment to be above code               line-comment-position
+   12:1   error  Missing JSDoc comment                           require-jsdoc
+   13:14  error  Missing JSDoc comment                           require-jsdoc
+   31:29  error  Missing JSDoc comment                           require-jsdoc
+   61:38  error  Missing JSDoc comment                           require-jsdoc
+  100:28  error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\RiskAssessmentEngine.ts
+  6:30  error  'integrateDisputeHistory' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\utils\SellerBadgeEngine.ts
+    7:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+    8:20  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+    9:7   error  'Seller' is assigned a value but never used     @typescript-eslint/no-unused-vars
+    9:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   12:1   error  Missing JSDoc comment                           require-jsdoc
+   24:1   error  Missing JSDoc comment                           require-jsdoc
+   37:1   error  Missing JSDoc comment                           require-jsdoc
+   48:1   error  Missing JSDoc comment                           require-jsdoc
+   57:1   error  Missing JSDoc comment                           require-jsdoc
+   66:1   error  Missing JSDoc comment                           require-jsdoc
+   73:1   error  Missing JSDoc comment                           require-jsdoc
+  107:1   error  Missing JSDoc comment                           require-jsdoc
+  116:1   error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\SellerBadgeEngineGrokOld.ts
+  13:7   error  'Reputation' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  13:20  error  Require statement not part of import statement   @typescript-eslint/no-var-requires
+  13:58  error  Expected comment to be above code                line-comment-position
+
+C:\CFH\backend\utils\ai\AIInspectionDamageClassifier.ts
+  6:24  error  Missing JSDoc comment                                                        require-jsdoc
+  6:25  error  'imageData' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\utils\ai\MechanicAIExplainer.ts
+  6:27  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\analyticsExportUtils.ts
+   8:21  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:12  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  11:14  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\arbitration\AIDisputePredictor.ts
+   8:16  error  Require statement not part of import statement           @typescript-eslint/no-var-requires
+   9:17  error  Require statement not part of import statement           @typescript-eslint/no-var-requires
+  10:52  error  'generatePdfSummary' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  10:75  error  Require statement not part of import statement           @typescript-eslint/no-var-requires
+  11:16  error  Require statement not part of import statement           @typescript-eslint/no-var-requires
+  14:1   error  Missing JSDoc comment                                    require-jsdoc
+  19:50  error  Expected comment to be above code                        line-comment-position
+  32:1   error  Missing JSDoc comment                                    require-jsdoc
+  66:1   error  Missing JSDoc comment                                    require-jsdoc
+  84:1   error  Missing JSDoc comment                                    require-jsdoc
+
+C:\CFH\backend\utils\arbitration\AIDisputePredictorGrokOld3.ts
+  3:8   error  'mongoose' is defined but never used               @typescript-eslint/no-unused-vars
+  4:10  error  'Dispute' is defined but never used                @typescript-eslint/no-unused-vars
+  5:10  error  'Auction' is defined but never used                @typescript-eslint/no-unused-vars
+  6:10  error  'predictDisputeOutcome' is defined but never used  @typescript-eslint/no-unused-vars
+  7:8   error  Missing JSDoc comment                              require-jsdoc
+
+C:\CFH\backend\utils\arbitration\arbitrationExportTools.ts
+  3:8   error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:10  error  'Dispute' is defined but never used   @typescript-eslint/no-unused-vars
+  5:10  error  'Auction' is defined but never used   @typescript-eslint/no-unused-vars
+  6:8   error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\arbitration\arbitrationExportToolsGrokOld.ts
+   8:12  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+   9:14  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  10:21  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  11:29  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  12:17  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\auction\AIInsightEngine.ts
+  3:8   error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:10  error  'Auction' is defined but never used   @typescript-eslint/no-unused-vars
+  5:8   error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\auction\AuctionAnalyticsScheduler.ts
+  3:8  error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  5:8  error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\auction\AuctionTimer.ts
+  8:27  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\buyerExportUtils.ts
+  3:8   error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:10  error  'Auction' is defined but never used   @typescript-eslint/no-unused-vars
+  5:8   error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\buyerExportUtilsGrokOld.ts
+  15:21  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  16:12  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  17:14  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  18:16  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  19:20  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  24:1   error  Missing JSDoc comment                           require-jsdoc
+  28:1   error  Missing JSDoc comment                           require-jsdoc
+  52:1   error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\cacheManager.ts
+  3:8   error  Missing JSDoc comment                                                    require-jsdoc
+  3:40  error  'value' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:47  error  Unexpected any. Specify a different type                                 @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\utils\cod1HaulerReviewAI.ts
+  5:26  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\constants.ts
+   7:8  error  Unexpected var, use let or const instead  no-var
+  15:8  error  Unexpected var, use let or const instead  no-var
+  21:8  error  Unexpected var, use let or const instead  no-var
+
+C:\CFH\backend\utils\crypto.ts
+  11:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\errors.ts
+   7:14  error  Missing JSDoc comment  require-jsdoc
+  18:14  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\escrowLogic.ts
+  3:8   error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:10  error  'Escrow' is defined but never used    @typescript-eslint/no-unused-vars
+  5:8   error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\escrow\EscrowAutoReleaseEngine.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\escrow\EscrowBlockchainExporter.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\escrow\EscrowDisputeLinker.ts
+  3:10  error  'Dispute' is defined but never used  @typescript-eslint/no-unused-vars
+  4:8   error  Missing JSDoc comment                require-jsdoc
+
+C:\CFH\backend\utils\escrow\EscrowTransactionPDFExporter.ts
+  3:8  error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:8  error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\exportUtils\arbitrationExportTools.ts
+   9:8   error  'fs' is defined but never used                @typescript-eslint/no-unused-vars
+  24:42  error  Missing JSDoc comment                         require-jsdoc
+  32:13  error  'pdfData' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\CFH\backend\utils\exportUtils\pdfExportService.ts
+  3:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:29  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:35  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\utils\insurance\InsuranceMarketPredictor.ts
+  27:41  error  Expected comment to be above code  line-comment-position
+  28:41  error  Expected comment to be above code  line-comment-position
+  29:41  error  Expected comment to be above code  line-comment-position
+  79:22  error  Expected comment to be above code  line-comment-position
+
+C:\CFH\backend\utils\insurance\InsuranceQuoteAnalyzer.ts
+  3:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:30  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:36  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\utils\judgeModelUtils.ts
+  3:8  error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:8  error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\lenderExportUtils.ts
+  3:8  error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:8  error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\mechanic\MechanicAIRepairRecommender.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\mechanic\MechanicBadgeCelebrationLogic.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\mechanic\MechanicInspectionReportBuilder.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\mechanic\MechanicLeaderboard.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\mechanic\MechanicVoiceDictation.ts
+  3:8   error  Missing JSDoc comment                                                    require-jsdoc
+  3:39  error  'audio' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:46  error  Unexpected any. Specify a different type                                 @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\utils\mechanic\RepairCostPredictor.ts
+  6:31  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+  8:27  error  Missing JSDoc comment                           require-jsdoc
+
+C:\CFH\backend\utils\mechanic\ReportSharer.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\notificationDispatcher.ts
+  4:22  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
+
+C:\CFH\backend\utils\notificationTrigger.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\pdfGenerator.ts
+  3:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:29  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:35  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+C:\CFH\backend\utils\reputationEngine.ts
+  3:8  error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:8  error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\scalabilityManager.ts
+  3:8  error  Missing JSDoc comment  require-jsdoc
+
+C:\CFH\backend\utils\scoreUtils.ts
+  3:8  error  'mongoose' is defined but never used  @typescript-eslint/no-unused-vars
+  4:8  error  Missing JSDoc comment                 require-jsdoc
+
+C:\CFH\backend\utils\validateInput.ts
+  3:8   error  Missing JSDoc comment                                                   require-jsdoc
+  3:31  error  'data' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  3:37  error  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+✖ 374 problems (374 errors, 0 warnings)
+

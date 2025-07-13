@@ -1,0 +1,94 @@
+# CFH Automotive Ecosystem: Marketplace Feature List
+
+This document outlines the finalized features for the Marketplace module of the CFH Automotive Ecosystem, covering `MarketplaceSearch.jsx` (frontend component for searching vehicles and services) and `marketplaceRoutes.js` (backend API routes for search management). These features support a $200K revenue goal through subscriptions ($10-$30/month) and listing fees ($5-$20), aligning with the freemium model, simplicity, and integration with CFH Auctions and services.
+
+## MarketplaceSearch.jsx
+**Path**: C:\CFH\frontend\src\components\marketplace\MarketplaceSearch.jsx  
+**Purpose**: Search for vehicles (from CFH Auctions, dealers, private sellers) and CFH services (e.g., insurance, transport).
+
+### Free Tier
+- Search vehicles or services using keywords like “Honda Civic” or “oil change.”
+- Choose between Vehicles or Services categories.
+- Filter vehicles by Make, Model, Year, and ZIP code.
+- Filter services by Type (e.g., Mechanic) and Location.
+- View results with photo, price/current bid, location, and provider rating.
+- Sort by Price or Distance.
+- Save up to 3 searches.
+- See basic stats like average vehicle price or popular listings.
+- Accessibility: Screen reader support, keyboard navigation.
+- Error messages for no results.
+
+### Standard Tier
+- Unified search bar for all keywords.
+- Filter vehicles by Price, Mileage, Body Style (e.g., SUV), and Seller Type (e.g., Auction).
+- Filter services by provider ratings and sub-services (e.g., oil change).
+- Map view showing result locations.
+- Scroll through multiple result pages.
+- Search for up to 2 vehicles at once.
+- Preview basic vehicle history (e.g., accidents, owners).
+- Sort by Year or Auction End Date.
+- See CFH Auction listings in results.
+- Error messages for invalid searches.
+
+### Premium Tier
+- Filter vehicles by Trim, Engine, Colors, Features, or No Reserve auctions.
+- Filter services by certifications (e.g., ASE Mechanic) or availability.
+- Save unlimited searches with email/in-app alerts for new matches.
+- View results with more photos and details.
+- Use advanced search with Boolean operators (e.g., “Honda AND low mileage”).
+- Access analytics like regional price trends or demand.
+- No ads in search results.
+- Customize searches by seller type (e.g., private) or warranty.
+- See real-time pricing based on market and auction data.
+- Earn 50 points per search ($0.10/point, redeemable for discounts).
+
+### Wow++ Tier
+- AI suggests vehicles/services based on your searches or CFH Garage.
+- Upload a car photo to find similar vehicles.
+- Search using natural language (e.g., “red sports car under $30,000 near me”).
+- Estimate total costs (insurance, financing, maintenance) for vehicles.
+- Get service quotes (e.g., insurance, transport) for vehicles in results.
+- Preview services like window tinting in AR on your car.
+- Personalized homepage with tailored recommendations.
+- Earn “Deal Finder” badge for completing purchases.
+- Blockchain ensures transparent transaction records.
+- Link to pre-approved financing for vehicles.
+- Revenue: $10-$30/month subscriptions, $5-$20/listing fees, $2/API call.
+
+## marketplaceRoutes.js
+**Path**: C:\cfh\backend\routes\marketplace\marketplaceRoutes.js  
+**Purpose**: Backend APIs to manage marketplace searches.
+
+### Free Tier
+- Search API for basic keywords and limited filters.
+- View basic vehicle or service details.
+- Save up to 3 searches.
+- Secure with user login (JWT).
+
+### Standard Tier
+- Retrieve saved searches.
+- Delete saved searches.
+- Search for up to 2 vehicles at once.
+- Get basic vehicle history previews.
+- Fast, secure API responses (<500ms).
+
+### Premium Tier
+- Use advanced filters (e.g., Colors, Certifications).
+- Set custom alerts for new listings.
+- Access basic analytics (e.g., price trends).
+- View featured listings.
+- Customize searches with specific conditions.
+- Get real-time pricing insights.
+- Receive updates via webhooks.
+- Earn 100 points per engagement action ($0.10/point).
+
+### Wow++ Tier
+- AI-powered search suggestions.
+- Process natural language searches.
+- Search using uploaded images.
+- Calculate total ownership costs.
+- Get personalized recommendations.
+- Record transactions on blockchain.
+- Link to financing offers.
+- Earn “Market Explorer” badge for frequent use.
+- Revenue: $2 per API call supports $200K goal.

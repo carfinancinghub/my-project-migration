@@ -1,0 +1,103 @@
+CFH Automotive Ecosystem: Analytics Dashboard Feature List
+Features for AnalyticsDashboard.jsx (frontend) and analyticsRoutes.js (backend APIs). Supports $50K revenue goal via $5-$15/month subscriptions, enhancing business insights.
+AnalyticsDashboard.jsx
+Path: C:\CFH\frontend\src\components\analytics\AnalyticsDashboard.jsxPurpose: Visualize and manage platform performance metrics.
+Free Tier
+
+Basic dashboard: profile views, listings.
+Limited history: 30 days.
+Standard reports: monthly views.
+Basic KPIs: auctions, registrations.
+Basic trends: weekly/monthly.
+Data tables: basic sorting.
+Printable view.
+Accessibility: WCAG 2.1, screen reader support.
+Error: data load failures, no data.
+
+Standard Tier
+
+Date range filtering: 7/30 days, custom.
+Real-time updates: live data streaming.
+Advanced filtering: time, role, category.
+Auctions integration: bid performance.
+
+Premium Tier
+
+Interactive charts: drill-downs.
+Comparison: month-over-month.
+Heatmaps: geographic customer data.
+Conversion funnels: view-to-sale.
+Demographic insights: anonymized.
+Custom reports: user-defined metrics.
+Data exports: CSV, Excel, PDF.
+Scheduled reports: weekly/monthly emails.
+Benchmarking: peer comparisons.
+Predictive analytics: auction trends.
+Segmentation: customer groups.
+Advanced insights: performance metrics.
+Custom widgets: user-selected metrics.
+Multi-dimensional: cross-parameter analysis.
+Earn 50 points/engagement ($0.10/point).
+
+Wow++ Features
+
+AI insights: actionable recommendations.
+“Analytics Champion” badge for milestones.
+Redeem points for ad credits.
+What-if forecasting: scenario modeling.
+NLP queries: natural language input.
+Real-time dashboard: live metrics.
+Customer journey: discovery paths.
+AI performance scoring: cross-module.
+Dynamic visualizations: interactive charts.
+Gamified leaderboards: top analysts.
+Monetization: $5-$15/month, $2/API call.
+CQS: <1s load, audit logging.
+Error Handling: Retry data fetches (1s).
+
+analyticsRoutes.js
+Path: C:\cfh\backend\routes\analytics\analyticsRoutes.jsPurpose: APIs for analytics data aggregation and delivery.
+Free Tier
+
+Dashboard data: GET /analytics/dashboard.
+Basic KPIs: GET /getBasicKPI.
+Basic trends: GET /getBasicTrendData.
+Secure with JWT.
+CQS: Rate limit (100/hour).
+
+Standard Tier
+
+Real-time: GET /getRealTimeAnalytics.
+Advanced filters: GET /getFilteredAnalytics.
+Fast APIs (<500ms).
+CQS: HTTPS, encryption.
+Error Handling: 400 invalid, 404 not found.
+
+Premium Tier
+
+Advanced queries: GET /analytics/query.
+Exports: GET /analytics/export.
+Scheduled reports: Internal cron job.
+Benchmarking: GET /analytics/benchmarks.
+Predictive: GET /getPredictiveAnalytics.
+Segmentation: GET /getSegmentedAnalytics.
+Insights: GET /getAdvancedPerformanceInsights.
+Widgets: POST /createCustomWidget.
+Earn 100 points/engagement ($0.10/point).
+CQS: Redis caching, 99.9% uptime.
+
+Wow++ Features
+
+AI insights: GET /analytics/ai-insights.
+Forecasting: POST /analytics/forecast.
+NLP queries: POST /analytics/nlp-query.
+Real-time pipeline: Internal Kafka.
+Gamification: POST /trackAnalyticsGamificationPoints.
+Journey analysis: GET /analytics/journey.
+Performance scoring: Internal API.
+Dynamic visuals: Internal chart logic.
+Leaderboards: API queries.
+Monetization: $2/API call.
+CQS: <1s response, audit logging.
+Error Handling: 429 rate limits, retries.
+

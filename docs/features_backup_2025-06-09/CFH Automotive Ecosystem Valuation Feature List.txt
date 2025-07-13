@@ -1,0 +1,93 @@
+# CFH Automotive Ecosystem: Valuation Feature List
+
+## ValuationCalculator.jsx
+**Path**: C:\CFH\frontend\src\components\valuation\ValuationCalculator.jsx  
+**Purpose**: React component for calculating/viewing vehicle valuations.
+
+### Free
+- Basic valuation: VIN or Make/Model/Year, mileage, general condition.  
+- Basic comparables: Average market price for similar vehicles.  
+- Key influencing factors: Generic value drivers.  
+- Save one report: Basic summary.  
+- Auctions integration: QuickValue for auction listings.  
+- **CQS**: WCAG 2.1 AA, <2s load time.  
+- **Error Handling**: “Invalid VIN” alert.
+
+### Standard
+- Detailed vehicle input: Trim, engine, options.  
+- Condition assessment: Excellent, Good, Fair, Poor.  
+- Location input: ZIP code for regional adjustments.  
+- Valuation ranges: Trade-in, private party, retail.  
+- Adjustment factors: Specific condition, options impact.  
+- Print/save report: Basic summary.  
+- Multi-vehicle valuation: Up to 2 vehicles.  
+- **CQS**: Input sanitization, headers.  
+- **Error Handling**: “Mileage invalid” alert.
+
+### Premium
+- Multi-point report: Detailed trade-in, private, retail values.  
+- Vehicle history integration: Carfax/AutoCheck snippet.  
+- Depreciation curve: 1-3 year projection.  
+- Historical valuation: VIN-based trends.  
+- Adjustment simulator: What-if condition changes.  
+- Portfolio valuation: Multiple vehicles.  
+- Valuation analytics: Regional sales comparisons.  
+- Advanced customization: Service history, upgrades.  
+- Gamification: 50 points/valuation ($0.10/point).  
+- **CQS**: CSP headers, secure data.
+
+### Wow++
+- AI future value forecast: 1-5 year projections.  
+- Modification impact analyzer: Aftermarket value effects.  
+- AR damage input: Camera-based damage assessment.  
+- Comparable listings: Visuals from CFH Auctions.  
+- Value boost recommendations: Actionable improvements.  
+- Insurance valuation check: Compare insured vs. market value.  
+- Gamification: “Market Master” badge for accurate sales.  
+- Blockchain transparency: Immutable valuation records.  
+- Real-time market data: Dynamic updates.  
+- Monetization: $5-$50/report, $100-$500/month API, contributes to $100K goal.  
+- **CQS**: <1s load time, audit logging.  
+- **Error Handling**: Retry API failures with 1s intervals.
+
+## valuationRoutes.js
+**Path**: C:\cfh\backend\routes\valuation\valuationRoutes.js  
+**Purpose**: Node.js/Express routes for valuation management.
+
+### Free
+- `POST /valuation/calculate`: Basic QuickValue.  
+- `GET /valuation/reports/:reportId`: Basic report details.  
+- `POST /valuation/reports/:reportId/save`: Save one report.  
+- **CQS**: JWT authentication, rate limiting (100/hour).
+
+### Standard
+- `GET /valuation/reports/user/:userId`: Saved report list.  
+- Multi-vehicle valuation: `POST /bulkValuation`.  
+- VIN decoding: `POST /valuation/decode-vin`.  
+- **CQS**: HTTPS, <500ms response, encryption.  
+- **Error Handling**: 400 invalid inputs, 404 not found.
+
+### Premium
+- `POST /valuation/calculate/detailed`: Detailed report.  
+- `GET /valuation/reports/:vin/history`: Historical data.  
+- `POST /valuation/simulate`: Adjustment simulation.  
+- `POST /valuation/portfolio`: Portfolio valuation.  
+- Webhooks: `POST /valuation/callbacks/partner/:partnerId`.  
+- Custom parameters: `POST /generateCustomValuation`.  
+- Analytics: `GET /getValuationAnalytics`.  
+- Comparables: `GET /getComparableVehicles`.  
+- Gamification: `POST /valuation/events` (100 points/action).  
+- **CQS**: Redis caching, 99.9% uptime.
+
+### Wow++
+- `POST /valuation/predict-future-value`: AI future projections.  
+- `POST /valuation/assess-modifications`: Modification impact.  
+- `POST /valuation/process-ar-damage`: AR damage data.  
+- `GET /valuation/comparables`: Visual comparables.  
+- `GET /valuation/:reportId/boost-suggestions`: Value boost advice.  
+- `POST /storeValuationBlockchain`: Blockchain records.  
+- Real-time data: `GET /getMarketTrends`.  
+- Gamification: “Valuation Virtuoso” badge for frequent use.  
+- Monetization: $2/API call, contributes to $100K goal.  
+- **CQS**: <1s response, audit logging.  
+- **Error Handling**: 429 rate limits, retry timeouts.

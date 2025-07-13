@@ -1,0 +1,90 @@
+CFH Automotive Ecosystem: Marketplace Listings Feature List
+Features for MarketplaceListings.jsx (frontend) and marketplaceListingsRoutes.js (backend APIs). Supports $70K revenue goal via $5-$20/month subscriptions and listing fees, enhancing listing management.
+MarketplaceListings.jsx
+Path: C:\CFH\frontend\src\components\marketplace\MarketplaceListings.jsxPurpose: Create, search, and manage marketplace listings for vehicles and services.
+Free Tier
+
+Create basic listings: title, description, price, 1 image.
+Basic search: keyword, category (e.g., vehicles, services).
+View listings: details, primary image, seller profile.
+Basic insights: view count, favorites.
+Accessibility: WCAG 2.1, screen reader support, keyboard navigation.
+Error: submission failures, invalid inputs.
+
+Standard Tier
+
+Advanced filters: price range, location, vehicle type.
+Upload up to 5 images per listing.
+Buyer-seller messaging: in-app chat.
+Listing status: active, pending, sold.
+Auctions integration: link to CFH Auctions.
+CQS: <2s load time, secure inputs.
+
+Premium Tier
+
+Upload up to 10 images/videos.
+Enhanced listing visibility: featured placements.
+Advanced insights: click-through rates, buyer demographics.
+Custom listing templates: pre-filled fields.
+Priority support: faster listing approvals.
+Multi-listing management: bulk edits.
+Earn 50 points/listing ($0.10/point, redeemable for discounts).
+CQS: <1s load time, audit logging.
+
+Wow++ Tier
+
+AI listing suggestions: optimize title, description based on market trends.
+“Top Seller” badge for high-performing listings.
+Redeem points for featured listing boosts.
+AR preview: visualize vehicle in buyer’s garage.
+Blockchain verification: transparent listing history.
+Automated pricing: real-time market-based suggestions.
+Integration with escrow, financing, transport services.
+Leaderboards: top marketplace sellers.
+Monetization: $5-$20/month, $5-$20/listing fee, $2/API call.
+CQS: <1s response, audit logging.
+Error Handling: Retry submission failures (1s).
+
+marketplaceListingsRoutes.js
+Path: C:\cfh\backend\routes\marketplace\marketplaceListingsRoutes.jsPurpose: APIs for listing creation, management, and analytics.
+Free Tier
+
+Create listing: POST /marketplace/listings.
+Search listings: GET /marketplace/listings.
+View listing: GET /marketplace/listings/:listingId.
+Basic insights: GET /marketplace/listings/:listingId/insights.
+Secure with JWT.
+CQS: Rate limiting (100/hour).
+
+Standard Tier
+
+Update listing: PUT /marketplace/listings/:listingId.
+Upload images: POST /marketplace/listings/:listingId/images.
+Messaging: POST /marketplace/listings/:listingId/messages.
+Status updates: PUT /marketplace/listings/:listingId/status.
+Fast APIs (<500ms).
+CQS: HTTPS, encryption.
+Error Handling: 400 invalid inputs, 404 not found.
+
+Premium Tier
+
+Bulk edits: PUT /marketplace/listings/bulk.
+Featured listings: POST /marketplace/listings/:listingId/feature.
+Advanced insights: GET /marketplace/listings/:listingId/analytics.
+Custom templates: POST /marketplace/listings/templates.
+Webhooks: POST /marketplace/listings/:listingId/webhooks.
+Earn 100 points/engagement ($0.10/point).
+CQS: Redis caching, 99.9% uptime.
+
+Wow++ Tier
+
+AI suggestions: GET /marketplace/listings/ai-suggestions.
+Blockchain verification: POST /marketplace/listings/:listingId/verify.
+AR preview data: GET /marketplace/listings/:listingId/ar-data.
+Automated pricing: GET /marketplace/listings/:listingId/pricing.
+Gamification: POST /trackMarketplacePoints.
+Leaderboards: GET /marketplace/leaderboards.
+Monetization: $2/API call.
+CQS: <1s response, audit logging.
+Error Handling: 429 rate limits, retry timeouts.
+

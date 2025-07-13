@@ -1,0 +1,5 @@
+bash: free: command not found
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     1510       1    1510      21676  ?         197614 08:40:07 /usr/bin/mintty
+     3653    1511    3653      19644  pty0      197614 14:40:19 /usr/bin/ps
+     1511    1510    1511       5696  pty0      197614 08:40:07 /usr/bin/bash

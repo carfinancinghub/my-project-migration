@@ -1,0 +1,93 @@
+CFH Automotive Ecosystem: Loyalty Program Feature List
+Features for LoyaltyProgram.jsx (frontend) and loyaltyProgramRoutes.js (backend APIs). Supports $65K revenue goal via $5-$15/month subscriptions, boosting retention.
+LoyaltyProgram.jsx
+Path: C:\CFH\frontend\src\components\loyalty\LoyaltyProgram.jsxPurpose: Manage loyalty points, tiers, and rewards.
+Free Tier
+
+Enroll in Bronze tier.
+Earn points (1x rate) for actions.
+View points balance, last 30 days history.
+Redeem for basic rewards (discounts, draws).
+Progress bar to next tier.
+Basic analytics: points earned.
+Accessibility: WCAG 2.1, screen reader support.
+Error: redemption failures.
+
+Standard Tier
+
+Points history: all transactions.
+Tier benefits explanation.
+Reward catalog: filter by category.
+Program rules/FAQ link.
+Auctions integration: points for bids.
+
+Premium Tier
+
+Boosted points (1.25x Silver, 1.5x Gold).
+Exclusive rewards: deeper discounts, merchandise.
+Annual anniversary, birthday bonuses.
+Lower points for redemptions.
+No points expiration.
+Advanced analytics: earning trends.
+Custom campaigns: bonus points.
+Earn 50 points/action ($0.10/point).
+
+Wow++ Tier
+
+AI reward/goal suggestions.
+Gamified challenges: bonus points.
+“CFH Ambassador” badge for milestones.
+Points gifting, community pooling.
+Surprise rewards for active users.
+Visual tier journey map.
+Partner offers: local services.
+Points-for-charity donations.
+Trust signal: tier badge display.
+Leaderboards for top earners.
+Monetization: $5-$15/month, $2/API call.
+CQS: <1s load, audit logging.
+Error Handling: Retry redemptions (1s).
+
+loyaltyProgramRoutes.js
+Path: C:\cfh\backend\routes\loyalty\loyaltyProgramRoutes.jsPurpose: APIs for loyalty program management.
+Free Tier
+
+Log points: POST /loyalty/events.
+Get status: GET /users/me/loyalty/status.
+History: GET /users/me/loyalty/history.
+Rewards: GET /loyalty/rewards.
+Redeem: POST /loyalty/rewards/:rewardId/redeem.
+Secure with JWT.
+CQS: Rate limit (100/hour).
+
+Standard Tier
+
+Tier calc: Internal service.
+Fast, secure APIs (<500ms).
+CQS: HTTPS, encryption.
+Error Handling: 400 invalid, 404 not found.
+
+Premium Tier
+
+Boosted points: Internal logic.
+Exclusive rewards: GET /loyalty/rewards.
+Bonus points: Internal service.
+Analytics: GET /users/me/loyalty/analytics.
+Campaigns: POST /loyalty/campaigns.
+Earn 100 points/engagement ($0.10/point).
+CQS: Redis caching, 99.9% uptime.
+
+Wow++ Tier
+
+AI suggestions: GET /users/me/loyalty/ai-suggestions.
+Challenges: GET/POST /loyalty/challenges.
+Gifting: POST /users/me/loyalty/gift-points.
+Surprise rewards: Internal service.
+Partner offers: External API.
+Charity: POST /loyalty/rewards/donate-charity.
+Trust signal: Internal logic.
+Leaderboards: GET /loyalty/leaderboards.
+Monetization: $2/API call.
+CQS: <1s response, audit logging.
+Error Handling: 429 rate limits, retry timeouts.
+

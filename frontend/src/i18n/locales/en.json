@@ -1,0 +1,16 @@
+{
+  "escrow": {
+    "propose_condition": "Propose a New Condition",
+    "propose_form_label": "Form to propose a new escrow condition",
+    "condition_description": "Condition Description",
+    "submit_proposal": "Submit Proposal",
+    "close_dialog": "Close propose condition dialog",
+    "close": "Close",
+    "transaction_title": "Escrow Transaction: {{id}}",
+    "propose_condition_aria": "Propose a new custom condition for this transaction",
+    "errors": {
+      "api_error": "An API error occurred.",
+      "transaction_fetch": "Failed to fetch transaction."
+    }
+  }
+}

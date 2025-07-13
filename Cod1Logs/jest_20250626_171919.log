@@ -1,0 +1,192 @@
+PASS tests/reports/ReportService.test.ts
+PASS tests/payments/PaymentService.test.ts
+FAIL tests/middleware/RBACMiddleware.test.ts
+  ● RBACMiddleware › allows access for user with permitted role
+
+    TypeError: Cannot read properties of undefined (reading 'error')
+
+    [0m [90m 23 |[39m     expect(next)[33m.[39mtoHaveBeenCalled()[33m;[39m
+     [90m 24 |[39m     expect(res[33m.[39mstatus)[33m.[39mnot[33m.[39mtoHaveBeenCalled()[33m;[39m
+    [31m[1m>[22m[39m[90m 25 |[39m     expect(logger[33m.[39merror)[33m.[39mnot[33m.[39mtoHaveBeenCalled()[33m;[39m
+     [90m    |[39m                   [31m[1m^[22m[39m
+     [90m 26 |[39m   })[33m;[39m
+     [90m 27 |[39m
+     [90m 28 |[39m   it([32m'denies access for user without permitted role'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.<anonymous> (tests/middleware/RBACMiddleware.test.ts:25:19)
+
+  ● RBACMiddleware › denies access for user without permitted role
+
+    TypeError: Cannot read properties of undefined (reading 'error')
+
+    [0m [90m 11 |[39m   [36mreturn[39m (req[33m:[39m [33mAuthenticatedRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {
+     [90m 12 |[39m     [36mif[39m ([33m![39mreq[33m.[39muser [33m||[39m [33m![39mreq[33m.[39muser[33m.[39mroles [33m||[39m [33m![39mreq[33m.[39muser[33m.[39mroles[33m.[39msome(role [33m=>[39m allowedRoles[33m.[39mincludes(role))) {
+    [31m[1m>[22m[39m[90m 13 |[39m       logger[33m.[39merror([32m`Access denied for user ${req.user?.id || 'unknown'}`[39m)[33m;[39m
+     [90m    |[39m              [31m[1m^[22m[39m
+     [90m 14 |[39m       [36mreturn[39m res[33m.[39mstatus([35m403[39m)[33m.[39mjson({ error[33m:[39m [32m'Access denied'[39m })[33m;[39m
+     [90m 15 |[39m     }
+     [90m 16 |[39m     next()[33m;[39m[0m
+
+      at middleware/RBACMiddleware.ts:13:14
+      at Object.<anonymous> (tests/middleware/RBACMiddleware.test.ts:30:26)
+
+FAIL tests/notification/NotificationService.test.ts
+  ● NotificationService › should send email notification and return success
+
+    TypeError: Cannot read properties of undefined (reading 'error')
+
+    [0m [90m  9 |[39m     } [36mcatch[39m (error[33m:[39m unknown) {
+     [90m 10 |[39m       [36mconst[39m errorMessage [33m=[39m error [36minstanceof[39m [33mError[39m [33m?[39m error[33m.[39mmessage [33m:[39m [32m'Unknown error'[39m[33m;[39m
+    [31m[1m>[22m[39m[90m 11 |[39m       logger[33m.[39merror([32m`Failed to send email notification to ${to}: ${errorMessage}`[39m)[33m;[39m
+     [90m    |[39m              [31m[1m^[22m[39m
+     [90m 12 |[39m       [36mthrow[39m [36mnew[39m [33mError[39m([32m`Notification failed: ${errorMessage}`[39m)[33m;[39m
+     [90m 13 |[39m     }
+     [90m 14 |[39m   }[0m
+
+      at NotificationService.sendEmail (services/notification/NotificationService.ts:11:14)
+      at Object.<anonymous> (tests/notification/NotificationService.test.ts:14:34)
+
+  ● NotificationService › should send push notification and return success
+
+    TypeError: Cannot read properties of undefined (reading 'error')
+
+    [0m [90m 20 |[39m     } [36mcatch[39m (error[33m:[39m unknown) {
+     [90m 21 |[39m       [36mconst[39m errorMessage [33m=[39m error [36minstanceof[39m [33mError[39m [33m?[39m error[33m.[39mmessage [33m:[39m [32m'Unknown error'[39m[33m;[39m
+    [31m[1m>[22m[39m[90m 22 |[39m       logger[33m.[39merror([32m`Failed to send push notification to ${to}: ${errorMessage}`[39m)[33m;[39m
+     [90m    |[39m              [31m[1m^[22m[39m
+     [90m 23 |[39m       [36mthrow[39m [36mnew[39m [33mError[39m([32m`Notification failed: ${errorMessage}`[39m)[33m;[39m
+     [90m 24 |[39m     }
+     [90m 25 |[39m   }[0m
+
+      at NotificationService.sendPush (services/notification/NotificationService.ts:22:14)
+      at Object.<anonymous> (tests/notification/NotificationService.test.ts:20:34)
+
+  ● NotificationService › should send notification and return true
+
+    TypeError: Cannot read properties of undefined (reading 'error')
+
+    [0m [90m 31 |[39m     } [36mcatch[39m (error[33m:[39m unknown) {
+     [90m 32 |[39m       [36mconst[39m errorMessage [33m=[39m error [36minstanceof[39m [33mError[39m [33m?[39m error[33m.[39mmessage [33m:[39m [32m'Unknown error'[39m[33m;[39m
+    [31m[1m>[22m[39m[90m 33 |[39m       logger[33m.[39merror([32m`Failed to send notification to ${userId}: ${errorMessage}`[39m)[33m;[39m
+     [90m    |[39m              [31m[1m^[22m[39m
+     [90m 34 |[39m       [36mthrow[39m [36mnew[39m [33mError[39m([32m`Notification failed: ${errorMessage}`[39m)[33m;[39m
+     [90m 35 |[39m     }
+     [90m 36 |[39m   }[0m
+
+      at NotificationService.sendNotification (services/notification/NotificationService.ts:33:14)
+      at Object.<anonymous> (tests/notification/NotificationService.test.ts:26:34)
+
+  ● NotificationService › should throw error on email notification failure
+
+    Cannot use spyOn on a primitive value; undefined given
+
+    [0m [90m 30 |[39m
+     [90m 31 |[39m   it([32m'should throw error on email notification failure'[39m[33m,[39m [36masync[39m () [33m=>[39m {
+    [31m[1m>[22m[39m[90m 32 |[39m     jest[33m.[39mspyOn(logger[33m,[39m [32m'info'[39m)[33m.[39mmockImplementationOnce(() [33m=>[39m { [36mthrow[39m [36mnew[39m [33mError[39m([32m'Mock error'[39m)[33m;[39m })[33m;[39m
+     [90m    |[39m          [31m[1m^[22m[39m
+     [90m 33 |[39m     [36mawait[39m expect(service[33m.[39msendEmail([32m'user1@example.com'[39m[33m,[39m [32m'Test email'[39m))[33m.[39mrejects[33m.[39mtoThrow([32m'Notification failed'[39m)[33m;[39m
+     [90m 34 |[39m     expect(logger[33m.[39merror)[33m.[39mtoHaveBeenCalledWith(expect[33m.[39mstringContaining([32m'Failed to send email'[39m))[33m;[39m
+     [90m 35 |[39m   })[33m;[39m[0m
+
+      at ModuleMocker.spyOn (node_modules/jest-environment-node/node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (tests/notification/NotificationService.test.ts:32:10)
+
+  ● NotificationService › should throw error on push notification failure
+
+    Cannot use spyOn on a primitive value; undefined given
+
+    [0m [90m 36 |[39m
+     [90m 37 |[39m   it([32m'should throw error on push notification failure'[39m[33m,[39m [36masync[39m () [33m=>[39m {
+    [31m[1m>[22m[39m[90m 38 |[39m     jest[33m.[39mspyOn(logger[33m,[39m [32m'info'[39m)[33m.[39mmockImplementationOnce(() [33m=>[39m { [36mthrow[39m [36mnew[39m [33mError[39m([32m'Mock error'[39m)[33m;[39m })[33m;[39m
+     [90m    |[39m          [31m[1m^[22m[39m
+     [90m 39 |[39m     [36mawait[39m expect(service[33m.[39msendPush([32m'user1'[39m[33m,[39m [32m'Test push'[39m))[33m.[39mrejects[33m.[39mtoThrow([32m'Notification failed'[39m)[33m;[39m
+     [90m 40 |[39m     expect(logger[33m.[39merror)[33m.[39mtoHaveBeenCalledWith(expect[33m.[39mstringContaining([32m'Failed to send push'[39m))[33m;[39m
+     [90m 41 |[39m   })[33m;[39m[0m
+
+      at ModuleMocker.spyOn (node_modules/jest-environment-node/node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (tests/notification/NotificationService.test.ts:38:10)
+
+  ● NotificationService › should throw error on notification failure
+
+    Cannot use spyOn on a primitive value; undefined given
+
+    [0m [90m 42 |[39m
+     [90m 43 |[39m   it([32m'should throw error on notification failure'[39m[33m,[39m [36masync[39m () [33m=>[39m {
+    [31m[1m>[22m[39m[90m 44 |[39m     jest[33m.[39mspyOn(logger[33m,[39m [32m'info'[39m)[33m.[39mmockImplementationOnce(() [33m=>[39m { [36mthrow[39m [36mnew[39m [33mError[39m([32m'Mock error'[39m)[33m;[39m })[33m;[39m
+     [90m    |[39m          [31m[1m^[22m[39m
+     [90m 45 |[39m     [36mawait[39m expect(service[33m.[39msendNotification([32m'user1'[39m[33m,[39m [32m'Test message'[39m))[33m.[39mrejects[33m.[39mtoThrow([32m'Notification failed'[39m)[33m;[39m
+     [90m 46 |[39m     expect(logger[33m.[39merror)[33m.[39mtoHaveBeenCalledWith(expect[33m.[39mstringContaining([32m'Failed to send notification'[39m))[33m;[39m
+     [90m 47 |[39m   })[33m;[39m[0m
+
+      at ModuleMocker.spyOn (node_modules/jest-environment-node/node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (tests/notification/NotificationService.test.ts:44:10)
+
+FAIL tests/auctions/auctions.test.ts
+  ● Test suite failed to run
+
+    [96mroutes/user/userProfileRoutes.ts[0m:[93m9[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'getProfile' does not exist on type 'typeof UserProfile'.
+
+    [7m9[0m     const profile = await UserProfile.getProfile(req.params.userId);
+    [7m [0m [91m                                      ~~~~~~~~~~[0m
+
+FAIL tests/analytics/analytics.service.test.ts
+  ● Test suite failed to run
+
+    [96mroutes/user/userProfileRoutes.ts[0m:[93m9[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'getProfile' does not exist on type 'typeof UserProfile'.
+
+    [7m9[0m     const profile = await UserProfile.getProfile(req.params.userId);
+    [7m [0m [91m                                      ~~~~~~~~~~[0m
+
+FAIL tests/escrow/escrow.service.test.ts
+  ● Test suite failed to run
+
+    [96mtests/escrow/escrow.service.test.ts[0m:[93m2[0m:[93m25[0m - [91merror[0m[90m TS2459: [0mModule '"@services/escrow/escrow.service"' declares 'BadRequestError' locally, but it is not exported.
+
+    [7m2[0m import { EscrowService, BadRequestError, AuthorizationError } from '@services/escrow/escrow.service';
+    [7m [0m [91m                        ~~~~~~~~~~~~~~~[0m
+
+      [96mservices/escrow/escrow.service.ts[0m:[93m4[0m:[93m10[0m
+        [7m4[0m import { BadRequestError, AuthorizationError } from '@utils/errors';
+        [7m [0m [96m         ~~~~~~~~~~~~~~~[0m
+        'BadRequestError' is declared here.
+    [96mtests/escrow/escrow.service.test.ts[0m:[93m2[0m:[93m42[0m - [91merror[0m[90m TS2459: [0mModule '"@services/escrow/escrow.service"' declares 'AuthorizationError' locally, but it is not exported.
+
+    [7m2[0m import { EscrowService, BadRequestError, AuthorizationError } from '@services/escrow/escrow.service';
+    [7m [0m [91m                                         ~~~~~~~~~~~~~~~~~~[0m
+
+      [96mservices/escrow/escrow.service.ts[0m:[93m4[0m:[93m27[0m
+        [7m4[0m import { BadRequestError, AuthorizationError } from '@utils/errors';
+        [7m [0m [96m                          ~~~~~~~~~~~~~~~~~~[0m
+        'AuthorizationError' is declared here.
+
+FAIL tests/services/escrow/escrow.service.test.ts
+  ● Test suite failed to run
+
+    [96mtests/services/escrow/escrow.service.test.ts[0m:[93m30[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'message' does not exist on type '{ _id: string; status: string; user: string; vehicle: { vin?: string | null | undefined; price?: number | null | undefined; } | null | undefined; }'.
+
+    [7m30[0m     expect(result.message).toBe('Receipt confirmed');
+    [7m  [0m [91m                  ~~~~~~~[0m
+    [96mtests/services/escrow/escrow.service.test.ts[0m:[93m35[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 2.
+
+    [7m35[0m     const result = await escrowService.updateCondition(created._id, 'completed');
+    [7m  [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+      [96mservices/escrow/escrow.service.ts[0m:[93m52[0m:[93m53[0m
+        [7m52[0m   async updateCondition(id: string, userId: string, condition: string) {
+        [7m  [0m [96m                                                    ~~~~~~~~~~~~~~~~~[0m
+        An argument for 'condition' was not provided.
+    [96mtests/services/escrow/escrow.service.test.ts[0m:[93m36[0m:[93m19[0m - [91merror[0m[90m TS2551: [0mProperty 'conditions' does not exist on type '{ _id: string; status: string | null | undefined; user: string; vehicle: { vin?: string | null | undefined; price?: number | null | undefined; } | null | undefined; condition: string; }'. Did you mean 'condition'?
+
+    [7m36[0m     expect(result.conditions[0].status).toBe('completed');
+    [7m  [0m [91m                  ~~~~~~~~~~[0m
+
+      [96mservices/escrow/escrow.service.ts[0m:[93m65[0m:[93m118[0m
+        [7m65[0m     return { _id: transaction._id, status: transaction.status, user: transaction.user, vehicle: transaction.vehicle, condition };
+        [7m  [0m [96m                                                                                                                     ~~~~~~~~~[0m
+        'condition' is declared here.
+
+Test Suites: 6 failed, 2 passed, 8 total
+Tests:       8 failed, 2 passed, 10 total
+Snapshots:   0 total
+Time:        6.143 s
+Ran all test suites.

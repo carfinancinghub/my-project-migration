@@ -1,0 +1,28 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250622181325
+Username: Agasi\Agasi5
+RunAs User: Agasi\Agasi5
+Configuration Name: 
+Machine: AGASI (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell
+Process ID: 27584
+PSVersion: 5.1.26100.4202
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4202
+BuildVersion: 10.0.26100.4202
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CFH\EvalLogs\eval_console_20250622_181325.log
+PS C:\CFH\backend> Write-Host "Saving placeholder NotificationsComponent.tsx, notifications.ts..."
+Saving placeholder NotificationsComponent.tsx, notifications.ts...
+PS C:\CFH\backend> Write-Host "Success: Files saved"
+Success: Files saved
+PS C:\CFH\backend> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250622181325
+**********************

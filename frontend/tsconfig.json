@@ -1,0 +1,20 @@
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+	"baseUrl": "src",
+	"paths": {
+		"@cfh/inspection-utils": ["../packages/inspection-utils"]
+}
+    }
+  },
+  "include": ["src/**/*.ts", "index.ts"]
+}

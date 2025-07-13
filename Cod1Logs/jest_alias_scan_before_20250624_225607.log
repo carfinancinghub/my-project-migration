@@ -1,0 +1,51 @@
+﻿# 2025 CFH, All Rights Reserved
+# Purpose: Scan and validate Jest aliases for the CFH Automotive Ecosystem
+# Author: CFH Dev Team
+# Date: 2025-06-23T23:30:00.000Z
+# Version: 1.0.0
+# Crown Certified: Yes
+# Batch ID: Tools-062325
+# Save Location: C:\CFH\backend\jest-alias-scan.ps1
+
+\20250623_235446 = Get-Date -Format 'yyyyMMdd_HHmmss'
+\C:\CFH\Cod1Logs = 'C:\CFH\Cod1Logs'
+New-Item -ItemType Directory -Path \C:\CFH\Cod1Logs -Force | Out-Null
+\ = "\C:\CFH\Cod1Logs\jest_alias_scan_\20250623_235446.log"
+
+function Scan-Aliases {
+    param (
+        [string]\ = 'C:\CFH\backend'
+    )
+    \ = @()
+    \ = Get-Content -Path "\\tsconfig.json" -Raw | ConvertFrom-Json
+    \ = \.compilerOptions.paths
+    \ = Get-ChildItem -Path \ -Recurse -Include *.ts,*.js,*.mjs | Where-Object { \.FullName -notmatch 'node_modules' }
+    foreach (\app.ts in \) {
+        \ = Get-Content -Path \app.ts.FullName
+        for (\ = 0; \ -lt \.Length; \++) {
+            foreach (\ in \.PSObject.Properties.Name) {
+                \ = \ -replace '\*', '(.+)'
+                if (\[\] -match "^\\s*(import|require).*['\"]\['\"]") {
+                    \ = \System.Collections.Hashtable[1]
+                    \ = \.\[0] -replace '\*', \
+                    \ = Join-Path \ \
+                    if (-not (Test-Path \)) {
+                        \ += "File: \, Line: \, Alias: \, Resolved Path: \ - NOT FOUND"
+                    }
+                }
+            }
+        }
+    }
+    if (\.Count -gt 0) {
+        \ | Out-File -FilePath \ -Append
+        Write-Host "Alias issues found. Check \ for details."
+    } else {
+        "[2025-06-24T06:54:51.2786450Z] No alias issues found" | Out-File -FilePath \ -Append
+        Write-Host "No alias issues found."
+    }
+}
+
+"[2025-06-24T06:54:51.2786450Z] Starting Jest alias scan" | Out-File -FilePath \ -Append
+Scan-Aliases
+"[2025-06-24T06:54:51.2786450Z] Completed Jest alias scan" | Out-File -FilePath \ -Append
+

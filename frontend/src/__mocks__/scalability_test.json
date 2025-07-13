@@ -1,0 +1,6 @@
+{
+  "metrics": {
+    "requestsPerSecond": 1250,
+    "latency": 0.045
+  }
+}

@@ -1,0 +1,17 @@
+FAIL tests/notification/NotificationService.test.ts
+  ● Test suite failed to run
+
+    [96mtests/setup.ts[0m:[93m30[0m:[93m17[0m - [91merror[0m[90m TS2552: [0mCannot find name 'jes'. Did you mean 'jest'?
+
+    [7m30[0m   getAuditLogs: jes
+    [7m  [0m [91m                ~~~[0m
+    [96mtests/setup.ts[0m:[93m70[0m:[93m1[0m - [91merror[0m[90m TS1160: [0mUnterminated template literal.
+
+    [7m70[0m 
+    [7m  [0m [91m[0m
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.6 s
+Ran all test suites matching /tests\\notification\\NotificationService.test.ts/i.

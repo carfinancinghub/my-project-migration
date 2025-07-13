@@ -1,0 +1,112 @@
+﻿```
+// ðŸ‘‘ Crown Certified Test â€” CrossModuleIntegration.test.js
+// Path: backend/tests/integration/CrossModuleIntegration.test.js
+// Purpose: Integration tests for interactions between Escrow Chain Sync and AI Valuation Assistant modules.
+// Author: Rivers Auction Team â€” May 17, 2025
+
+const request = require('supertest');
+const express = require('express');
+const escrowRouter = require('@routes/escrow/sync');
+const trustScoreEngine = require('@services/ai/TrustScoreEngine');
+const predictionEngine = require('@services/ai/PredictionEngine');
+const Escrow = require('@models/Escrow');
+const logger = require('@utils/logger');
+
+jest.mock('@services/ai/TrustScoreEngine');
+jest.mock('@services/ai/PredictionEngine');
+jest.mock('@models/Escrow');
+jest.mock('@utils/logger', () => ({
+  error: jest.fn(),
+  info: jest.fn(),
+}));
+
+const app = express();
+app.use(express.json());
+app.use('/api/escrow', escrowRouter);
+
+describe('Cross-Module Integration', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should sync escrow action and update trust score', async () => {
+    const actionData = { transactionId: 'tx1', actionType: 'create', userId: 'u1', metadata: {} };
+    Escrow.findOneAndUpdate.mockResolvedValue({
+      transactionId: 'tx1',
+      status: 'completed',
+    });
+    trustScoreEngine.calculateTrustScore.mockResolvedValue({
+      data: { score: 85, breakdown: null },
+    });
+
+    const response = await request(app)
+      .post('/api/escrow/sync')
+      .query({ isPremium: 'false' })
+      .send(actionData);
+
+    expect(response.status).toBe(201);
+    expect(response.body).toEqual({
+      success: true,
+      data: { record: expect.any(Object), blockchain: undefined },
+      version: 'v1',
+    });
+    expect(trustScoreEngine.calculateTrustScore).toHaveBeenCalledWith('u1', false);
+    expect(logger.info).toHaveBeenCalledWith('Trust score calculated for user u1: 85');
+  });
+
+  it('should fetch valuation prediction after escrow sync', async () => {
+    const actionData = { transactionId: 'tx1', actionType: 'create', userId: 'u1', metadata: {} };
+    Escrow.findOneAndUpdate.mockResolvedValue({
+      transactionId: 'tx1',
+      status: 'completed',
+    });
+    predictionEngine.getBasicPrediction.mockResolvedValue({
+      data: { prediction: { successProbability: 0.75 } },
+    });
+
+    const syncResponse = await request(app)
+      .post('/api/escrow/sync')
+      .query({ isPremium: 'false' })
+      .send(actionData);
+
+    expect(syncResponse.status).toBe(201);
+
+    const predictionResponse = await request(app)
+      .get('/api/predictions/basic')
+      .query({ auctionId: 'a1', bidAmount: 1000 });
+
+    expect(predictionResponse.status).toBe(200);
+    expect(predictionResponse.body).toEqual({
+      success: true,
+      data: { prediction: { successProbability: 0.75 } },
+      version: 'v1',
+    });
+    expect(predictionEngine.getBasicPrediction).toHaveBeenCalledWith({ auctionId: 'a1', bidAmount: 1000 });
+  });
+
+  it('should handle errors across modules', async () => {
+    const actionData = { transactionId: 'tx1', actionType: 'create', userId: 'u1', metadata: {} };
+    Escrow.findOneAndUpdate.mockRejectedValue(new Error('Sync failed'));
+
+    const response = await request(app)
+      .post('/api/escrow/sync')
+      .query({ isPremium: 'false' })
+      .send(actionData);
+
+    expect(response.status).toBe(500);
+    expect(response.body).toEqual({ success: false, message: 'Failed to sync escrow action' });
+    expect(logger.error).toHaveBeenCalledWith('POST /api/escrow/sync failed', expect.any(Error));
+  });
+});
+
+/*
+Functions Summary:
+- describe('Cross-Module Integration')
+  - Purpose: Test suite for interactions between Escrow Chain Sync and AI Valuation Assistant
+  - Tests:
+    - Syncs escrow action and updates trust score
+    - Fetches valuation prediction after escrow sync
+    - Handles errors across modules
+  - Dependencies: supertest, express, @routes/escrow/sync, @services/ai/TrustScoreEngine, @services/ai/PredictionEngine, @models/Escrow, @utils/logger
+*/
+```

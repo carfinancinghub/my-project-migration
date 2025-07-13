@@ -1,0 +1,111 @@
+// File: AuctionPerformance.test.js
+// Path: C:\CFH\backend\tests\analytics\AuctionPerformance.test.js
+// Purpose: Unit tests for AuctionPerformance service
+// Author: Rivers Auction Dev Team
+// Date: 2025-05-24
+// Cod2 Crown Certified: Yes
+
+const AuctionPerformance = require('@services/analytics/AuctionPerformance');
+const db = require('@services/db');
+const logger = require('@utils/logger');
+
+jest.mock('@services/db');
+jest.mock('@utils/logger');
+
+describe('AuctionPerformance', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  describe('calculatePerformance', () => {
+    it('calculates auction performance successfully', async () => {
+      const mockAuction = {
+        bids: [
+          { bidderId: '123', amount: 10000 },
+          { bidderId: '123', amount: 12000 },
+          { bidderId: '456', amount: 15000 }
+        ],
+        finalBid: 15000,
+        reservePrice: 11000,
+        startTime: '2025-05-24T12:00:00Z',
+        endTime: '2025-05-24T14:00:00Z'
+      };
+      db.getAuction.mockResolvedValueOnce(mockAuction);
+
+      const result = await AuctionPerformance.calculatePerformance('789');
+      expect(result).toEqual({
+        totalBids: 3,
+        bidFrequency: 1.5, // 3 bids / 2 hours
+        success: true,
+        finalBid: 15000,
+        reservePrice: 11000,
+        bidderCount: 2
+      });
+      expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Calculated performance'));
+    });
+
+    it('throws error when auction is not found', async () => {
+      db.getAuction.mockResolvedValueOnce(null);
+      await expect(AuctionPerformance.calculatePerformance('789')).rejects.toThrow('Auction not found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('Auction not found'));
+    });
+
+    it('handles auction with no bids', async () => {
+      const mockAuction = {
+        bids: [],
+        finalBid: 0,
+        reservePrice: 11000,
+        startTime: '2025-05-24T12:00:00Z',
+        endTime: '2025-05-24T14:00:00Z'
+      };
+      db.getAuction.mockResolvedValueOnce(mockAuction);
+
+      const result = await AuctionPerformance.calculatePerformance('789');
+      expect(result).toEqual({
+        totalBids: 0,
+        bidFrequency: 0,
+        success: false,
+        finalBid: 0,
+        reservePrice: 11000,
+        bidderCount: 0
+      });
+    });
+  });
+
+  describe('getPerformanceTrends', () => {
+    it('generates performance trends successfully', async () => {
+      const mockAuctions = [
+        { id: '789', bids: [{ bidderId: '123' }], finalBid: 10000, reservePrice: 9000, endTime: '2025-05-24T12:00:00Z' },
+        { id: '790', bids: [{ bidderId: '456' }], finalBid: 8000, reservePrice: 10000, endTime: '2025-05-24T14:00:00Z' }
+      ];
+      db.getSellerAuctionsByDate.mockResolvedValueOnce(mockAuctions);
+
+      const result = await AuctionPerformance.getPerformanceTrends('456', '2025-05-24', '2025-05-25');
+      expect(result).toEqual({
+        successRate: 0.5,
+        avgBidderCount: 1,
+        trends: [
+          { auctionId: '789', success: true, bidderCount: 1, finalBid: 10000, timestamp: '2025-05-24T12:00:00Z' },
+          { auctionId: '790', success: false, bidderCount: 1, finalBid: 8000, timestamp: '2025-05-24T14:00:00Z' }
+        ]
+      });
+      expect(logger.info).toHaveBeenCalledWith(expect.stringContaining('Generated performance trends'));
+    });
+
+    it('throws error when no auctions are found', async () => {
+      db.getSellerAuctionsByDate.mockResolvedValueOnce([]);
+      await expect(AuctionPerformance.getPerformanceTrends('456', '2025-05-24', '2025-05-25')).rejects.toThrow('No auctions found');
+      expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('No auctions found'));
+    });
+
+    it('handles auctions with no bids', async () => {
+      const mockAuctions = [
+        { id: '789', bids: [], finalBid: 0, reservePrice: 9000, endTime: '2025-05-24T12:00:00Z' }
+      ];
+      db.getSellerAuctionsByDate.mockResolvedValueOnce(mockAuctions);
+
+      const result = await AuctionPerformance.getPerformanceTrends('456', '2025-05-24', '2025-05-25');
+      expect(result.trends[0].bidderCount).toBe(0);
+    });
+  });
+});

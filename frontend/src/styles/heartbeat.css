@@ -1,0 +1,19 @@
+/* File: heartbeat.css */
+/* Path: frontend/src/styles/heartbeat.css */
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+.glow-shadow {
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.8), 0 0 12px rgba(239, 68, 68, 0.5);
+}
