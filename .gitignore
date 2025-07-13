@@ -30,10 +30,14 @@ cypress/screenshots/
 *.csv
 *.txt
 
-# Optional backup/restore or history
+# Backup/temp files
 *.bak
 *.swp
 *.tmp
 
+# Windows system files
+desktop.ini
+
 # Google Drive or temp sync folders
 .tmp.driveupload/
+load/
