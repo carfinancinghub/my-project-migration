@@ -1,0 +1,36 @@
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+out/
+
+# System/IDE specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Testing/output
+coverage/
+cypress/videos/
+cypress/screenshots/
+
+# Environment
+.env
+.env.*.local
+
+# Misc – Remove if you want to keep these files
+*.gsheet
+*.csv
+*.txt
+
+# Optional backup/restore or history
+*.bak
+*.swp
+*.tmp
