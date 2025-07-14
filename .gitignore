@@ -1,7 +1,7 @@
 # Logs
 *.log
 
-# Dependency directories
+# Dependencies
 node_modules/
 bower_components/
 
@@ -11,24 +11,24 @@ build/
 out/
 tsbuildinfo
 
-# IDE/system-specific
+# System / IDE specific
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 desktop.ini
 
-# Testing/output
+# Test outputs
 coverage/
-cypress/videos/
-cypress/screenshots/
 jest-output/
+cypress/screenshots/
+cypress/videos/
 
-# Environment
+# Environment configs
 .env
 .env.*.local
 
-# Temp & backup
+# Temporary & backup files
 *.bak
 *.swp
 *.tmp
@@ -36,16 +36,16 @@ jest-output/
 load/
 ~$*
 
-# Project-specific ignore
+# Project-specific ignores
 CFH_Analytics/legacy/
-frontend/.next/
+# frontend/.next/           #I have removed this to make sure Grok check's it correctly. 
 backend/.husky/
-backend/__mocks__/
 backend/logs/
 backend/coverage/
 backend/dist/
+# backend/__mocks__/     # You may remove this line if you want to keep it in Git
 
-# Misc (optional)
+# Data / docs (optional)
 *.gsheet
 *.csv
 *.txt
