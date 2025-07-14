@@ -1,8 +1,0 @@
-{
-  "success": true,
-  "data": {
-    "summary": { avgBid: 9500, totalAuctions: 2400 },
-    "premiumAnalytics": { marketTrend: [...], hotTimes: [...] }
-  },
-  "version": "v1"
-}

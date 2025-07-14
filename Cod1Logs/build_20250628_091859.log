@@ -1,7 +1,0 @@
-
-> cfh-backend@1.0.0 build
-> tsc && tsc-alias
-
-routes/analytics/bid.ts(13,3): error TS1005: ',' expected.
-routes/analytics/bid.ts(13,6): error TS1005: ',' expected.
-tests/services/escrow/EscrowAuditService.test.ts(21,36): error TS1005: ')' expected.

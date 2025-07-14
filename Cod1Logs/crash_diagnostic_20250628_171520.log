@@ -1,8 +1,0 @@
-bash: free: command not found
-      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
-     1911    1910    1911       1964  pty0      197614 16:32:01 /usr/bin/bash
-     4586    1911    4586      24872  pty0      197614 17:15:20 /usr/bin/ps
-     1910       1    1910      23972  ?         197614 16:32:01 /usr/bin/mintty
-Filesystem            Size  Used Avail Use% Mounted on
-C:/Program Files/Git  454G  363G   91G  81% /
-G:                     15G  2.5G   13G  17% /g

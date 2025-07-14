@@ -1,9 +1,0 @@
-Package                           Current   Wanted  Latest  Location                                       Depended by
-@types/express                    4.17.23  4.17.23   5.0.3  node_modules/@types/express                    backend
-@types/jest                       29.5.14  29.5.14  30.0.0  node_modules/@types/jest                       backend
-@types/supertest                   2.0.16   2.0.16   6.0.3  node_modules/@types/supertest                  backend
-@typescript-eslint/eslint-plugin   7.18.0   7.18.0  8.35.0  node_modules/@typescript-eslint/eslint-plugin  backend
-@typescript-eslint/parser          7.18.0   7.18.0  8.35.0  node_modules/@typescript-eslint/parser         backend
-eslint                             8.57.1   8.57.1  9.29.0  node_modules/eslint                            backend
-express                            4.21.2   4.21.2   5.1.0  node_modules/express                           backend
-jest                               29.7.0   29.7.0  30.0.3  node_modules/jest                              backend

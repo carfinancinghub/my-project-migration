@@ -1,1 +1,0 @@
-Remove-Item -Path "C:\CFH\frontend\node_modules\.vite" -Recurse -Force

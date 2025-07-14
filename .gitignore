@@ -9,35 +9,43 @@ bower_components/
 dist/
 build/
 out/
+tsbuildinfo
 
-# System/IDE specific
+# IDE/system-specific
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+desktop.ini
 
 # Testing/output
 coverage/
 cypress/videos/
 cypress/screenshots/
+jest-output/
 
 # Environment
 .env
 .env.*.local
 
-# Misc – Remove if you want to keep these files
-*.gsheet
-*.csv
-*.txt
-
-# Backup/temp files
+# Temp & backup
 *.bak
 *.swp
 *.tmp
-
-# Windows system files
-desktop.ini
-
-# Google Drive or temp sync folders
-.tmp.driveupload/
+.tmp*/
 load/
+~$*
+
+# Project-specific ignore
+CFH_Analytics/legacy/
+frontend/.next/
+backend/.husky/
+backend/__mocks__/
+backend/logs/
+backend/coverage/
+backend/dist/
+
+# Misc (optional)
+*.gsheet
+*.csv
+*.txt

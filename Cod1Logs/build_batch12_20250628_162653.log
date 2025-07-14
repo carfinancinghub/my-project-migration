@@ -1,7 +1,0 @@
-
-> cfh-backend@1.0.0 build
-> tsc && tsc-alias
-
-workers/NotificationWorker.ts(5,110): error TS1144: '{' or ';' expected.
-workers/NotificationWorker.ts(5,113): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
-workers/NotificationWorker.ts(8,1): error TS1128: Declaration or statement expected.

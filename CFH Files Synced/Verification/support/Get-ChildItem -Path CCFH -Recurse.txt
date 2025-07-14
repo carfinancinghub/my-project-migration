@@ -1,7 +1,0 @@
-Get-ChildItem -Path "C:\CFH" -Recurse -File -Include `
-    "history",
-	"SupportTicketForm.jsx" |
-    Where-Object { $_.FullName -notlike "*\node_modules\*" } |
-    Sort-Object FullName |
-    Select-Object FullName, Length |
-    Format-Table -AutoSize

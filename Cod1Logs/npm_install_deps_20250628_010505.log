@@ -1,9 +1,0 @@
-npm ERR! code E404
-npm ERR! 404 Not Found - GET https://registry.npmjs.org/@badeball%2fcypress-cypress-preprocessor - Not found
-npm ERR! 404 
-npm ERR! 404  '@badeball/cypress-cypress-preprocessor@^20.1.2' is not in this registry.
-npm ERR! 404 
-npm ERR! 404 Note that you can also install from a
-npm ERR! 404 tarball, folder, http url, or git url.
-
-npm ERR! A complete log of this run can be found in: C:\Users\Agasi5\AppData\Local\npm-cache\_logs\2025-06-28T08_05_06_257Z-debug-0.log

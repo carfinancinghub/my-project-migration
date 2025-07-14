@@ -1,6 +1,0 @@
-Version 5.8.3
-cfh-backend@1.0.0 C:\CFH\backend
-├── jest@27.5.1
-└─┬ ts-jest@27.1.5
-  └── jest@27.5.1 deduped
-
