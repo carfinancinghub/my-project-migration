@@ -2,15 +2,17 @@
  * © 2025 CFH, All Rights Reserved
  * File: authController.ts
  * Path: C:\CFH\backend\controllers\auth\authController.ts
- * Purpose: Handles user registration and login authentication.
- * Author: Mini Team
- * Date: 2025-07-05 [1849]
- * Version: 1.0.0
- * VersionID: c5e4f2d3-8b7a-4c6d-9e3b-6f5a4d3c2b1e
- * Crown Certified: Yes
+ * Purpose: Handles user registration and login authentication with tier-based logic in the CFH Automotive Ecosystem.
+ * Author: Mini Team (upgraded by Cod1, reviewed by Grok)
+ * Date: 2025-07-14 [15:00]
+ * Version: 1.1.0
+ * Version ID: c5e4f2d3-8b7a-4c6d-9e3b-6f5a4d3c2b1e
+ * Crown Certified: Yes (pending final test)
  * Batch ID: Compliance-070525
  * Artifact ID: a4b3c2d1-e0f9-8d7c-6b5a-4f3e2d1c0b9a
  * Save Location: C:\CFH\backend\controllers\auth\authController.ts
+ * Updated By: Grok (based on Cod1 suggestions)
+ * Timestamp: 2025-07-14 [15:00]
  */
 
 /*
@@ -37,10 +39,10 @@
 import { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import User, { IUser } from '@/models/User';
-import logger from '@utils/logger';
-import { BadRequestError, AuthenticationError } from '@utils/errors';
-import { validateRegister, validateLogin } from '@/validation/auth.validation';
+import User, { IUser } from '@models/User'; // Alias import
+import logger from '@utils/logger'; // Alias import
+import { BadRequestError, AuthenticationError } from '@utils/errors'; // Alias import
+import { validateRegister, validateLogin } from '@validation/auth.validation'; // Alias import
 
 // --- Interfaces ---
 interface RegisterBody {
@@ -104,13 +106,14 @@ export const registerUser = async (req: Request<{}, {}, RegisterBody>, res: Resp
 
     const token = jwt.sign(payload, process.env.JWT_SECRET!, { expiresIn: JWT_EXPIRATION });
 
+    logger.info('User registered successfully', { email, correlationId: req.headers['x-correlation-id'] });
     res.status(201).json({
       message: 'User registered successfully',
       token,
       ...payload,
     });
   } catch (error) {
-    logger.error(`a4b3c2d1: Registration error: ${error.message}`);
+    logger.error(`Registration error: ${error.message}`, { correlationId: req.headers['x-correlation-id'] });
     next(error);
   }
 };
@@ -146,13 +149,16 @@ export const loginUser = async (req: Request<{}, {}, LoginBody>, res: Response, 
 
     const token = jwt.sign(payload, process.env.JWT_SECRET!, { expiresIn: JWT_EXPIRATION });
 
+    logger.info('User logged in', { email, correlationId: req.headers['x-correlation-id'] });
     res.status(200).json({
       message: 'Login successful',
       token,
       ...payload,
     });
   } catch (error) {
-    logger.error(`a4b3c2d1: Login error: ${error.message}`);
+    logger.error(`Login error: ${error.message}`, { correlationId: req.headers['x-correlation-id'] });
     next(error);
   }
 };
+
+// Premium/Wow++ Note: Add OTP for Wow++ login, device fingerprint for premium.
