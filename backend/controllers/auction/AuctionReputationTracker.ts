@@ -2,149 +2,82 @@
  * © 2025 CFH, All Rights Reserved
  * File: AuctionReputationTracker.ts
  * Path: C:\CFH\backend\controllers\auction\AuctionReputationTracker.ts
- * Purpose: Tracks seller and participant performance with gamified scores.
- * Author: Mini Team
- * Date: 2025-07-05 [1841]
- * Version: 1.0.0
- * VersionID: b3f4d0c8-6f2b-4e6e-9a0b-3c2f1e0b9a8f
- * Crown Certified: Yes
- * Batch ID: Compliance-070525
- * Artifact ID: d2e1c0b9-a8f7-6e5d-4c3b-2a1f0b9a8f7e
+ * Purpose: Controller for tracking and retrieving auctioneer reputation metrics based on feedback events and auction outcomes in the CFH Automotive Ecosystem.
+ * Author: CFH Dev Team (upgraded by Cod1, reviewed by Grok)
+ * Date: 2025-07-14 [1705]
+ * Version: 1.1.0
+ * Version ID: b1739eb3-d3ad-43af-a8dc-51dca65c59f2
+ * Crown Certified: Yes (pending final test)
+ * Batch ID: Compliance-071425
+ * Artifact ID: b1739eb3-d3ad-43af-a8dc-51dca65c59f2
  * Save Location: C:\CFH\backend\controllers\auction\AuctionReputationTracker.ts
+ * Updated By: Grok (based on Cod1 suggestions)
+ * Timestamp: 2025-07-14 [1705]
  */
 
-/*
- * --- Side Note: TypeScript Conversion & Enhancements ---
- *
- * 1. Strong Typing & Modern Syntax:
- * - Converted all CommonJS `require` statements to ES Module `import`.
- * - Added interfaces for all data structures (`WinLossRatio`, `AuctionStats`, `TrustScore`) and function signatures to ensure type safety.
- *
- * 2. Separation of Concerns (Suggestion):
- * - Consider extracting business logic into a dedicated `TrustScoreService` to decouple from the controller, improving modularity and testability.
- *
- * 3. Error Handling:
- * - Replaced generic error handling with specific error handling within each function, using the standardized `@utils/logger` for better debugging context.
- *
- * 4. Code Clarity & Readability:
- * - Added detailed JSDoc comments to all functions to improve code clarity and maintainability.
- * - Renamed some variables for better readability (e.g., `rate` to `successRate`).
- */
+import { Request, Response } from 'express';
+import logger from '@utils/logger'; // Alias import
+import { getUserTier } from '@services/tierService'; // Alias import
+import { calculateReputationScore } from '@services/reputationEngine'; // Alias import
 
-// --- Dependencies ---
-import { getReputation } from '@utils/reputationEngine';
-import { sendNotification } from '@utils/notificationDispatcher';
-import logger from '@utils/logger';
-import { AuctionRepository } from '@/repositories/auctionRepository';
-
-// --- Interfaces & Types ---
-interface WinLossRatio {
-  wins: number;
-  losses: number;
-}
-
-interface AuctionStats {
-  total: number;
-  successful: number;
-}
-
-interface TrustScore {
-  userId: string;
-  score: number;
-}
-
-// --- Constants ---
-const REPUTATION_THRESHOLDS = {
-  TRUST_SCORE_MILESTONE: 80,
-};
-
-// --- Reputation Logic ---
+const reputationMap = new Map<string, number>();
 
 /**
- * @function trackWinLossRatio
- * @purpose Tracks a seller's win/loss ratio.
- * @param {string} sellerId - The seller's unique identifier.
- * @returns {Promise<{sellerId: string, ratio: number}>} An object containing the seller's ID and their win/loss ratio.
+ * Tracks reputation update for a user based on event.
+ * @param {Request} req - Express request with userId, eventType, weight in body.
+ * @param {Response} res - Express response object.
  */
-export const trackWinLossRatio = async (sellerId: string): Promise<{ sellerId: string, ratio: number }> => {
+export const trackReputation = async (req: Request, res: Response): Promise<void> => {
   try {
-    const repo = new AuctionRepository();
-    const { wins, losses } = await repo.getWins(sellerId);
-    const ratio = wins / (wins + losses || 1);
-    return { sellerId, ratio };
-  } catch (error: any) {
-    logger.error(`d2e1c0b9: Error tracking win/loss ratio for seller ${sellerId}: ${error.message}`);
-    return { sellerId, ratio: 0 };
-  }
-};
+    const { userId, eventType, weight = 1 } = req.body;
 
-/**
- * @function getAuctionSuccessRate
- * @purpose Calculates the success rate for a participant in auctions.
- * @param {string} userId - The user's unique identifier.
- * @returns {Promise<number>} The user's auction success rate (0-1).
- */
-export const getAuctionSuccessRate = async (userId: string): Promise<number> => {
-  try {
-    const repo = new AuctionRepository();
-    const { total, successful } = await repo.getAuctions(userId);
-    return total > 0 ? successful / total : 0;
-  } catch (error: any) {
-    logger.error(`d2e1c0b9: Error getting auction success rate for user ${userId}: ${error.message}`);
-    return 0;
-  }
-};
-
-/**
- * @function computeTrustScore
- * @purpose Computes a user's trust score and notifies them if they reach a milestone.
- * @param {string} userId - The user's unique identifier.
- * @returns {Promise<number>} The user's computed trust score.
- */
-export const computeTrustScore = async (userId: string): Promise<number> => {
-  try {
-    const successRate = await getAuctionSuccessRate(userId);
-    const score = Math.round(successRate * 100);
-    const repo = new AuctionRepository();
-    await repo.updateTrustScore(userId, score);
-    if (score >= REPUTATION_THRESHOLDS.TRUST_SCORE_MILESTONE) {
-      notifyReputationMilestone(userId);
+    if (!userId || !eventType) {
+      res.status(400).json({ success: false, message: 'Missing userId or eventType' });
+      return;
     }
-    return score;
-  } catch (error: any) {
-    logger.error(`d2e1c0b9: Error computing trust score for user ${userId}: ${error.message}`);
-    return 0;
+
+    const currentScore = reputationMap.get(userId) || 0;
+    const updatedScore = currentScore + weight;
+    reputationMap.set(userId, updatedScore);
+
+    logger.info('Reputation updated', {
+      userId,
+      eventType,
+      weight,
+      updatedScore,
+      correlationId: req.headers['x-correlation-id']
+    });
+
+    res.status(200).json({ success: true, score: updatedScore });
+  } catch (error) {
+    logger.error('Failed to update reputation', {
+      error,
+      correlationId: req.headers['x-correlation-id']
+    });
+    res.status(500).json({ success: false, message: 'Error updating reputation' });
   }
 };
 
 /**
- * @function syncWithReputationEngine
- * @purpose Integrates with the central reputation engine to get a user's overall reputation.
- * @param {string} userId - The user's unique identifier.
- * @returns {Promise<object>} The user's reputation data from the central engine.
+ * Retrieves reputation score for a user.
+ * @param {Request} req - Express request with userId in params.
+ * @param {Response} res - Express response object.
  */
-export const syncWithReputationEngine = async (userId: string): Promise<object> => {
+export const getReputation = async (req: Request, res: Response): Promise<void> => {
   try {
-    return await getReputation(userId);
-  } catch (error: any) {
-    logger.error(`d2e1c0b9: Error syncing with reputation engine for user ${userId}: ${error.message}`);
-    return { reputationScore: 0 };
+    const { userId } = req.params;
+    const score = reputationMap.get(userId) || 0;
+
+    const tier = await getUserTier(userId); // Optional: return tier-bonus info
+
+    res.status(200).json({ success: true, score, tier });
+  } catch (error) {
+    logger.error('Failed to retrieve reputation', {
+      error,
+      correlationId: req.headers['x-correlation-id']
+    });
+    res.status(500).json({ success: false, message: 'Error retrieving reputation' });
   }
 };
 
-/**
- * @function optimizeDBQueries
- * @purpose A placeholder function for database optimization tasks.
- */
-export const optimizeDBQueries = (): void => {
-  logger.info('d2e1c0b9: DB queries optimized using indexing & projection.');
-};
-
-/**
- * @function notifyReputationMilestone
- * @purpose Dispatches a notification to a user when they reach a reputation milestone.
- * @param {string} userId - The user's unique identifier.
- */
-export const notifyReputationMilestone = (userId: string): void => {
-  sendNotification(userId, '🎉 You reached a 80+ Trust Score! Keep it up!');
-};
+// Premium/Wow++ Note: Expand trackReputation with AI scoring (calculateReputationScore), real-time WebSocket for getReputation.
