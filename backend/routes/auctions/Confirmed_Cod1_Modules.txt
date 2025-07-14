@@ -1,0 +1,17 @@
+✅ File Catalog - Real-Time Enabled (Cod1 Verified)
+
+📁 backend/
+├── index.js
+├── socket.js
+
+📁 backend/controllers/auth/
+├── authController.js
+
+📁 backend/controllers/auction/
+├── auctionController.js
+
+📁 backend/routes/auth/
+├── index.js
+
+📁 backend/routes/auctions/
+├── index.js
