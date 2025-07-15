@@ -19,3 +19,7 @@
 - Cod1: Add i18n for user-facing messages (2025-07-15 [22:30]).
 - Cod1: Add rate limiting/anti-spam protection (2025-07-15 [22:30]).
 - Cod1: Expand error messages with context (2025-07-15 [22:30]).
+# CFH Migration Suggestions
+## config/env.ts (2025-07-15 [07:00])
+- Grok: Add tier-specific env vars for Wow++ (e.g., WOW_DB_URI for sharding) (2025-07-15 [07:00]).
+- Grok: Integrate env validation with Joi for premium (2025-07-15 [07:00]).
