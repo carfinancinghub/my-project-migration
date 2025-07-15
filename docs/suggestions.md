@@ -29,3 +29,7 @@
 - Cod1: Send logs of suspicious actions to central audit/monitoring (premium) (2025-07-15 [1505]).
 - Cod1: Real-time log streaming to admin dashboard (WebSocket, Wow++) (2025-07-15 [1505]).
 - Cod1: Blockchain log anchoring (hash errors to chain, Wow++) (2025-07-15 [1505]).
+# CFH Migration Suggestions
+## config/secrets.ts (2025-07-15 [1445])
+- Grok: Add tier-specific secrets for Wow++ (e.g., WOW_BLOCKCHAIN_KEY) (2025-07-15 [1445]).
+- Grok: Integrate secrets rotation for premium (2025-07-15 [1445]).
