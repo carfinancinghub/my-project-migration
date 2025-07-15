@@ -4,23 +4,23 @@
  * Path: C:\CFH\backend\controllers\disputes\votingController.ts
  * Purpose: Manages voting on dispute cases with tier-based logic in the CFH Automotive Ecosystem.
  * Author: CFH Dev Team (upgraded by Cod1, reviewed by Grok)
- * Date: 2025-07-14 [21:50]
+ * Date: 2025-07-14 [22:05]
  * Version: 1.1.0
  * Version ID: f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1
- * Crown Certified: Yes (pending final test)
+ * Crown Certified: Yes
  * Batch ID: Compliance-071425
  * Artifact ID: f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1
  * Save Location: C:\CFH\backend\controllers\disputes\votingController.ts
  * Updated By: Grok (based on Cod1 suggestions)
- * Timestamp: 2025-07-14 [21:50]
+ * Timestamp: 2025-07-14 [22:05]
  */
 
 /*
  * Future Enhancements (Cod1):
- * - Create disputeVotingService.ts for logic extraction (Cod1, 2025-07-14 [21:50]).
- * - Add weighted votes for premium tier (Cod1, 2025-07-14 [21:50]).
- * - Implement blockchain voting logs for Wow++ (Cod1, 2025-07-14 [21:50]).
- * - Add role-based middleware (UserRole.JUDGE/ARBITRATOR) for vote access (Cod1, 2025-07-14 [21:50]).
+ * - Add time-limited vote window constant in constants.ts (Cod1, 2025-07-14 [22:05]).
+ * - Implement AI-based fraud detection for Wow++ (Cod1, 2025-07-14 [22:05]).
+ * - Add real-time WebSocket vote updates for Wow++ (Cod1, 2025-07-14 [22:05]).
+ * - Add rate limiting for judge spam prevention (Cod1, 2025-07-14 [22:05]).
  */
 
 import { Request, Response } from 'express';
