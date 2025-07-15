@@ -23,3 +23,9 @@
 ## config/env.ts (2025-07-15 [07:00])
 - Grok: Add tier-specific env vars for Wow++ (e.g., WOW_DB_URI for sharding) (2025-07-15 [07:00]).
 - Grok: Integrate env validation with Joi for premium (2025-07-15 [07:00]).
+# CFH Migration Suggestions
+## utils/logger.ts (2025-07-15 [1505])
+- Cod1: Allow user-specific log tags (userTier, userId) in output (2025-07-15 [1505]).
+- Cod1: Send logs of suspicious actions to central audit/monitoring (premium) (2025-07-15 [1505]).
+- Cod1: Real-time log streaming to admin dashboard (WebSocket, Wow++) (2025-07-15 [1505]).
+- Cod1: Blockchain log anchoring (hash errors to chain, Wow++) (2025-07-15 [1505]).
