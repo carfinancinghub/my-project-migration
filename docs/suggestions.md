@@ -7,3 +7,15 @@
 - Cod1: Add authorization middleware (e.g., borrower interaction check) (2025-07-15 [09:00]).
 - Cod1: Refactor average rating calculation to function (2025-07-15 [09:00]).
 - Cod1: Add test coverage with ts-jest or vitest (2025-07-15 [09:00]).
+# CFH Migration Suggestions
+## votingController.ts (2025-07-15 [22:30])
+- Cod1: Implement 3-judge voting logic (resolve on 3 votes) (2025-07-15 [22:30]).
+- Cod1: Add real-time Socket.io for voting updates (2025-07-15 [22:30]).
+- Cod1: Integrate badge/reputation updates after resolution (2025-07-15 [22:30]).
+- Cod1: Trigger notifications to parties after vote (2025-07-15 [22:30]).
+- Cod1: Activate weighted votes for premium (use weight in tally) (2025-07-15 [22:30]).
+- Cod1: Add audit timeline/event logging for Wow++/Premium (2025-07-15 [22:30]).
+- Cod1: Add blockchain/write-ahead logs for votes (Wow++ feature) (2025-07-15 [22:30]).
+- Cod1: Add i18n for user-facing messages (2025-07-15 [22:30]).
+- Cod1: Add rate limiting/anti-spam protection (2025-07-15 [22:30]).
+- Cod1: Expand error messages with context (2025-07-15 [22:30]).
