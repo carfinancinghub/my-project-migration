@@ -33,3 +33,13 @@
 ## config/secrets.ts (2025-07-15 [1445])
 - Grok: Add tier-specific secrets for Wow++ (e.g., WOW_BLOCKCHAIN_KEY) (2025-07-15 [1445]).
 - Grok: Integrate secrets rotation for premium (2025-07-15 [1445]).
+# CFH Migration Suggestions
+## config/cache.ts (2025-07-15 [1432])
+- Cod1: Stricter Zod schema for cached data (2025-07-15 [1432]).
+- Cod1: Advanced error strategy (retry, alert) (2025-07-15 [1432]).
+- Cod1: More observability in logs (e.g., TTL visibility) (2025-07-15 [1432]).
+## config/mail.ts (2025-07-15 [1432])
+- Cod1: Add BullMQ or RabbitMQ queue stubs for Wow++ (2025-07-15 [1432]).
+## tests/config/mail.test.ts (2025-07-15 [1432])
+- Cod1: Add coverage report or e2e test with Supertest (2025-07-15 [1432]).
+- 
