@@ -34,6 +34,8 @@ jest.mock('@services/db');
 jest.mock('@services/ai');
 jest.mock('@utils/logger');
 
+// Wow++ placeholder: Add predictive bidding simulation, AI fallback, seller profile completeness, parameterized tests, and explainability/interpretability checks.
+
 describe('AIInsightSeller', () => {
   beforeEach(() => {
     jest.clearAllMocks();
