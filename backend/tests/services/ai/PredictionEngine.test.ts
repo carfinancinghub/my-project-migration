@@ -21,6 +21,16 @@
  * - Improved: Typed inputData and result expectations
  * - Suggest: Add performance tests for prediction latency
  */
+/**
+ * Side Note / Suggestions:
+ * - Test Utility DRY: Move repeated mocks and test data to separate utils for reusability.
+ * - Integration Coverage: Add E2E or integration tests with live ML model and DB.
+ * - Performance Tests: Track prediction response time (latency) and log/report slow predictions.
+ * - Free: Core unit test coverage, error path coverage.
+ * - Premium: Advanced prediction, analytics on prediction accuracy, customizable ML model use.
+ * - Wow++: Live retraining triggers if accuracy drops, in-dashboard latency stats for admins, predictive logging for big auctions.
+ */
+
 
 // 👑 Crown Certified Test — PredictionEngine.test.ts
 // Path: backend/tests/services/ai/PredictionEngine.test.ts
