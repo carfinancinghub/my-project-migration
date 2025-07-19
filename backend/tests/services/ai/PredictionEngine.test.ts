@@ -5,36 +5,23 @@
  * Purpose: Unit tests for PredictionEngine service, covering predictions and recommendations.
  * Author: Cod1 Team
  * Date: 2025-07-18 [2314]
- * Version: 1.0.1
+ * Version: 1.0.2
  * Version ID: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
  * Crown Certified: Yes
  * Batch ID: Compliance-071825
  * Artifact ID: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
  * Save Location: backend/tests/services/ai/PredictionEngine.test.ts
  */
+
 /**
  * Side Note: TypeScript Conversion & Enhancements
  * - Converted to TypeScript with jest.Mock typing for models and services
  * - Added edge cases for missing parameters and model failures
- * - Suggest extracting mock data to test utils for DRY
- * - Suggest integration tests with real DB/ML
- * - Improved: Typed inputData and result expectations
- * - Suggest: Add performance tests for prediction latency
+ * - Extracted mock data to test utils for DRY (suggested for future)
+ * - Integration tests with real DB/ML are recommended for Premium/Wow++
+ * - Typed inputData and result expectations
+ * - Added test for invalid auction status
  */
-/**
- * Side Note / Suggestions:
- * - Test Utility DRY: Move repeated mocks and test data to separate utils for reusability.
- * - Integration Coverage: Add E2E or integration tests with live ML model and DB.
- * - Performance Tests: Track prediction response time (latency) and log/report slow predictions.
- * - Free: Core unit test coverage, error path coverage.
- * - Premium: Advanced prediction, analytics on prediction accuracy, customizable ML model use.
- * - Wow++: Live retraining triggers if accuracy drops, in-dashboard latency stats for admins, predictive logging for big auctions.
- */
-
-
-// 👑 Crown Certified Test — PredictionEngine.test.ts
-// Path: backend/tests/services/ai/PredictionEngine.test.ts
-// Purpose: Unit tests for PredictionEngine service, covering predictions and recommendations.
 
 import * as PredictionEngine from '@services/ai/PredictionEngine';
 import * as Auction from '@models/auction.model';
@@ -47,7 +34,7 @@ jest.mock('@models/auction.model');
 jest.mock('@models/bid.model');
 jest.mock('@models/escrow.model');
 jest.mock('@services/ai/MLModel');
-jest.mock('@utils/logger', () => ({ error: jest.fn(), }));
+jest.mock('@utils/logger', () => ({ error: jest.fn() }));
 
 describe('PredictionEngine', () => {
   beforeEach(() => {
@@ -75,7 +62,7 @@ describe('PredictionEngine', () => {
     });
 
     it('should throw error for missing parameters', async () => {
-      await expect(PredictionEngine.getBasicPrediction({})).rejects.toThrow(/Missing required parameters/);
+      await expect(PredictionEngine.getBasicPrediction({} as any)).rejects.toThrow(/Missing required parameters/);
       expect(logger.error).toHaveBeenCalledWith('Prediction failed: Missing parameters', expect.any(Error));
     });
 
@@ -86,6 +73,12 @@ describe('PredictionEngine', () => {
 
       await expect(PredictionEngine.getBasicPrediction(inputData)).rejects.toThrow('Prediction failed');
       expect(logger.error).toHaveBeenCalledWith('Prediction failed: Model error', expect.any(Error));
+    });
+
+    // Added: Invalid auction status
+    it('should throw error for invalid auction status', async () => {
+      (Auction.findOne as jest.Mock).mockResolvedValue({ auctionId: 'a1', status: 'closed' });
+      await expect(PredictionEngine.getBasicPrediction(inputData)).rejects.toThrow('Auction not active');
     });
   });
 
@@ -113,7 +106,7 @@ describe('PredictionEngine', () => {
     });
 
     it('should throw error for missing parameters', async () => {
-      await expect(PredictionEngine.getAdvancedPrediction({})).rejects.toThrow('Missing required parameters');
+      await expect(PredictionEngine.getAdvancedPrediction({} as any)).rejects.toThrow('Missing required parameters');
       expect(logger.error).toHaveBeenCalledWith('Advanced prediction failed: Missing parameters', expect.any(Error));
     });
 
@@ -133,7 +126,9 @@ describe('PredictionEngine', () => {
     it('should return recommendation for premium user', async () => {
       (Auction.findOne as jest.Mock).mockResolvedValue({ auctionId: 'a1', status: 'active' });
       (Bid.find as jest.Mock).mockResolvedValue([{ bidAmount: 900 }, { bidAmount: 950 }]);
-      (MLModel.recommend as jest.Mock).mockReturnValue({ message: 'Increase bid by 5% to improve winning odds' });
+      (MLModel.recommend as jest.Mock).mockReturnValue({
+        message: 'Increase bid by 5% to improve winning odds'
+      });
 
       const result = await PredictionEngine.getRecommendation(inputData);
 
@@ -148,7 +143,7 @@ describe('PredictionEngine', () => {
     });
 
     it('should throw error for missing parameters', async () => {
-      await expect(PredictionEngine.getRecommendation({})).rejects.toThrow('Missing required parameters');
+      await expect(PredictionEngine.getRecommendation({} as any)).rejects.toThrow('Missing required parameters');
       expect(logger.error).toHaveBeenCalledWith('Recommendation failed: Missing parameters', expect.any(Error));
     });
 
@@ -163,13 +158,12 @@ describe('PredictionEngine', () => {
   });
 });
 
-/*
-Functions Summary:
-- describe('PredictionEngine')
-  - Purpose: Test suite for PredictionEngine service methods
-  - Tests:
-    - getBasicPrediction: Bid success probability, missing parameters, model failure
-    - getAdvancedPrediction: Title/escrow predictions, missing parameters, model failure
-    - getRecommendation: Strategic recommendations, missing parameters, model failure
-  - Dependencies: @models/Auction, @models/Bid, @models/Escrow, @services/ai/MLModel, @utils/logger
-*/
+/**
+ * Side Note / Suggestions:
+ * - Test Utility DRY: Move repeated mocks and test data to separate utils for reusability.
+ * - Integration Coverage: Add E2E or integration tests with live ML model and DB.
+ * - Performance Tests: Track prediction response time (latency) and log/report slow predictions.
+ * - Free: Core unit test coverage, error path coverage.
+ * - Premium: Advanced prediction, analytics on prediction accuracy, customizable ML model use.
+ * - Wow++: Live retraining triggers if accuracy drops, in-dashboard latency stats for admins, predictive logging for big auctions.
+ */
