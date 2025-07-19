@@ -22,6 +22,15 @@
  * - Free Feature: Basic analysis tests
  * - Premium Feature: Comparative analysis, AI insights
  * - Wow ++ Feature: Real-time post-auction alerts tests
+ * === Additional Suggestions for Future Development ===
+ * - Add edge case tests for auctions with no bids, negative bids, or cancelled status.
+ * - Add stress/load test: many auctions in comparative analysis.
+ * - Parameterize auctions by type (vehicle, real estate, NFT) for insight diversity.
+ * - Add AI misprediction/fallback scenario tests.
+ * - Test for alert frequency and user notification preferences (opt-in/opt-out).
+ * - Consider real-time update/stream tests (if UI is live).
+ * - Add GDPR-compliance: anonymize auction/user data in insights.
+ * - Simulate 3rd-party data fetch failures (external price, market info).
  */
 
 import PostAuctionInsights from '@services/premium/PostAuctionInsights';
