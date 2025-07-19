@@ -124,3 +124,11 @@ describe('UserNotifications', () => {
     });
   });
 });
+
+// === Wow++ Suggestions (for future extension) ===
+// - Test fallback escalation: if email fails, auto-escalate to SMS or push.
+// - Add GDPR/CCPA consent & notification revocation tests.
+// - Test notification throttling/rate limiting per user.
+// - Mock and assert audit logging for all preference and send actions.
+// - Parameterize tests for all notification channel combinations.
+// - Simulate DB/network failures and test retry/backoff logic.
