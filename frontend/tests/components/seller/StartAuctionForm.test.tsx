@@ -1,7 +1,7 @@
 /**
  * © 2025 CFH, All Rights Reserved
  * File: StartAuctionForm.test.tsx
- * Path: frontend/src/components/seller/StartAuctionForm.test.tsx
+ * Path: frontend/tests/components/seller/StartAuctionForm.test.tsx
  * Purpose: Unit tests for StartAuctionForm component, validating auction creation, input handling, error feedback, and accessibility.
  * Author: Cod1 Team
  * Date: 2025-07-18 [0837]
@@ -10,7 +10,7 @@
  * Crown Certified: Yes
  * Batch ID: Compliance-071825
  * Artifact ID: a1s2d3f4-g5h6-j7k8-l9m0-n1o2p3q4r5s6
- * Save Location: frontend/src/components/seller/StartAuctionForm.test.tsx
+ * Save Location: frontend/tests/components/seller/StartAuctionForm.test.tsx
  */
 
 import React from 'react';
