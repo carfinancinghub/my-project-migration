@@ -22,6 +22,17 @@
  * - Free Feature: Basic approval/rejection tests
  * - Premium Feature: Suggest tests for premium officer roles if added
  * - Wow ++ Feature: AI-assisted approval suggestions tests
+ * === Additional Suggestions for Future Development ===
+ * - Add tests for concurrent approval/rejection (race conditions).
+ * - Test input sanitization (e.g., script injection in comments).
+ * - Add audit log assertions after approval/rejection (who, when, IP).
+ * - Parameterize officer role checks (e.g., junior, senior, admin).
+ * - Integrate and assert notification triggers (e.g., email, push) on approval/rejection.
+ * - Add error handling tests for DB/network failures.
+ * - Extract all repeated mocks to testUtils for DRY principle.
+ * - Consider test for multi-step workflow (e.g., escalate to senior on unclear comment).
+ * - Include permission edge cases (suspended, locked officer, etc).
+ * - Simulate timeouts/slow DB to test retry logic.
  */
 
 import ListingApproval from '@services/officer/ListingApproval';
