@@ -17,9 +17,19 @@
  * Side Note: TypeScript Conversion & Enhancements
  * - Converted to TypeScript with typed reports and mocks
  * - Suggest integrating with CI/CD for automated validation
- * - Suggest adding email/Slack alerts for failures
- * - Suggest unit tests for validateScalabilityReport
+ * - Suggest adding email/Slack alerts for failures (future)
+ * - Suggest unit tests for validateScalabilityReport (future)
  * - Improved: Typed validationReport, async file ops
+ */
+
+/**
+ * Side Note / Suggestions:
+ * - CI/CD Integration: Run this script post-deployment to validate scalability thresholds.
+ * - Alert System: If issues found, send alerts via email or Slack for quick response.
+ * - Custom Thresholds: Allow CLI args to override mock thresholds for different envs.
+ * - Free: Basic validation and report.
+ * - Premium: Historical comparison of reports, trend graphs.
+ * - Wow++: Auto-scale recommendations if thresholds breached, predictive scaling models.
  */
 
 import fs from 'fs/promises';
@@ -27,7 +37,11 @@ import path from 'path';
 import scalabilityReport from '@tests/scalability_report.json'; // Alias for scalability test report
 import mockData from '@_mocks/scalability_test.json'; // Alias for mock test data
 import logger from '@utils/logger'; // Assumed logger for error tracking
+// Placeholder: import sendAlert from '@utils/alert'; // For email/Slack (future)
 
+/**
+ * Types for validation data structures
+ */
 interface Scenario {
   name: string;
   completed: number;
@@ -180,6 +194,11 @@ const generateValidationReport = async () => {
     const reportPath = path.join(process.cwd(), 'backend/tests/scalability_validation.json');
     await fs.writeFile(reportPath, JSON.stringify(validationReport, null, 2), 'utf-8');
     logger.info(`Validation report generated at ${reportPath}`);
+
+    // Placeholder: Send alert if issues
+    // if (validationReport.validationIssues.length > 0) {
+    //   sendAlert('Scalability validation failed', validationReport);
+    // }
   } catch (error: any) {
     logger.error(`Failed to generate validation report: ${error.message}`);
     throw new Error(`Validation report generation failed: ${error.message}`);
@@ -194,11 +213,8 @@ generateValidationReport().catch((error) => {
 });
 
 /**
- * Side Note / Suggestions:
- * - CI/CD Integration: Run this script post-deployment to validate scalability thresholds.
- * - Alert System: If issues found, send alerts via email or Slack for quick response.
- * - Custom Thresholds: Allow CLI args to override mock thresholds for different envs.
- * - Free: Basic validation and report.
- * - Premium: Historical comparison of reports, trend graphs.
- * - Wow++: Auto-scale recommendations if thresholds breached, predictive scaling models.
+ * Cod2 Crown Certified: Validates scalability thresholds (concurrency, latency, errors) for CFH backend.
+ * Free: Basic validation/report.
+ * Premium: Trend comparison, Slack/email alerts.
+ * Wow++: Predictive scaling, recommendations, trend dashboard.
  */
