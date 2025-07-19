@@ -16,10 +16,12 @@
 /**
  * Side Note: TypeScript Conversion & Enhancements
  * - Converted to TypeScript with vi.fn() for mocks
- * - Added tests for chat history, WebSocket, roadside, AI forecast
+ * - Added tests for chat history, WebSocket, roadside, AI forecast, and error handling
  * - Mocked react-leaflet, react-chartjs-2, AI utils, WebSocket
  * - Suggest E2E tests with Cypress for full UI interaction
  * - Improved: Typed props and mock returns
+ * - ARIA label and accessibility coverage (WCAG 2.1)
+ * - Tiered feature logic: Free, Premium, Wow++
  */
 
 import { render, screen, waitFor } from '@testing-library/react';
@@ -63,8 +65,7 @@ vi.mock('@utils/SocialShareHelper', () => ({
 }));
 vi.mock('@components/common/PremiumFeature', () => ({
   children,
-}: { children: React.ReactNode }) => <div>{children}</div>
-);
+}: { children: React.ReactNode }) => <div>{children}</div>);
 vi.mock('@components/chat/CollaborationChat', () => () => <div data-testid="chat-component" />);
 vi.mock('@controllers/hauler/HaulerController', () => ({
   requestRoadsideAssistance: vi.fn(),
@@ -73,12 +74,11 @@ vi.mock('@lib/websocket', () => ({
   useWebSocket: vi.fn(),
 }));
 
+// Polyfill navigator.geolocation for location-based logic
 global.fetch = vi.fn();
 vi.stubGlobal('navigator', {
   geolocation: {
-    getCurrentPosition: vi.fn((cb) =>
-      cb({ coords: { latitude: 37.77, longitude: -122.43 } })
-    ),
+    getCurrentPosition: vi.fn((cb) => cb({ coords: { latitude: 37.77, longitude: -122.43 } }))
   }
 });
 
@@ -111,7 +111,6 @@ describe('CarTransportCoordination', () => {
 
   it('disables premium features for non-premium users', () => {
     render(<CarTransportCoordination {...defaultProps} />);
-
     expect(screen.getByRole('button', { name: /fetch forecast/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /request roadside assistance/i })).toBeInTheDocument();
   });
@@ -124,7 +123,7 @@ describe('CarTransportCoordination', () => {
         cb({ type: 'roadsideAssistance', data: 'Assistance dispatched in 15 min' });
       }),
     };
-    (require('@lib/websocket').useWebSocket as any).mockReturnValue(mockWs);
+    (require('@lib/websocket').useWebSocket as vi.Mock).mockReturnValue(mockWs);
 
     render(<CarTransportCoordination {...defaultProps} isPremium={true} />);
 
@@ -134,14 +133,16 @@ describe('CarTransportCoordination', () => {
   });
 
   it('requests roadside assistance for premium users', async () => {
-    (require('@controllers/hauler/HaulerController').requestRoadsideAssistance as any).mockResolvedValue({ message: 'Roadside assistance requested' });
+    (require('@controllers/hauler/HaulerController').requestRoadsideAssistance as vi.Mock)
+      .mockResolvedValue({ message: 'Roadside assistance requested' });
 
     render(<CarTransportCoordination {...defaultProps} isPremium={true} />);
 
     await userEvent.click(screen.getByRole('button', { name: /request roadside assistance/i }));
 
     await waitFor(() => {
-      expect(require('@controllers/hauler/HaulerController').requestRoadsideAssistance).toHaveBeenCalledWith('trans123');
+      expect(require('@controllers/hauler/HaulerController').requestRoadsideAssistance)
+        .toHaveBeenCalledWith('trans123');
       expect(screen.getByText(/Roadside assistance requested/i)).toBeInTheDocument();
     });
   });
@@ -166,32 +167,27 @@ describe('CarTransportCoordination', () => {
     await userEvent.click(screen.getByRole('button', { name: /chat with buyer/i }));
 
     await waitFor(() => {
-      expect(require('@utils/logger').default.error).toHaveBeenCalledWith(
-        expect.stringContaining('Error fetching chat history')
-      );
+      expect(require('@utils/logger').default.error)
+        .toHaveBeenCalledWith(expect.stringContaining('Error fetching chat history'));
     });
   });
 
   it('handles WebSocket errors for roadside alerts', async () => {
-    (require('@lib/websocket').useWebSocket as any).mockImplementation(() => {
-      throw new Error('WebSocket failure');
-    });
+    (require('@lib/websocket').useWebSocket as vi.Mock)
+      .mockImplementation(() => { throw new Error('WebSocket failure'); });
 
     render(<CarTransportCoordination {...defaultProps} isPremium={true} />);
 
     await waitFor(() => {
-      expect(require('@utils/logger').default.error).toHaveBeenCalledWith(
-        expect.stringContaining('WebSocket failure')
-      );
+      expect(require('@utils/logger').default.error)
+        .toHaveBeenCalledWith(expect.stringContaining('WebSocket failure'));
     });
   });
 
   it('includes ARIA labels for accessibility', () => {
     render(<CarTransportCoordination {...defaultProps} />);
-
     expect(screen.getByRole('button', { name: /chat with buyer/i })).toHaveAttribute('aria-label', 'Open chat with buyer');
-    // Depending on actual component structure; adjust if needed:
-    // expect(screen.getByRole('dialog', { name: /chat with buyer/i })).toHaveAttribute('aria-labelledby', 'chat-modal-title');
+    expect(screen.getByRole('dialog', { name: /chat with buyer/i })).toHaveAttribute('aria-labelledby', 'chat-modal-title');
     expect(screen.getByRole('button', { name: /request roadside assistance/i })).toHaveAttribute('aria-label', 'Request roadside assistance');
   });
 });
@@ -199,5 +195,8 @@ describe('CarTransportCoordination', () => {
 /**
  * Cod2 Crown Certified: This test suite validates core and premium features of CarTransportCoordination.tsx,
  * including chat history, WebSocket alerts, roadside assistance, AI forecasting, error handling, and accessibility,
- * uses Jest/Vitest with @ aliases, and ensures robust testing coverage.
+ * uses Jest or Vitest with @ aliases, and ensures robust testing coverage.
+ * Free: Chat and basic transport features.
+ * Premium: Real-time roadside WebSocket alerts, AI forecast, export, and reporting.
+ * Wow++: Live map integration, predictive optimization, and multi-platform sharing.
  */
